@@ -1,1 +1,12 @@
-server/ProjectTwo/target
+#Java
+**/.metadata
+**/.project
+**/.settings/
+**/.classpath
+**/.recommenders/**
+**/Servers
+**/.springBeans
+
+#Angular
+**/dist
+**/node_modules
