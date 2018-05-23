@@ -1,7 +1,8 @@
-A Caliber Project I guess
+A Caliber Project
+====================================================================================
 
 Requirements for a team project
-====================================================================================
+------------------------------------------------------------------------------------
 1. Working pipeline for project 2 to deploy application code and integrate test code
 2. Develop an new API to automate the test written for any web application
 3. Tests have to be executed from SPA using Angular 5
@@ -21,7 +22,7 @@ Requirements for a team project
 		- Karma (optional)
 	
 What you will be working on 
-====================================================================================
+------------------------------------------------------------------------------------
 the instance URL is https://dev-caliber.revature.tech
 
 
@@ -36,5 +37,5 @@ Mandatory requirements / user stories / use case
 
 
 Group
-====================================================================================
+------------------------------------------------------------------------------------
 Andrew, Skaggs, David Kim
