@@ -1,4 +1,12 @@
-/server/ProjectTwo/target/
-/server/ProjectTwo/.settings/
-/server/ProjectTwo/.classpath/
-/server/ProjectTwo/.project/
+#Java
+**/.metadata
+**/.project
+**/.settings/
+**/.classpath
+**/.recommenders/**
+**/Servers
+**/.springBeans
+
+#Angular
+**/dist
+**/node_modules
