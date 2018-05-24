@@ -2,9 +2,9 @@ package pom;
 
 import org.openqa.selenium.WebDriver;
 
-public class Reports extends Pom{
+public class AssessPom extends Pom{
 
-	public Reports(WebDriver driver) {
+	public AssessPom(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}

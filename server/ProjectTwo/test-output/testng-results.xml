@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5498" started-at="2018-05-24T22:01:31Z" finished-at="2018-05-24T22:01:37Z">
+  <suite name="Default suite" duration-ms="6955" started-at="2018-05-24T23:45:40Z" finished-at="2018-05-24T23:45:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5498" started-at="2018-05-24T22:01:31Z" finished-at="2018-05-24T22:01:37Z">
-      <class name="drivertest.FirefoxTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:drivertest.FirefoxTest@2a5ca609]" name="beforeSuite" is-config="true" duration-ms="7805" started-at="2018-05-24T18:01:24Z" finished-at="2018-05-24T18:01:31Z">
+    <test name="Default test" duration-ms="6955" started-at="2018-05-24T23:45:40Z" finished-at="2018-05-24T23:45:47Z">
+      <class name="pomtest.HomeTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.HomeTest@724af044]" name="beforeSuite" is-config="true" duration-ms="6127" started-at="2018-05-24T19:45:34Z" finished-at="2018-05-24T19:45:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="home()[pri:1, instance:drivertest.FirefoxTest@2a5ca609]" name="home" duration-ms="5478" started-at="2018-05-24T18:01:32Z" finished-at="2018-05-24T18:01:37Z">
+        <test-method status="PASS" signature="goHome()[pri:1, instance:pomtest.HomeTest@724af044]" name="goHome" duration-ms="3795" started-at="2018-05-24T19:45:40Z" finished-at="2018-05-24T19:45:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- home -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:drivertest.FirefoxTest@2a5ca609]" name="afterSuite" is-config="true" duration-ms="2095" started-at="2018-05-24T18:01:37Z" finished-at="2018-05-24T18:01:39Z">
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="clickHome()[pri:2, instance:pomtest.HomeTest@724af044]" name="clickHome" duration-ms="761" started-at="2018-05-24T19:45:44Z" finished-at="2018-05-24T19:45:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickHome -->
+        <test-method status="PASS" signature="clickManageBatch()[pri:3, instance:pomtest.HomeTest@724af044]" name="clickManageBatch" duration-ms="1451" started-at="2018-05-24T19:45:45Z" finished-at="2018-05-24T19:45:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickManageBatch -->
+        <test-method status="PASS" signature="clickAssessBatch()[pri:4, instance:pomtest.HomeTest@724af044]" name="clickAssessBatch" duration-ms="711" started-at="2018-05-24T19:45:46Z" finished-at="2018-05-24T19:45:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAssessBatch -->
+        <test-method status="PASS" signature="clickReports()[pri:5, instance:pomtest.HomeTest@724af044]" name="clickReports" duration-ms="210" started-at="2018-05-24T19:45:47Z" finished-at="2018-05-24T19:45:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickReports -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.HomeTest@724af044]" name="afterSuite" is-config="true" duration-ms="847" started-at="2018-05-24T19:45:47Z" finished-at="2018-05-24T19:45:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- drivertest.FirefoxTest -->
+      </class> <!-- pomtest.HomeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
