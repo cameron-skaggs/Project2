@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="caliber" parallel="false">
+
+<!--
+<parameter name="username" value="mercury"></parameter>
+<parameter name="password" value="mercury"></parameter>
+ --> 
+  <test name="caliber test">
+  <groups>
+<!-- 
+  	<run>
+  		<include name="hello"/>
+  	</run>
+-->
+  </groups>
+    <classes>
+      <class name="apptest.AppTest"/>
+      <class name="drivertest.ChromeTest"/>
+      <class name="drivertest.FirefoxTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

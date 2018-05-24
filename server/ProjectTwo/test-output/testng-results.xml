@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5190" started-at="2018-05-23T23:38:54Z" finished-at="2018-05-23T23:38:59Z">
+  <suite name="caliber" duration-ms="13705" started-at="2018-05-24T21:58:35Z" finished-at="2018-05-24T21:58:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5190" started-at="2018-05-23T23:38:54Z" finished-at="2018-05-23T23:38:59Z">
-      <class name="com.revature.driver.ChromeTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.driver.ChromeTest@2a5ca609]" name="beforeSuite" is-config="true" duration-ms="17724" started-at="2018-05-23T19:38:36Z" finished-at="2018-05-23T19:38:54Z">
+    <test name="caliber test" duration-ms="13705" started-at="2018-05-24T21:58:35Z" finished-at="2018-05-24T21:58:49Z">
+      <class name="drivertest.ChromeTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:drivertest.ChromeTest@79ca92b9]" name="beforeSuite" is-config="true" duration-ms="4902" started-at="2018-05-24T17:58:22Z" finished-at="2018-05-24T17:58:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="home()[pri:0, instance:com.revature.driver.ChromeTest@2a5ca609]" name="home" duration-ms="5165" started-at="2018-05-23T19:38:54Z" finished-at="2018-05-23T19:38:59Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:drivertest.FirefoxTest@1460a8c0]" name="beforeSuite" is-config="true" duration-ms="8466" started-at="2018-05-24T17:58:27Z" finished-at="2018-05-24T17:58:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="home()[pri:0, instance:drivertest.ChromeTest@79ca92b9]" name="home" duration-ms="9062" started-at="2018-05-24T17:58:35Z" finished-at="2018-05-24T17:58:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- home -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.driver.ChromeTest@2a5ca609]" name="afterSuite" is-config="true" duration-ms="1364" started-at="2018-05-23T19:39:00Z" finished-at="2018-05-23T19:39:01Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:drivertest.ChromeTest@79ca92b9]" name="afterSuite" is-config="true" duration-ms="2097" started-at="2018-05-24T17:58:49Z" finished-at="2018-05-24T17:58:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.revature.driver.ChromeTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:drivertest.FirefoxTest@1460a8c0]" name="afterSuite" is-config="true" duration-ms="3754" started-at="2018-05-24T17:58:51Z" finished-at="2018-05-24T17:58:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- drivertest.ChromeTest -->
+      <class name="drivertest.FirefoxTest">
+        <test-method status="PASS" signature="home()[pri:1, instance:drivertest.FirefoxTest@1460a8c0]" name="home" duration-ms="4617" started-at="2018-05-24T17:58:44Z" finished-at="2018-05-24T17:58:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+      </class> <!-- drivertest.FirefoxTest -->
+    </test> <!-- caliber test -->
+  </suite> <!-- caliber -->
 </testng-results>
