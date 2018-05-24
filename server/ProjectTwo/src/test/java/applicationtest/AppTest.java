@@ -1,4 +1,4 @@
-package apptest;
+package applicationtest;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

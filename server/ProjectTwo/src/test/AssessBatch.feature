@@ -1,0 +1,1 @@
+Feature: Assess Batch feature

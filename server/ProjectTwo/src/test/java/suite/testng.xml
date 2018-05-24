@@ -15,7 +15,6 @@
 -->
   </groups>
     <classes>
-      <class name="apptest.AppTest"/>
       <class name="drivertest.ChromeTest"/>
       <class name="drivertest.FirefoxTest"/>
       
