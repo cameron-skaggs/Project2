@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [caliber]">
-  <test name="caliber test">
+  <test name="driver test">
+    <packages>
+      <package name="drivertest"/>
+    </packages>
     <classes>
-      <class name="apptest.AppTest"/>
       <class name="drivertest.ChromeTest"/>
       <class name="drivertest.FirefoxTest"/>
     </classes>
-  </test> <!-- caliber test -->
+  </test> <!-- driver test -->
+  <test name="pom test">
+    <packages>
+      <package name="pomtest"/>
+    </packages>
+    <classes>
+      <class name="pomtest.HomeTest"/>
+    </classes>
+  </test> <!-- pom test -->
 </suite> <!-- Failed suite [caliber] -->

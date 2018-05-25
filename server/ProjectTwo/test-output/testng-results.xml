@@ -1,41 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6955" started-at="2018-05-24T23:45:40Z" finished-at="2018-05-24T23:45:47Z">
+  <suite name="Default suite" duration-ms="411" started-at="2018-05-25T01:59:06Z" finished-at="2018-05-25T01:59:07Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6f7fd0e6]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="6955" started-at="2018-05-24T23:45:40Z" finished-at="2018-05-24T23:45:47Z">
-      <class name="pomtest.HomeTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.HomeTest@724af044]" name="beforeSuite" is-config="true" duration-ms="6127" started-at="2018-05-24T19:45:34Z" finished-at="2018-05-24T19:45:40Z">
+    <test name="Default test" duration-ms="411" started-at="2018-05-25T01:59:06Z" finished-at="2018-05-25T01:59:07Z">
+      <class name="runner.Runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.Runner@6f7fd0e6]" name="setUpClass" is-config="true" duration-ms="263" started-at="2018-05-24T21:59:06Z" finished-at="2018-05-24T21:59:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="goHome()[pri:1, instance:pomtest.HomeTest@724af044]" name="goHome" duration-ms="3795" started-at="2018-05-24T19:45:40Z" finished-at="2018-05-24T19:45:44Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6f7fd0e6]" name="feature" duration-ms="11" started-at="2018-05-24T21:59:07Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-05-24T21:59:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Caliber feature]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goHome -->
-        <test-method status="PASS" signature="clickHome()[pri:2, instance:pomtest.HomeTest@724af044]" name="clickHome" duration-ms="761" started-at="2018-05-24T19:45:44Z" finished-at="2018-05-24T19:45:45Z">
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.Runner@6f7fd0e6]" name="tearDownClass" is-config="true" duration-ms="21" started-at="2018-05-24T21:59:07Z" finished-at="2018-05-24T21:59:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickHome -->
-        <test-method status="PASS" signature="clickManageBatch()[pri:3, instance:pomtest.HomeTest@724af044]" name="clickManageBatch" duration-ms="1451" started-at="2018-05-24T19:45:45Z" finished-at="2018-05-24T19:45:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickManageBatch -->
-        <test-method status="PASS" signature="clickAssessBatch()[pri:4, instance:pomtest.HomeTest@724af044]" name="clickAssessBatch" duration-ms="711" started-at="2018-05-24T19:45:46Z" finished-at="2018-05-24T19:45:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickAssessBatch -->
-        <test-method status="PASS" signature="clickReports()[pri:5, instance:pomtest.HomeTest@724af044]" name="clickReports" duration-ms="210" started-at="2018-05-24T19:45:47Z" finished-at="2018-05-24T19:45:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickReports -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.HomeTest@724af044]" name="afterSuite" is-config="true" duration-ms="847" started-at="2018-05-24T19:45:47Z" finished-at="2018-05-24T19:45:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- pomtest.HomeTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.Runner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -13,5 +13,4 @@ public class Chrome implements Driver{
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		return new ChromeDriver();
 	}
-	
 }

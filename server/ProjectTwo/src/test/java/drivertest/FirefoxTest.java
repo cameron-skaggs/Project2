@@ -2,8 +2,9 @@ package drivertest;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -12,12 +13,12 @@ import driver.DriverFactory;
 
 public class FirefoxTest {
 	WebDriver driver;
-	WebDriverWait wait;
 	
 	@BeforeSuite
 	public void beforeSuite() {
 		driver = DriverFactory.get("firefox");
-		wait = new WebDriverWait(driver, 4);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 	
 	@Test(priority=1)
