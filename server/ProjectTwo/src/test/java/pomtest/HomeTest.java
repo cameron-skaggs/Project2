@@ -2,8 +2,6 @@ package pomtest;
 
 import static org.testng.Assert.assertEquals;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,8 +19,6 @@ public class HomeTest {
 	@BeforeSuite
 	public void beforeSuite() {
 		driver = DriverFactory.get("chrome");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 	
 	@Test(priority=1)

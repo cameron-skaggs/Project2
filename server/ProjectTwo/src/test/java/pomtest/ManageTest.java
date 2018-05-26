@@ -2,11 +2,12 @@ package pomtest;
 
 import static org.testng.Assert.assertEquals;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -16,14 +17,14 @@ import pom.ManagePom;
 
 public class ManageTest {
 	WebDriver driver;
+	WebDriverWait wait;
 	HomePom home;
 	ManagePom manage;
 	
 	@BeforeSuite
 	public void beforeSuite() {
 		driver = DriverFactory.get("chrome");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 1);
 		home = new HomePom(driver);
 		manage = new ManagePom(driver);
 		
@@ -34,21 +35,48 @@ public class ManageTest {
 	public void clickYear() {
 		WebElement year = manage.anchorYear();
 		assertEquals("2018", year.getText());
-		year.click();
 	}
 	
 	@Test(priority=2)
 	public void clickCreateBatch() {
-		WebElement create = manage.anchorCreate();
-		create.click();
-		String xpath = "//*[@id=\"batchModalLabel\"]";
-		String text = elementTrim(xpath);
-		assertEquals("Create New Batch", text);
+		WebElement anchor = manage.anchorCreate();
+		WebElement input = manage.inputCreate();
+		WebElement close = manage.buttonCreateClose();
+		
+		anchor.click();
+		
+		String string = input.getAttribute("value");
+		assertEquals("Save", string);
+
+		modalWait(close);
+		close.click();
 	}
 	
-	public String elementTrim(String xpath) {
-		WebElement element = driver.findElement(By.xpath(xpath));
-		String string = element.getText();
-		return string.replace(" ", "");
+	@Test(priority=3)
+	public void clickImportBatch() {
+		WebElement anchor = manage.anchorImport();
+		WebElement input = manage.inputImport();
+		WebElement close = manage.buttonImportClose();
+		
+		modalWait(anchor);
+		anchor.click();
+
+		String string = input.getAttribute("value");
+		assertEquals("Import", string);
+		
+		modalWait(close);
+		close.click();
 	}
+	
+	@AfterSuite
+	public void afterSuite() {
+		driver.quit();
+	}
+	
+	public void modalWait(WebElement webElement) {
+		ExpectedCondition<WebElement> condition =
+				ExpectedConditions.elementToBeClickable(webElement);
+		wait.until(condition);
+	}
+	
 }
