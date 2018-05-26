@@ -78,5 +78,4 @@ public class ManageTest {
 				ExpectedConditions.elementToBeClickable(webElement);
 		wait.until(condition);
 	}
-	
 }

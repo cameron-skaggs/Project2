@@ -16,6 +16,8 @@
     </packages>
     <classes>
       <class name="pomtest.HomeTest"/>
+      <class name="pomtest.ManageTest"/>
+      <class name="pomtest.ManageYearTest"/>
     </classes>
   </test> <!-- pom test -->
 </suite> <!-- Failed suite [caliber] -->

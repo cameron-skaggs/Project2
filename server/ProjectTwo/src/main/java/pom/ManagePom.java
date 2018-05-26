@@ -11,7 +11,8 @@ public class ManagePom extends Pom {
 	}
 
 	public WebElement anchorYear() {
-		return driver.findElement(By.linkText("2018"));
+		String xpath = "//*[@id=\"manage\"]/div[1]/div/div/ul/li[1]/a";
+		return driver.findElement(By.xpath(xpath));
 	}
 
 	public WebElement anchorCreate() {
@@ -42,6 +43,5 @@ public class ManagePom extends Pom {
 	public WebElement buttonImportClose() {
 		String xpath = "//*[@id=\"importBatchModal\"]/div/div/div[3]/button";
 		return driver.findElement(By.xpath(xpath));
-		
 	}
 }

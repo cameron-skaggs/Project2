@@ -1,33 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2733" started-at="2018-05-26T15:33:05Z" finished-at="2018-05-26T15:33:08Z">
+  <suite name="caliber" duration-ms="60804" started-at="2018-05-26T20:17:57Z" finished-at="2018-05-26T20:18:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2733" started-at="2018-05-26T15:33:05Z" finished-at="2018-05-26T15:33:08Z">
-      <class name="pomtest.ManageTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageTest@2b98378d]" name="beforeSuite" is-config="true" duration-ms="8899" started-at="2018-05-26T11:32:56Z" finished-at="2018-05-26T11:33:05Z">
+    <test name="driver test" duration-ms="40558" started-at="2018-05-26T20:17:57Z" finished-at="2018-05-26T20:18:37Z">
+      <class name="drivertest.ChromeTest">
+        <test-method status="PASS" signature="home()[pri:0, instance:drivertest.ChromeTest@8bd1b6a]" name="home" duration-ms="21696" started-at="2018-05-26T16:17:57Z" finished-at="2018-05-26T16:18:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+      </class> <!-- drivertest.ChromeTest -->
+      <class name="drivertest.FirefoxTest">
+        <test-method status="PASS" signature="home()[pri:1, instance:drivertest.FirefoxTest@18be83e4]" name="home" duration-ms="18794" started-at="2018-05-26T16:18:18Z" finished-at="2018-05-26T16:18:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+      </class> <!-- drivertest.FirefoxTest -->
+    </test> <!-- driver test -->
+    <test name="pom test" duration-ms="14273" started-at="2018-05-26T20:18:43Z" finished-at="2018-05-26T20:18:57Z">
+      <class name="drivertest.ChromeTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:drivertest.ChromeTest@8bd1b6a]" name="beforeSuite" is-config="true" duration-ms="4663" started-at="2018-05-26T16:16:39Z" finished-at="2018-05-26T16:16:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="clickYear()[pri:1, instance:pomtest.ManageTest@2b98378d]" name="clickYear" duration-ms="598" started-at="2018-05-26T11:33:05Z" finished-at="2018-05-26T11:33:06Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:drivertest.FirefoxTest@18be83e4]" name="beforeSuite" is-config="true" duration-ms="30539" started-at="2018-05-26T16:16:44Z" finished-at="2018-05-26T16:17:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickYear -->
-        <test-method status="PASS" signature="clickCreateBatch()[pri:2, instance:pomtest.ManageTest@2b98378d]" name="clickCreateBatch" duration-ms="918" started-at="2018-05-26T11:33:06Z" finished-at="2018-05-26T11:33:07Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.HomeTest@7d9d1a19]" name="beforeSuite" is-config="true" duration-ms="5601" started-at="2018-05-26T16:17:14Z" finished-at="2018-05-26T16:17:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickCreateBatch -->
-        <test-method status="PASS" signature="clickImportBatch()[pri:3, instance:pomtest.ManageTest@2b98378d]" name="clickImportBatch" duration-ms="1190" started-at="2018-05-26T11:33:07Z" finished-at="2018-05-26T11:33:08Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageTest@39c0f4a]" name="beforeSuite" is-config="true" duration-ms="18777" started-at="2018-05-26T16:17:20Z" finished-at="2018-05-26T16:17:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickImportBatch -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageTest@2b98378d]" name="afterSuite" is-config="true" duration-ms="1027" started-at="2018-05-26T11:33:08Z" finished-at="2018-05-26T11:33:09Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageYearTest@1794d431]" name="beforeSuite" is-config="true" duration-ms="17760" started-at="2018-05-26T16:17:39Z" finished-at="2018-05-26T16:17:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:drivertest.ChromeTest@8bd1b6a]" name="afterSuite" is-config="true" duration-ms="1916" started-at="2018-05-26T16:18:58Z" finished-at="2018-05-26T16:19:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:drivertest.FirefoxTest@18be83e4]" name="afterSuite" is-config="true" duration-ms="6491" started-at="2018-05-26T16:19:00Z" finished-at="2018-05-26T16:19:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.HomeTest@7d9d1a19]" name="afterSuite" is-config="true" duration-ms="1063" started-at="2018-05-26T16:19:06Z" finished-at="2018-05-26T16:19:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageTest@39c0f4a]" name="afterSuite" is-config="true" duration-ms="919" started-at="2018-05-26T16:19:07Z" finished-at="2018-05-26T16:19:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageYearTest@1794d431]" name="afterSuite" is-config="true" duration-ms="495" started-at="2018-05-26T16:19:08Z" finished-at="2018-05-26T16:19:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- drivertest.ChromeTest -->
+      <class name="pomtest.ManageTest">
+        <test-method status="PASS" signature="clickYear()[pri:1, instance:pomtest.ManageTest@39c0f4a]" name="clickYear" duration-ms="71" started-at="2018-05-26T16:18:53Z" finished-at="2018-05-26T16:18:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickYear -->
+        <test-method status="PASS" signature="clickCreateBatch()[pri:2, instance:pomtest.ManageTest@39c0f4a]" name="clickCreateBatch" duration-ms="2112" started-at="2018-05-26T16:18:53Z" finished-at="2018-05-26T16:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCreateBatch -->
+        <test-method status="PASS" signature="clickImportBatch()[pri:3, instance:pomtest.ManageTest@39c0f4a]" name="clickImportBatch" duration-ms="1278" started-at="2018-05-26T16:18:55Z" finished-at="2018-05-26T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickImportBatch -->
       </class> <!-- pomtest.ManageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="pomtest.HomeTest">
+        <test-method status="PASS" signature="goHome()[pri:1, instance:pomtest.HomeTest@7d9d1a19]" name="goHome" duration-ms="5406" started-at="2018-05-26T16:18:43Z" finished-at="2018-05-26T16:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="clickHome()[pri:2, instance:pomtest.HomeTest@7d9d1a19]" name="clickHome" duration-ms="1125" started-at="2018-05-26T16:18:48Z" finished-at="2018-05-26T16:18:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickHome -->
+        <test-method status="PASS" signature="clickManageBatch()[pri:3, instance:pomtest.HomeTest@7d9d1a19]" name="clickManageBatch" duration-ms="1170" started-at="2018-05-26T16:18:50Z" finished-at="2018-05-26T16:18:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickManageBatch -->
+        <test-method status="PASS" signature="clickAssessBatch()[pri:4, instance:pomtest.HomeTest@7d9d1a19]" name="clickAssessBatch" duration-ms="1628" started-at="2018-05-26T16:18:51Z" finished-at="2018-05-26T16:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAssessBatch -->
+        <test-method status="PASS" signature="clickReports()[pri:5, instance:pomtest.HomeTest@7d9d1a19]" name="clickReports" duration-ms="249" started-at="2018-05-26T16:18:52Z" finished-at="2018-05-26T16:18:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickReports -->
+      </class> <!-- pomtest.HomeTest -->
+      <class name="pomtest.ManageYearTest">
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@1794d431]" name="listYears" duration-ms="596" started-at="2018-05-26T16:18:56Z" data-provider="years" finished-at="2018-05-26T16:18:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2019]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listYears -->
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@1794d431]" name="listYears" duration-ms="194" started-at="2018-05-26T16:18:57Z" data-provider="years" finished-at="2018-05-26T16:18:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listYears -->
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@1794d431]" name="listYears" duration-ms="194" started-at="2018-05-26T16:18:57Z" data-provider="years" finished-at="2018-05-26T16:18:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2017]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listYears -->
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@1794d431]" name="listYears" duration-ms="180" started-at="2018-05-26T16:18:57Z" data-provider="years" finished-at="2018-05-26T16:18:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2016]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listYears -->
+      </class> <!-- pomtest.ManageYearTest -->
+    </test> <!-- pom test -->
+  </suite> <!-- caliber -->
 </testng-results>

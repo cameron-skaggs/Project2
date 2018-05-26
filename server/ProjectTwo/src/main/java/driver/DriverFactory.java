@@ -14,8 +14,7 @@ public class DriverFactory {
 			driver = new Chrome();
 			return driver.get();
 		default:
-			System.out.println("driver factory problems");
-			return null;
+			throw new IllegalArgumentException("DriverFactory#get " + type);
 		}
 	}
 }
