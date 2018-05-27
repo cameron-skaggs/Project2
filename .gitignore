@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **/pull_request_template.md
 **/issue_template.md
 **/target/
@@ -5,6 +6,9 @@
 **/META-INF/**
 
 #Eclipse
+=======
+#Java
+>>>>>>> 8b74048469aac030b2091e933a44c1990c9c8083
 **/.metadata
 **/.project
 **/.settings/
@@ -13,6 +17,7 @@
 **/Servers
 **/.springBeans
 
+<<<<<<< HEAD
 # compiled output
 /dist
 /tmp
@@ -20,3 +25,8 @@
 
 # dependencies
 /node_modules
+=======
+#Angular
+**/dist
+**/node_modules
+>>>>>>> 8b74048469aac030b2091e933a44c1990c9c8083

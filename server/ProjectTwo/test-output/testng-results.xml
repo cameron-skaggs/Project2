@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5190" started-at="2018-05-23T23:38:54Z" finished-at="2018-05-23T23:38:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5190" started-at="2018-05-23T23:38:54Z" finished-at="2018-05-23T23:38:59Z">
+      <class name="com.revature.driver.ChromeTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.driver.ChromeTest@2a5ca609]" name="beforeSuite" is-config="true" duration-ms="17724" started-at="2018-05-23T19:38:36Z" finished-at="2018-05-23T19:38:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="home()[pri:0, instance:com.revature.driver.ChromeTest@2a5ca609]" name="home" duration-ms="5165" started-at="2018-05-23T19:38:54Z" finished-at="2018-05-23T19:38:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.driver.ChromeTest@2a5ca609]" name="afterSuite" is-config="true" duration-ms="1364" started-at="2018-05-23T19:39:00Z" finished-at="2018-05-23T19:39:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.revature.driver.ChromeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
