@@ -1,1142 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="105" passed="104">
+<testng-results skipped="0" failed="1" total="119" passed="118">
   <reporter-output>
   </reporter-output>
-  <suite name="caliber" duration-ms="14121" started-at="2018-05-27T20:26:35Z" finished-at="2018-05-27T20:26:49Z">
+  <suite name="caliber" duration-ms="62973" started-at="2018-05-27T20:36:18Z" finished-at="2018-05-27T20:37:21Z">
     <groups>
     </groups>
-    <test name="managecreatetest" duration-ms="14121" started-at="2018-05-27T20:26:35Z" finished-at="2018-05-27T20:26:49Z">
-      <class name="pomtest.ManageCreateTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageCreateTest@475530b9]" name="beforeSuite" is-config="true" duration-ms="10288" started-at="2018-05-27T16:26:25Z" finished-at="2018-05-27T16:26:35Z">
+    <test name="driver test" duration-ms="26783" started-at="2018-05-27T20:36:18Z" finished-at="2018-05-27T20:36:45Z">
+      <class name="drivertest.ChromeTest">
+        <test-method status="PASS" signature="home()[pri:0, instance:drivertest.ChromeTest@8bd1b6a]" name="home" duration-ms="9653" started-at="2018-05-27T16:36:19Z" finished-at="2018-05-27T16:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+      </class> <!-- drivertest.ChromeTest -->
+      <class name="drivertest.FirefoxTest">
+        <test-method status="PASS" signature="home()[pri:1, instance:drivertest.FirefoxTest@18be83e4]" name="home" duration-ms="17035" started-at="2018-05-27T16:36:28Z" finished-at="2018-05-27T16:36:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+      </class> <!-- drivertest.FirefoxTest -->
+    </test> <!-- driver test -->
+    <test name="pom test" duration-ms="33185" started-at="2018-05-27T20:36:48Z" finished-at="2018-05-27T20:37:21Z">
+      <class name="drivertest.ChromeTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:drivertest.ChromeTest@8bd1b6a]" name="beforeSuite" is-config="true" duration-ms="4124" started-at="2018-05-27T16:34:51Z" finished-at="2018-05-27T16:34:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="inputName()[pri:1, instance:pomtest.ManageCreateTest@475530b9]" name="inputName" duration-ms="549" started-at="2018-05-27T16:26:35Z" finished-at="2018-05-27T16:26:36Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:drivertest.FirefoxTest@18be83e4]" name="beforeSuite" is-config="true" duration-ms="11869" started-at="2018-05-27T16:34:55Z" finished-at="2018-05-27T16:35:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inputName -->
-        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@475530b9]" name="selectTraining" duration-ms="179" started-at="2018-05-27T16:26:36Z" data-provider="trainingtype" finished-at="2018-05-27T16:26:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Revature]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.HomeTest@39c0f4a]" name="beforeSuite" is-config="true" duration-ms="5434" started-at="2018-05-27T16:35:07Z" finished-at="2018-05-27T16:35:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectTraining -->
-        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@475530b9]" name="selectTraining" duration-ms="106" started-at="2018-05-27T16:26:36Z" data-provider="trainingtype" finished-at="2018-05-27T16:26:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Corporate]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageCreateTest@1794d431]" name="beforeSuite" is-config="true" duration-ms="21820" started-at="2018-05-27T16:35:13Z" finished-at="2018-05-27T16:35:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectTraining -->
-        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@475530b9]" name="selectTraining" duration-ms="102" started-at="2018-05-27T16:26:36Z" data-provider="trainingtype" finished-at="2018-05-27T16:26:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[University]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageTest@42e26948]" name="beforeSuite" is-config="true" duration-ms="14069" started-at="2018-05-27T16:35:34Z" finished-at="2018-05-27T16:35:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectTraining -->
-        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@475530b9]" name="selectTraining" duration-ms="90" started-at="2018-05-27T16:26:36Z" data-provider="trainingtype" finished-at="2018-05-27T16:26:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Other]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageYearTest@57baeedf]" name="beforeSuite" is-config="true" duration-ms="30058" started-at="2018-05-27T16:35:48Z" finished-at="2018-05-27T16:36:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectTraining -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="134" started-at="2018-05-27T16:26:36Z" data-provider="skill" finished-at="2018-05-27T16:26:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[J2EE]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:drivertest.ChromeTest@8bd1b6a]" name="afterSuite" is-config="true" duration-ms="2388" started-at="2018-05-27T16:37:22Z" finished-at="2018-05-27T16:37:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="155" started-at="2018-05-27T16:26:36Z" data-provider="skill" finished-at="2018-05-27T16:26:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[.NET]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:drivertest.FirefoxTest@18be83e4]" name="afterSuite" is-config="true" duration-ms="4311" started-at="2018-05-27T16:37:24Z" finished-at="2018-05-27T16:37:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="119" started-at="2018-05-27T16:26:36Z" data-provider="skill" finished-at="2018-05-27T16:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[SDET]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.HomeTest@39c0f4a]" name="afterSuite" is-config="true" duration-ms="1209" started-at="2018-05-27T16:37:28Z" finished-at="2018-05-27T16:37:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="144" started-at="2018-05-27T16:26:37Z" data-provider="skill" finished-at="2018-05-27T16:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[BPM]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageCreateTest@1794d431]" name="afterSuite" is-config="true" duration-ms="4921" started-at="2018-05-27T16:37:30Z" finished-at="2018-05-27T16:37:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="107" started-at="2018-05-27T16:26:37Z" data-provider="skill" finished-at="2018-05-27T16:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Appian BPM]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageTest@42e26948]" name="afterSuite" is-config="true" duration-ms="1126" started-at="2018-05-27T16:37:35Z" finished-at="2018-05-27T16:37:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="111" started-at="2018-05-27T16:26:37Z" data-provider="skill" finished-at="2018-05-27T16:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[PEGA BPM]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageYearTest@57baeedf]" name="afterSuite" is-config="true" duration-ms="625" started-at="2018-05-27T16:37:36Z" finished-at="2018-05-27T16:37:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="112" started-at="2018-05-27T16:26:37Z" data-provider="skill" finished-at="2018-05-27T16:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Microsoft Dynamics 365]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- drivertest.ChromeTest -->
+      <class name="pomtest.ManageTest">
+        <test-method status="PASS" signature="clickYear()[pri:1, instance:pomtest.ManageTest@42e26948]" name="clickYear" duration-ms="74" started-at="2018-05-27T16:37:19Z" finished-at="2018-05-27T16:37:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="118" started-at="2018-05-27T16:26:37Z" data-provider="skill" finished-at="2018-05-27T16:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[JTA]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- clickYear -->
+        <test-method status="PASS" signature="clickCreateBatch()[pri:2, instance:pomtest.ManageTest@42e26948]" name="clickCreateBatch" duration-ms="878" started-at="2018-05-27T16:37:19Z" finished-at="2018-05-27T16:37:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="136" started-at="2018-05-27T16:26:37Z" data-provider="skill" finished-at="2018-05-27T16:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Microservices]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="90" started-at="2018-05-27T16:26:37Z" data-provider="skill" finished-at="2018-05-27T16:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Oracle Fusion]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="91" started-at="2018-05-27T16:26:37Z" data-provider="skill" finished-at="2018-05-27T16:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Salesforce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="91" started-at="2018-05-27T16:26:37Z" data-provider="skill" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Business Analyst]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="90" started-at="2018-05-27T16:26:38Z" data-provider="skill" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[System Admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="87" started-at="2018-05-27T16:26:38Z" data-provider="skill" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[QA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@475530b9]" name="selectSkill" duration-ms="101" started-at="2018-05-27T16:26:38Z" data-provider="skill" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Other]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectLocation(java.lang.String, java.lang.String)[pri:4, instance:pomtest.ManageCreateTest@475530b9]" name="selectLocation" duration-ms="116" started-at="2018-05-27T16:26:38Z" data-provider="location" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NY]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Tech Incubator at Queens College, 65-30 Kissena Blvd, CEP Hall 2 Queens NY 11367]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectLocation -->
-        <test-method status="PASS" signature="selectLocation(java.lang.String, java.lang.String)[pri:4, instance:pomtest.ManageCreateTest@475530b9]" name="selectLocation" duration-ms="114" started-at="2018-05-27T16:26:38Z" data-provider="location" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[VA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Revature LLC, 11730 Plaza America Drive, 2nd Floor Reston VA 20190]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectLocation -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="132" started-at="2018-05-27T16:26:38Z" data-provider="trainers" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="116" started-at="2018-05-27T16:26:38Z" data-provider="trainers" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Name]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="95" started-at="2018-05-27T16:26:38Z" data-provider="trainers" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bfs]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="88" started-at="2018-05-27T16:26:38Z" data-provider="trainers" finished-at="2018-05-27T16:26:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Patrick Walsh]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="89" started-at="2018-05-27T16:26:38Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dan Pickles]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="90" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Karan Dhirar]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="85" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Brian Connolly]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="93" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Genesis Bonds]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="118" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ankit Garg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="93" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ryan Lessley]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="84" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Steven Kelsey]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="113" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Emily Higgins]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="111" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Taylor Kemper]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="94" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Richard Orr]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="89" started-at="2018-05-27T16:26:39Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Nickolas Jurczak]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="98" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[August Duet]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="85" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Yuvaraj Damodaran]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="87" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Fred Belotte]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="84" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mehrab Rahman]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="87" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Peter Alagna]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="62" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mehrab Rahman]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="62" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Peter Alagna]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="87" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Stanley Medikonda]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="83" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Gray Wynne]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="87" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Orson Wallace]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="83" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Shelby Levinson]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="59" started-at="2018-05-27T16:26:40Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Gray Wynne]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="57" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Orson Wallace]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="65" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Shelby Levinson]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="83" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Walter Payne]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="86" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Natalie Church]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="110" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Archer Radcliff]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="82" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Rajesh Yamunachari]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="80" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Raghavan Swaminathan]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="81" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Marvin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="83" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Spongebob Squarepants]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="84" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Kermit Frog]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@475530b9]" name="selectTrainer" duration-ms="81" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[!@#$%^&*()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="102" started-at="2018-05-27T16:26:41Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="111" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Name]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="98" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bfs]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="92" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Patrick Walsh]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="82" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dan Pickles]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="88" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Karan Dhirar]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="82" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Brian Connolly]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="82" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Genesis Bonds]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="81" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ankit Garg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="84" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ryan Lessley]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="82" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Steven Kelsey]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="82" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Emily Higgins]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="84" started-at="2018-05-27T16:26:42Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Taylor Kemper]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="109" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Richard Orr]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="116" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Nickolas Jurczak]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="86" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[August Duet]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="83" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Yuvaraj Damodaran]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="95" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Fred Belotte]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="90" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mehrab Rahman]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="101" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Peter Alagna]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="81" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mehrab Rahman]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="57" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Peter Alagna]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="86" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Stanley Medikonda]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="87" started-at="2018-05-27T16:26:43Z" data-provider="trainers" finished-at="2018-05-27T16:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Gray Wynne]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="92" started-at="2018-05-27T16:26:44Z" data-provider="trainers" finished-at="2018-05-27T16:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Orson Wallace]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="89" started-at="2018-05-27T16:26:44Z" data-provider="trainers" finished-at="2018-05-27T16:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Shelby Levinson]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="112" started-at="2018-05-27T16:26:44Z" data-provider="trainers" finished-at="2018-05-27T16:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Gray Wynne]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="91" started-at="2018-05-27T16:26:44Z" data-provider="trainers" finished-at="2018-05-27T16:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Orson Wallace]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="101" started-at="2018-05-27T16:26:44Z" data-provider="trainers" finished-at="2018-05-27T16:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Shelby Levinson]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="136" started-at="2018-05-27T16:26:44Z" data-provider="trainers" finished-at="2018-05-27T16:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Walter Payne]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="157" started-at="2018-05-27T16:26:44Z" data-provider="trainers" finished-at="2018-05-27T16:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Natalie Church]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="102" started-at="2018-05-27T16:26:44Z" data-provider="trainers" finished-at="2018-05-27T16:26:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Archer Radcliff]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="82" started-at="2018-05-27T16:26:44Z" data-provider="trainers" finished-at="2018-05-27T16:26:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Rajesh Yamunachari]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="90" started-at="2018-05-27T16:26:45Z" data-provider="trainers" finished-at="2018-05-27T16:26:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Raghavan Swaminathan]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="87" started-at="2018-05-27T16:26:45Z" data-provider="trainers" finished-at="2018-05-27T16:26:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Marvin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="116" started-at="2018-05-27T16:26:45Z" data-provider="trainers" finished-at="2018-05-27T16:26:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Spongebob Squarepants]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="95" started-at="2018-05-27T16:26:45Z" data-provider="trainers" finished-at="2018-05-27T16:26:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Kermit Frog]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@475530b9]" name="selectCotrainer" duration-ms="86" started-at="2018-05-27T16:26:45Z" data-provider="trainers" finished-at="2018-05-27T16:26:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[!@#$%^&*()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectStart()[pri:7, instance:pomtest.ManageCreateTest@475530b9]" name="selectStart" duration-ms="134" started-at="2018-05-27T16:26:45Z" finished-at="2018-05-27T16:26:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectStart -->
-        <test-method status="PASS" signature="selectEnd()[pri:8, instance:pomtest.ManageCreateTest@475530b9]" name="selectEnd" duration-ms="141" started-at="2018-05-27T16:26:45Z" finished-at="2018-05-27T16:26:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectEnd -->
-        <test-method status="PASS" signature="inputGood()[pri:9, instance:pomtest.ManageCreateTest@475530b9]" name="inputGood" duration-ms="126" started-at="2018-05-27T16:26:45Z" finished-at="2018-05-27T16:26:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inputGood -->
-        <test-method status="PASS" signature="inputPassing()[pri:10, instance:pomtest.ManageCreateTest@475530b9]" name="inputPassing" duration-ms="104" started-at="2018-05-27T16:26:45Z" finished-at="2018-05-27T16:26:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inputPassing -->
-        <test-method status="PASS" signature="buttonSave()[pri:11, instance:pomtest.ManageCreateTest@475530b9]" name="buttonSave" duration-ms="104" started-at="2018-05-27T16:26:46Z" finished-at="2018-05-27T16:26:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buttonSave -->
-        <test-method status="PASS" signature="buttonClose()[pri:12, instance:pomtest.ManageCreateTest@475530b9]" name="buttonClose" duration-ms="1434" started-at="2018-05-27T16:26:46Z" finished-at="2018-05-27T16:26:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buttonClose -->
-        <test-method status="FAIL" signature="buttonX()[pri:13, instance:pomtest.ManageCreateTest@475530b9]" name="buttonX" duration-ms="2084" started-at="2018-05-27T16:26:47Z" finished-at="2018-05-27T16:26:49Z">
-          <exception class="org.openqa.selenium.TimeoutException">
+        </test-method> <!-- clickCreateBatch -->
+        <test-method status="FAIL" signature="clickImportBatch()[pri:3, instance:pomtest.ManageTest@42e26948]" name="clickImportBatch" duration-ms="326" started-at="2018-05-27T16:37:20Z" finished-at="2018-05-27T16:37:20Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on XP (f1372b59307199129763095d89210693)] -> xpath: //*[@id="createBatchModal"]] (tried for 1 second(s) with 500 MILLISECONDS interval)
+              <![CDATA[unknown error: Element <a>...</a> is not clickable at point (1239, 126). Other element would receive the click: <div class="modal-backdrop fade"></div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'LAPTOP-Q4VAUUHH', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\andre\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: f1372b59307199129763095d89210693]]>
+Session ID: 2ceb52f6b5235ad124d4c85352bb3091]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on XP (f1372b59307199129763095d89210693)] -> xpath: //*[@id="createBatchModal"]] (tried for 1 second(s) with 500 MILLISECONDS interval)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <a>...</a> is not clickable at point (1239, 126). Other element would receive the click: <div class="modal-backdrop fade"></div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
 System info: host: 'LAPTOP-Q4VAUUHH', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\andre\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: f1372b59307199129763095d89210693
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at pomtest.ManageCreateTest.modal(ManageCreateTest.java:230)
-	at pomtest.ManageCreateTest.buttonX(ManageCreateTest.java:132)
+Session ID: 2ceb52f6b5235ad124d4c85352bb3091
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at pomtest.ManageTest.clickImportBatch(ManageTest.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1163,15 +143,1190 @@ Session ID: f1372b59307199129763095d89210693
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickImportBatch -->
+      </class> <!-- pomtest.ManageTest -->
+      <class name="pomtest.HomeTest">
+        <test-method status="PASS" signature="goHome()[pri:1, instance:pomtest.HomeTest@39c0f4a]" name="goHome" duration-ms="7869" started-at="2018-05-27T16:36:48Z" finished-at="2018-05-27T16:36:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="clickHome()[pri:2, instance:pomtest.HomeTest@39c0f4a]" name="clickHome" duration-ms="1299" started-at="2018-05-27T16:36:56Z" finished-at="2018-05-27T16:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickHome -->
+        <test-method status="PASS" signature="clickManageBatch()[pri:3, instance:pomtest.HomeTest@39c0f4a]" name="clickManageBatch" duration-ms="1171" started-at="2018-05-27T16:36:57Z" finished-at="2018-05-27T16:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickManageBatch -->
+        <test-method status="PASS" signature="clickAssessBatch()[pri:4, instance:pomtest.HomeTest@39c0f4a]" name="clickAssessBatch" duration-ms="941" started-at="2018-05-27T16:36:59Z" finished-at="2018-05-27T16:37:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAssessBatch -->
+        <test-method status="PASS" signature="clickReports()[pri:5, instance:pomtest.HomeTest@39c0f4a]" name="clickReports" duration-ms="247" started-at="2018-05-27T16:37:00Z" finished-at="2018-05-27T16:37:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickReports -->
+      </class> <!-- pomtest.HomeTest -->
+      <class name="pomtest.ManageCreateTest">
+        <test-method status="PASS" signature="inputName()[pri:1, instance:pomtest.ManageCreateTest@1794d431]" name="inputName" duration-ms="2833" started-at="2018-05-27T16:37:00Z" finished-at="2018-05-27T16:37:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputName -->
+        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@1794d431]" name="selectTraining" duration-ms="385" started-at="2018-05-27T16:37:03Z" data-provider="trainingtype" finished-at="2018-05-27T16:37:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Revature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTraining -->
+        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@1794d431]" name="selectTraining" duration-ms="477" started-at="2018-05-27T16:37:03Z" data-provider="trainingtype" finished-at="2018-05-27T16:37:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Corporate]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTraining -->
+        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@1794d431]" name="selectTraining" duration-ms="650" started-at="2018-05-27T16:37:04Z" data-provider="trainingtype" finished-at="2018-05-27T16:37:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[University]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTraining -->
+        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@1794d431]" name="selectTraining" duration-ms="117" started-at="2018-05-27T16:37:04Z" data-provider="trainingtype" finished-at="2018-05-27T16:37:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTraining -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="139" started-at="2018-05-27T16:37:04Z" data-provider="skill" finished-at="2018-05-27T16:37:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[J2EE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="615" started-at="2018-05-27T16:37:04Z" data-provider="skill" finished-at="2018-05-27T16:37:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[.NET]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="147" started-at="2018-05-27T16:37:05Z" data-provider="skill" finished-at="2018-05-27T16:37:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SDET]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="114" started-at="2018-05-27T16:37:05Z" data-provider="skill" finished-at="2018-05-27T16:37:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BPM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="114" started-at="2018-05-27T16:37:05Z" data-provider="skill" finished-at="2018-05-27T16:37:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Appian BPM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="112" started-at="2018-05-27T16:37:05Z" data-provider="skill" finished-at="2018-05-27T16:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PEGA BPM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="112" started-at="2018-05-27T16:37:06Z" data-provider="skill" finished-at="2018-05-27T16:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Microsoft Dynamics 365]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="110" started-at="2018-05-27T16:37:06Z" data-provider="skill" finished-at="2018-05-27T16:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[JTA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="112" started-at="2018-05-27T16:37:06Z" data-provider="skill" finished-at="2018-05-27T16:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Microservices]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="111" started-at="2018-05-27T16:37:06Z" data-provider="skill" finished-at="2018-05-27T16:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Oracle Fusion]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="129" started-at="2018-05-27T16:37:06Z" data-provider="skill" finished-at="2018-05-27T16:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Salesforce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="138" started-at="2018-05-27T16:37:06Z" data-provider="skill" finished-at="2018-05-27T16:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Business Analyst]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="120" started-at="2018-05-27T16:37:06Z" data-provider="skill" finished-at="2018-05-27T16:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[System Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="121" started-at="2018-05-27T16:37:06Z" data-provider="skill" finished-at="2018-05-27T16:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@1794d431]" name="selectSkill" duration-ms="115" started-at="2018-05-27T16:37:06Z" data-provider="skill" finished-at="2018-05-27T16:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Other]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSkill -->
+        <test-method status="PASS" signature="selectLocation(java.lang.String, java.lang.String)[pri:4, instance:pomtest.ManageCreateTest@1794d431]" name="selectLocation" duration-ms="175" started-at="2018-05-27T16:37:07Z" data-provider="location" finished-at="2018-05-27T16:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NY]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tech Incubator at Queens College, 65-30 Kissena Blvd, CEP Hall 2 Queens NY 11367]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectLocation -->
+        <test-method status="PASS" signature="selectLocation(java.lang.String, java.lang.String)[pri:4, instance:pomtest.ManageCreateTest@1794d431]" name="selectLocation" duration-ms="153" started-at="2018-05-27T16:37:07Z" data-provider="location" finished-at="2018-05-27T16:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[VA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Revature LLC, 11730 Plaza America Drive, 2nd Floor Reston VA 20190]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectLocation -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="154" started-at="2018-05-27T16:37:07Z" data-provider="trainers" finished-at="2018-05-27T16:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="155" started-at="2018-05-27T16:37:07Z" data-provider="trainers" finished-at="2018-05-27T16:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="119" started-at="2018-05-27T16:37:07Z" data-provider="trainers" finished-at="2018-05-27T16:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bfs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="109" started-at="2018-05-27T16:37:07Z" data-provider="trainers" finished-at="2018-05-27T16:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Patrick Walsh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="126" started-at="2018-05-27T16:37:07Z" data-provider="trainers" finished-at="2018-05-27T16:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dan Pickles]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="111" started-at="2018-05-27T16:37:08Z" data-provider="trainers" finished-at="2018-05-27T16:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Karan Dhirar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="133" started-at="2018-05-27T16:37:08Z" data-provider="trainers" finished-at="2018-05-27T16:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brian Connolly]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="115" started-at="2018-05-27T16:37:08Z" data-provider="trainers" finished-at="2018-05-27T16:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Genesis Bonds]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="114" started-at="2018-05-27T16:37:08Z" data-provider="trainers" finished-at="2018-05-27T16:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ankit Garg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="127" started-at="2018-05-27T16:37:08Z" data-provider="trainers" finished-at="2018-05-27T16:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ryan Lessley]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="116" started-at="2018-05-27T16:37:08Z" data-provider="trainers" finished-at="2018-05-27T16:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Steven Kelsey]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="153" started-at="2018-05-27T16:37:08Z" data-provider="trainers" finished-at="2018-05-27T16:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Emily Higgins]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="112" started-at="2018-05-27T16:37:08Z" data-provider="trainers" finished-at="2018-05-27T16:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Taylor Kemper]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="110" started-at="2018-05-27T16:37:09Z" data-provider="trainers" finished-at="2018-05-27T16:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richard Orr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="108" started-at="2018-05-27T16:37:09Z" data-provider="trainers" finished-at="2018-05-27T16:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nickolas Jurczak]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="156" started-at="2018-05-27T16:37:09Z" data-provider="trainers" finished-at="2018-05-27T16:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[August Duet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="173" started-at="2018-05-27T16:37:09Z" data-provider="trainers" finished-at="2018-05-27T16:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yuvaraj Damodaran]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="112" started-at="2018-05-27T16:37:09Z" data-provider="trainers" finished-at="2018-05-27T16:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fred Belotte]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="143" started-at="2018-05-27T16:37:09Z" data-provider="trainers" finished-at="2018-05-27T16:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mehrab Rahman]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="121" started-at="2018-05-27T16:37:09Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peter Alagna]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="77" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mehrab Rahman]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="72" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peter Alagna]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="104" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stanley Medikonda]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="110" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gray Wynne]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="107" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Orson Wallace]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="110" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shelby Levinson]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="79" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gray Wynne]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="72" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Orson Wallace]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="74" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shelby Levinson]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="109" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Walter Payne]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="103" started-at="2018-05-27T16:37:10Z" data-provider="trainers" finished-at="2018-05-27T16:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Natalie Church]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="106" started-at="2018-05-27T16:37:11Z" data-provider="trainers" finished-at="2018-05-27T16:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Archer Radcliff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="112" started-at="2018-05-27T16:37:11Z" data-provider="trainers" finished-at="2018-05-27T16:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rajesh Yamunachari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="111" started-at="2018-05-27T16:37:11Z" data-provider="trainers" finished-at="2018-05-27T16:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Raghavan Swaminathan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="112" started-at="2018-05-27T16:37:11Z" data-provider="trainers" finished-at="2018-05-27T16:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Marvin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="122" started-at="2018-05-27T16:37:11Z" data-provider="trainers" finished-at="2018-05-27T16:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Spongebob Squarepants]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="123" started-at="2018-05-27T16:37:11Z" data-provider="trainers" finished-at="2018-05-27T16:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kermit Frog]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@1794d431]" name="selectTrainer" duration-ms="120" started-at="2018-05-27T16:37:11Z" data-provider="trainers" finished-at="2018-05-27T16:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[!@#$%^&*()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="147" started-at="2018-05-27T16:37:11Z" data-provider="trainers" finished-at="2018-05-27T16:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="124" started-at="2018-05-27T16:37:12Z" data-provider="trainers" finished-at="2018-05-27T16:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="119" started-at="2018-05-27T16:37:12Z" data-provider="trainers" finished-at="2018-05-27T16:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bfs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="106" started-at="2018-05-27T16:37:12Z" data-provider="trainers" finished-at="2018-05-27T16:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Patrick Walsh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="119" started-at="2018-05-27T16:37:12Z" data-provider="trainers" finished-at="2018-05-27T16:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dan Pickles]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="111" started-at="2018-05-27T16:37:12Z" data-provider="trainers" finished-at="2018-05-27T16:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Karan Dhirar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="116" started-at="2018-05-27T16:37:12Z" data-provider="trainers" finished-at="2018-05-27T16:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brian Connolly]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="113" started-at="2018-05-27T16:37:12Z" data-provider="trainers" finished-at="2018-05-27T16:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Genesis Bonds]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="124" started-at="2018-05-27T16:37:12Z" data-provider="trainers" finished-at="2018-05-27T16:37:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ankit Garg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="119" started-at="2018-05-27T16:37:12Z" data-provider="trainers" finished-at="2018-05-27T16:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ryan Lessley]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="112" started-at="2018-05-27T16:37:13Z" data-provider="trainers" finished-at="2018-05-27T16:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Steven Kelsey]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="139" started-at="2018-05-27T16:37:13Z" data-provider="trainers" finished-at="2018-05-27T16:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Emily Higgins]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="122" started-at="2018-05-27T16:37:13Z" data-provider="trainers" finished-at="2018-05-27T16:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Taylor Kemper]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="107" started-at="2018-05-27T16:37:13Z" data-provider="trainers" finished-at="2018-05-27T16:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richard Orr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="106" started-at="2018-05-27T16:37:13Z" data-provider="trainers" finished-at="2018-05-27T16:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nickolas Jurczak]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="110" started-at="2018-05-27T16:37:13Z" data-provider="trainers" finished-at="2018-05-27T16:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[August Duet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="118" started-at="2018-05-27T16:37:13Z" data-provider="trainers" finished-at="2018-05-27T16:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yuvaraj Damodaran]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="109" started-at="2018-05-27T16:37:13Z" data-provider="trainers" finished-at="2018-05-27T16:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fred Belotte]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="106" started-at="2018-05-27T16:37:13Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mehrab Rahman]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="110" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peter Alagna]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="79" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mehrab Rahman]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="83" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peter Alagna]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="103" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stanley Medikonda]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="112" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gray Wynne]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="116" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Orson Wallace]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="108" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shelby Levinson]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="66" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gray Wynne]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="80" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Orson Wallace]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="73" started-at="2018-05-27T16:37:14Z" data-provider="trainers" finished-at="2018-05-27T16:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shelby Levinson]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="109" started-at="2018-05-27T16:37:15Z" data-provider="trainers" finished-at="2018-05-27T16:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Walter Payne]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="112" started-at="2018-05-27T16:37:15Z" data-provider="trainers" finished-at="2018-05-27T16:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Natalie Church]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="112" started-at="2018-05-27T16:37:15Z" data-provider="trainers" finished-at="2018-05-27T16:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Archer Radcliff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="109" started-at="2018-05-27T16:37:15Z" data-provider="trainers" finished-at="2018-05-27T16:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rajesh Yamunachari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="134" started-at="2018-05-27T16:37:15Z" data-provider="trainers" finished-at="2018-05-27T16:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Raghavan Swaminathan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="107" started-at="2018-05-27T16:37:15Z" data-provider="trainers" finished-at="2018-05-27T16:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Marvin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="107" started-at="2018-05-27T16:37:15Z" data-provider="trainers" finished-at="2018-05-27T16:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Spongebob Squarepants]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="118" started-at="2018-05-27T16:37:15Z" data-provider="trainers" finished-at="2018-05-27T16:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kermit Frog]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@1794d431]" name="selectCotrainer" duration-ms="121" started-at="2018-05-27T16:37:15Z" data-provider="trainers" finished-at="2018-05-27T16:37:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[!@#$%^&*()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCotrainer -->
+        <test-method status="PASS" signature="selectStart()[pri:7, instance:pomtest.ManageCreateTest@1794d431]" name="selectStart" duration-ms="267" started-at="2018-05-27T16:37:16Z" finished-at="2018-05-27T16:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectStart -->
+        <test-method status="PASS" signature="selectEnd()[pri:8, instance:pomtest.ManageCreateTest@1794d431]" name="selectEnd" duration-ms="149" started-at="2018-05-27T16:37:16Z" finished-at="2018-05-27T16:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectEnd -->
+        <test-method status="PASS" signature="inputGood()[pri:9, instance:pomtest.ManageCreateTest@1794d431]" name="inputGood" duration-ms="134" started-at="2018-05-27T16:37:16Z" finished-at="2018-05-27T16:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputGood -->
+        <test-method status="PASS" signature="inputPassing()[pri:10, instance:pomtest.ManageCreateTest@1794d431]" name="inputPassing" duration-ms="165" started-at="2018-05-27T16:37:16Z" finished-at="2018-05-27T16:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputPassing -->
+        <test-method status="PASS" signature="buttonSave()[pri:11, instance:pomtest.ManageCreateTest@1794d431]" name="buttonSave" duration-ms="121" started-at="2018-05-27T16:37:16Z" finished-at="2018-05-27T16:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buttonSave -->
+        <test-method status="PASS" signature="buttonClose()[pri:12, instance:pomtest.ManageCreateTest@1794d431]" name="buttonClose" duration-ms="1408" started-at="2018-05-27T16:37:16Z" finished-at="2018-05-27T16:37:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buttonClose -->
+        <test-method status="PASS" signature="buttonX()[pri:13, instance:pomtest.ManageCreateTest@1794d431]" name="buttonX" duration-ms="1291" started-at="2018-05-27T16:37:18Z" finished-at="2018-05-27T16:37:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buttonX -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageCreateTest@475530b9]" name="afterSuite" is-config="true" duration-ms="183" started-at="2018-05-27T16:26:49Z" finished-at="2018-05-27T16:26:49Z">
+      </class> <!-- pomtest.ManageCreateTest -->
+      <class name="pomtest.ManageYearTest">
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@57baeedf]" name="listYears" duration-ms="424" started-at="2018-05-27T16:37:20Z" data-provider="years" finished-at="2018-05-27T16:37:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2019]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- pomtest.ManageCreateTest -->
-    </test> <!-- managecreatetest -->
+        </test-method> <!-- listYears -->
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@57baeedf]" name="listYears" duration-ms="195" started-at="2018-05-27T16:37:21Z" data-provider="years" finished-at="2018-05-27T16:37:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listYears -->
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@57baeedf]" name="listYears" duration-ms="199" started-at="2018-05-27T16:37:21Z" data-provider="years" finished-at="2018-05-27T16:37:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2017]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listYears -->
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@57baeedf]" name="listYears" duration-ms="179" started-at="2018-05-27T16:37:21Z" data-provider="years" finished-at="2018-05-27T16:37:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2016]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listYears -->
+      </class> <!-- pomtest.ManageYearTest -->
+    </test> <!-- pom test -->
   </suite> <!-- caliber -->
 </testng-results>
