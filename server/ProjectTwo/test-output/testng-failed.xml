@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [caliber]">
-  <test name="driver test">
-    <packages>
-      <package name="drivertest"/>
-    </packages>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="drivertest.ChromeTest"/>
-      <class name="drivertest.FirefoxTest"/>
+      <class name="pomtest.ManageCreateTest"/>
     </classes>
-  </test> <!-- driver test -->
-  <test name="pom test">
-    <packages>
-      <package name="pomtest"/>
-    </packages>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
     <classes>
-      <class name="pomtest.HomeTest"/>
-      <class name="pomtest.ManageTest"/>
-      <class name="pomtest.ManageYearTest"/>
+      <class name="pomtest.ManageCreateTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="selectLocation" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- pomtest.ManageCreateTest -->
     </classes>
-  </test> <!-- pom test -->
-</suite> <!-- Failed suite [caliber] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
