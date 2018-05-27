@@ -30,9 +30,9 @@ public class ManageCreatePom extends Pom{
 		select(xpath, string);
 	}
 	
-	public void selectLocation(String string) {
+	public void selectLocation(String state, String location) {
 		String xpath = "//*[@id=\"location\"]";
-		select(xpath, string);
+		selectLocation(xpath, state, location);
 	}
 	
 	public void selectTrainer(String string) {
@@ -69,14 +69,15 @@ public class ManageCreatePom extends Pom{
 		WebElement element = driver.findElement(By.xpath(xpath));
 		Select select = new Select(element);
 		
-		xpath += "/option";
-		List<WebElement> options = driver.findElements(By.xpath(xpath));
-		
-		element = options.stream()
-			.filter( option -> option.getText().equals(text) )
-			.findFirst()
-			.get();
-		
 		select.selectByValue(text);
+	}
+	
+	public void selectLocation(String xpath, String state, String location) {
+		WebElement element = driver.findElement(By.xpath(xpath));
+		Select select = new Select(element);
+		
+		select.selectByVisibleText(location);
+			
+			
 	}
 }

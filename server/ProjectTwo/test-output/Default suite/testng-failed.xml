@@ -6,15 +6,4 @@
       <class name="pomtest.ManageCreateTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="pomtest.ManageCreateTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-          <include name="selectLocation" invocation-numbers="0 1"/>
-        </methods>
-      </class> <!-- pomtest.ManageCreateTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

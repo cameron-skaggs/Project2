@@ -46,8 +46,8 @@ public class ManageCreateTest {
 	}
 	
 	@Test(priority=4, dataProvider="location")
-	public void selectLocation(String string) {
-		create.selectLocation(string);
+	public void selectLocation(String state, String address) {
+		create.selectLocation(state, address);
 	}
 	
 	@Test(priority=5, dataProvider="trainers")
@@ -99,8 +99,8 @@ public class ManageCreateTest {
 	@DataProvider(name="location")
 	public Object[][] location(){
 		return new Object[][] {
-			new Object[] { "Tech Incubator at Queens College, 65-30 Kissena Blvd, CEP Hall 2 Queens NY 11367" },
-			new Object[] { "Revature LLC, 11730 Plaza America Drive, 2nd Floor Reston VA 20190" }
+			new Object[] { "NY", "Tech Incubator at Queens College, 65-30 Kissena Blvd, CEP Hall 2 Queens NY 11367" },
+			new Object[] { "VA", "Revature LLC, 11730 Plaza America Drive, 2nd Floor Reston VA 20190" }
 		};
 	}
 	
