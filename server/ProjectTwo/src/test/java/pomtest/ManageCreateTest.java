@@ -27,8 +27,7 @@ public class ManageCreateTest {
 	
 	LocalDate today;
 	DateTimeFormatter format;
-	
-	
+
 	@BeforeSuite
 	public void beforeSuite() {
 		driver = DriverFactory.get("chrome");

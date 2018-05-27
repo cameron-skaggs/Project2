@@ -42,13 +42,14 @@ public class ManageTest {
 		WebElement anchor = manage.anchorCreate();
 		WebElement input = manage.inputCreate();
 		WebElement close = manage.buttonCreateClose();
+		WebElement modal = manage.modal();
 		
 		anchor.click();
 		
 		String string = input.getAttribute("value");
 		assertEquals("Save", string);
 
-		modalWait(close);
+		modal(modal, close);
 		close.click();
 	}
 	
@@ -57,14 +58,15 @@ public class ManageTest {
 		WebElement anchor = manage.anchorImport();
 		WebElement input = manage.inputImport();
 		WebElement close = manage.buttonImportClose();
+		WebElement modal = manage.modal();
 		
-		modalWait(anchor);
+		modal(modal, anchor);
 		anchor.click();
 
 		String string = input.getAttribute("value");
 		assertEquals("Import", string);
 		
-		modalWait(close);
+		modal(modal, close);
 		close.click();
 	}
 	
@@ -73,9 +75,13 @@ public class ManageTest {
 		driver.quit();
 	}
 	
-	private void modalWait(WebElement webElement) {
-		ExpectedCondition<WebElement> condition =
-				ExpectedConditions.elementToBeClickable(webElement);
-		wait.until(condition);
+	private void modal(WebElement modal, WebElement anchor) {
+		ExpectedCondition<Boolean> modalCondition =
+				ExpectedConditions.invisibilityOf(modal);
+		ExpectedCondition<WebElement> anchorCondition =
+				ExpectedConditions.elementToBeClickable(anchor);
+		
+		wait.until(modalCondition);
+		wait.until(anchorCondition);
 	}
 }

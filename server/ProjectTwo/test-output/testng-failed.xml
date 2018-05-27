@@ -1,65 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [caliber]">
-  <test name="driver test">
-    <packages>
-      <package name="drivertest"/>
-    </packages>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [driver chrome]">
+  <test name="test">
     <classes>
       <class name="drivertest.ChromeTest"/>
-      <class name="drivertest.FirefoxTest"/>
     </classes>
-  </test> <!-- driver test -->
-  <test name="pom test">
-    <packages>
-      <package name="pomtest"/>
-    </packages>
-    <classes>
-      <class name="pomtest.HomeTest"/>
-      <class name="pomtest.ManageCreateTest"/>
-      <class name="pomtest.ManageTest"/>
-      <class name="pomtest.ManageYearTest"/>
-    </classes>
-  </test> <!-- pom test -->
-  <test name="pom test(failed)">
-    <classes>
-      <class name="pomtest.ManageTest">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="clickImportBatch"/>
-        </methods>
-      </class> <!-- pomtest.ManageTest -->
-      <class name="pomtest.ManageCreateTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- pomtest.ManageCreateTest -->
-      <class name="pomtest.HomeTest">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- pomtest.HomeTest -->
-      <class name="drivertest.ChromeTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- drivertest.ChromeTest -->
-      <class name="pomtest.ManageYearTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- pomtest.ManageYearTest -->
-      <class name="drivertest.FirefoxTest">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- drivertest.FirefoxTest -->
-    </classes>
-  </test> <!-- pom test(failed) -->
-</suite> <!-- Failed suite [caliber] -->
+  </test> <!-- test -->
+</suite> <!-- Failed suite [driver chrome] -->
