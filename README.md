@@ -16,7 +16,7 @@ Requirements for a team project
 		- WebDriver (Selenium)
 		- Cucumber 
 		- TestNG
-	JavaScript
+	- JavaScript
 		- Jasmine
 		- Protractor
 		- Karma (optional)
