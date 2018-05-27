@@ -1,7 +1,13 @@
 package pomtest;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -14,16 +20,25 @@ import pom.ManagePom;
 
 public class ManageCreateTest {
 	WebDriver driver;
+	WebDriverWait wait;
 	HomePom home;
 	ManagePom manage;
 	ManageCreatePom create;
 	
+	LocalDate today;
+	DateTimeFormatter format;
+	
+	
 	@BeforeSuite
 	public void beforeSuite() {
 		driver = DriverFactory.get("chrome");
+		wait = new WebDriverWait(driver, 1);
 		home = new HomePom(driver);
 		manage = new ManagePom(driver);
 		create = new ManageCreatePom(driver);
+		
+		today = LocalDate.now();
+		format = DateTimeFormatter.ofPattern("MM dd yyyy");
 		
 		home.anchorManage().click();
 		manage.anchorCreate().click();
@@ -58,6 +73,64 @@ public class ManageCreateTest {
 	@Test(priority=6, dataProvider="trainers")
 	public void selectCotrainer(String string) {
 		create.selectCotrainer(string);
+	}
+	
+	@Test(priority=7)
+	public void selectStart() {
+		WebElement element = create.inputStart();	
+		String date = today.format(format);
+		element.sendKeys(date);
+	}
+	
+	@Test(priority=8)
+	public void selectEnd() {
+		WebElement element = create.inputEnd();
+		today = today.plusMonths(3);
+		String date = today.format(format);
+		element.sendKeys(date);
+	}
+	
+	@Test(priority=9)
+	public void inputGood() {
+		WebElement element = create.inputGood();
+		element.sendKeys("80");
+	}
+	
+	@Test(priority=10)
+	public void inputPassing() {
+		WebElement element = create.inputPassing();
+		element.sendKeys("50");
+	}
+	
+	@Test(priority=11)
+	public void buttonSave() {
+		create.buttonSave().click();
+	}
+	
+	@Test(priority=12)
+	public void buttonClose() {
+		WebElement anchor = manage.anchorCreate();
+		WebElement button = create.buttonClose();
+		WebElement modal = create.modal();
+		
+		modal(modal, anchor);
+		anchor.click();
+		
+		modal(modal, button);
+		button.click();
+	}
+	
+	@Test(priority=13)
+	public void buttonX() {
+		WebElement anchor = manage.anchorCreate();
+		WebElement button = create.buttonX();
+		WebElement modal = create.modal();
+		
+		modal(modal, anchor);
+		anchor.click();
+		
+		modal(modal, button);
+		button.click();
 	}
 	
 	@AfterSuite
@@ -147,5 +220,14 @@ public class ManageCreateTest {
 			new Object[] { "!@#$%^&*()" }
 		};
 	}
-
+	
+	private void modal(WebElement modal, WebElement anchor) {
+		ExpectedCondition<Boolean> modalCondition =
+				ExpectedConditions.invisibilityOf(modal);
+		ExpectedCondition<WebElement> anchorCondition =
+				ExpectedConditions.elementToBeClickable(anchor);
+		
+		wait.until(modalCondition);
+		wait.until(anchorCondition);
+	}
 }

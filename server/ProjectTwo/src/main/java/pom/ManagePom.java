@@ -14,7 +14,7 @@ public class ManagePom extends Pom {
 		String xpath = "//*[@id=\"manage\"]/div[1]/div/div/ul/li[1]/a";
 		return driver.findElement(By.xpath(xpath));
 	}
-
+	
 	public WebElement anchorCreate() {
 		String xpath = "//*[@id=\"manage\"]/div[1]/div/div/ul/li[3]/a";
 		return driver.findElement(By.xpath(xpath));

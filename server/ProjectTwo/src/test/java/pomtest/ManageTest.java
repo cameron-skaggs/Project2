@@ -73,7 +73,7 @@ public class ManageTest {
 		driver.quit();
 	}
 	
-	public void modalWait(WebElement webElement) {
+	private void modalWait(WebElement webElement) {
 		ExpectedCondition<WebElement> condition =
 				ExpectedConditions.elementToBeClickable(webElement);
 		wait.until(condition);

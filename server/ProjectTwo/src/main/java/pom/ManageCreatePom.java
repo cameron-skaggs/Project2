@@ -45,37 +45,55 @@ public class ManageCreatePom extends Pom{
 	
 	public WebElement inputStart() {
 		String xpath = "//*[@id=\"start-date\"]/input";
-		return null;
+		return driver.findElement(By.xpath(xpath));
 	}
 	
 	public WebElement inputEnd() {
-		String xpath = "//*[@id=\"start-date\"]/input";
-		return null;
+		String xpath = "//*[@id=\"end-date\"]/input";
+		return driver.findElement(By.xpath(xpath));
 	}
 	
 	public WebElement inputGood() {
 		String xpath = "//*[@id=\"goodGrade\"]";
-		return null;
+		return driver.findElement(By.xpath(xpath));
 	}
 	
 	public WebElement inputPassing() {
 		String xpath = "//*[@id=\"borderlineGrade\"]";
-		return null;
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement buttonSave() {
+		String xpath = "//*[@id=\"createBatchModal\"]/div/div/div[3]/button";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement buttonClose() {
+		String xpath = "//*[@id=\"createBatchModal\"]/div/div/div[3]/button";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement buttonX() {
+		String xpath = "//*[@id=\"createBatchModal\"]/div/div/div[1]/button";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement modal() {
+		String xpath = "//*[@id=\"createBatchModal\"]";
+		return driver.findElement(By.xpath(xpath));
 	}
 
-	public void select(String xpath, String text) {
+	private void select(String xpath, String text) {
 		WebElement element = driver.findElement(By.xpath(xpath));
 		Select select = new Select(element);
 		
 		select.selectByValue(text);
 	}
 	
-	public void selectLocation(String xpath, String state, String location) {
+	private void selectLocation(String xpath, String state, String location) {
 		WebElement element = driver.findElement(By.xpath(xpath));
 		Select select = new Select(element);
 		
 		select.selectByVisibleText(location);
-			
-			
 	}
 }
