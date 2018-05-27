@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [caliber]">
-  <test name="pom test">
-    <packages>
-      <package name="pomtest"/>
-    </packages>
+  <test name="managecreatetest">
     <classes>
-      <class name="pomtest.HomeTest"/>
       <class name="pomtest.ManageCreateTest"/>
-      <class name="pomtest.ManageTest"/>
-      <class name="pomtest.ManageYearTest"/>
     </classes>
-  </test> <!-- pom test -->
+  </test> <!-- managecreatetest -->
+  <test name="managecreatetest(failed)">
+    <classes>
+      <class name="pomtest.ManageCreateTest">
+        <methods>
+          <include name="buttonX"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- pomtest.ManageCreateTest -->
+    </classes>
+  </test> <!-- managecreatetest(failed) -->
 </suite> <!-- Failed suite [caliber] -->
