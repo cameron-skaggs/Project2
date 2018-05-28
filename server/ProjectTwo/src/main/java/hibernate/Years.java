@@ -21,4 +21,26 @@ public class Years {
 	
 	@Column(name="YEAR")
 	private int year;
+
+	public Years(int id, int year) {
+		super();
+		this.id = id;
+		this.year = year;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
 }
