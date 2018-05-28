@@ -54,4 +54,8 @@ public class HibernateUtil {
 			System.out.println("Transaction has been rolled back");
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cameron

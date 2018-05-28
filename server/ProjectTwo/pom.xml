@@ -113,11 +113,19 @@
 			<version>3.4.0</version>
 		</dependency>
 		<!-- Make sure that the Hibernate-EHCache depenedency is the same version as your Hibernate -->
+<<<<<<< HEAD
 	<dependency>
 		<groupId>org.hibernate</groupId>
 		<artifactId>hibernate-ehcache</artifactId>
 		<version>5.2.13.Final</version>
 	</dependency>
+=======
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>5.2.13.Final</version>
+		</dependency>
+>>>>>>> cameron
 	<!-- You might not need these two down here -->
 	<dependency>
 		<groupId>org.slf4j</groupId>
