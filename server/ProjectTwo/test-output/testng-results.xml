@@ -2,20 +2,40 @@
 <testng-results skipped="0" failed="0" total="118" passed="118">
   <reporter-output>
   </reporter-output>
-  <suite name="pom manage create" duration-ms="13478" started-at="2018-05-27T21:48:54Z" finished-at="2018-05-27T21:49:08Z">
+  <suite name="driverchrome" duration-ms="3515" started-at="2018-05-28T16:44:29Z" finished-at="2018-05-28T16:44:33Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="13478" started-at="2018-05-27T21:48:54Z" finished-at="2018-05-27T21:49:08Z">
-      <class name="pomtest.ManageCreateTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageCreateTest@6eebc39e]" name="beforeSuite" is-config="true" duration-ms="13725" started-at="2018-05-27T17:48:41Z" finished-at="2018-05-27T17:48:54Z">
+    <test name="driverchrome" duration-ms="3515" started-at="2018-05-28T16:44:29Z" finished-at="2018-05-28T16:44:33Z">
+      <class name="drivertest.ChromeTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:drivertest.ChromeTest@cb5822]" name="beforeSuite" is-config="true" duration-ms="4212" started-at="2018-05-28T12:44:25Z" finished-at="2018-05-28T12:44:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="inputName()[pri:1, instance:pomtest.ManageCreateTest@6eebc39e]" name="inputName" duration-ms="361" started-at="2018-05-27T17:48:54Z" finished-at="2018-05-27T17:48:55Z">
+        <test-method status="PASS" signature="home()[pri:0, instance:drivertest.ChromeTest@cb5822]" name="home" duration-ms="3494" started-at="2018-05-28T12:44:29Z" finished-at="2018-05-28T12:44:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:drivertest.ChromeTest@cb5822]" name="afterSuite" is-config="true" duration-ms="2090" started-at="2018-05-28T12:44:33Z" finished-at="2018-05-28T12:44:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- drivertest.ChromeTest -->
+    </test> <!-- driverchrome -->
+  </suite> <!-- driverchrome -->
+  <suite name="pommanagecreate" duration-ms="12297" started-at="2018-05-28T16:45:20Z" finished-at="2018-05-28T16:45:32Z">
+    <groups>
+    </groups>
+    <test name="managebatch&gt;createbatch" duration-ms="12297" started-at="2018-05-28T16:45:20Z" finished-at="2018-05-28T16:45:32Z">
+      <class name="pomtest.ManageCreateTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="beforeSuite" is-config="true" duration-ms="8973" started-at="2018-05-28T12:45:11Z" finished-at="2018-05-28T12:45:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="inputName()[pri:1, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="inputName" duration-ms="355" started-at="2018-05-28T12:45:20Z" finished-at="2018-05-28T12:45:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputName -->
-        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTraining" duration-ms="180" started-at="2018-05-27T17:48:55Z" data-provider="trainingtype" finished-at="2018-05-27T17:48:55Z">
+        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTraining" duration-ms="187" started-at="2018-05-28T12:45:20Z" data-provider="trainingtype" finished-at="2018-05-28T12:45:20Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTraining -->
-        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTraining" duration-ms="159" started-at="2018-05-27T17:48:55Z" data-provider="trainingtype" finished-at="2018-05-27T17:48:55Z">
+        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTraining" duration-ms="166" started-at="2018-05-28T12:45:20Z" data-provider="trainingtype" finished-at="2018-05-28T12:45:20Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTraining -->
-        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTraining" duration-ms="94" started-at="2018-05-27T17:48:55Z" data-provider="trainingtype" finished-at="2018-05-27T17:48:55Z">
+        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTraining" duration-ms="97" started-at="2018-05-28T12:45:20Z" data-provider="trainingtype" finished-at="2018-05-28T12:45:20Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +68,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTraining -->
-        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTraining" duration-ms="87" started-at="2018-05-27T17:48:55Z" data-provider="trainingtype" finished-at="2018-05-27T17:48:55Z">
+        <test-method status="PASS" signature="selectTraining(java.lang.String)[pri:2, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTraining" duration-ms="88" started-at="2018-05-28T12:45:20Z" data-provider="trainingtype" finished-at="2018-05-28T12:45:20Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTraining -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="126" started-at="2018-05-27T17:48:55Z" data-provider="skill" finished-at="2018-05-27T17:48:55Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="102" started-at="2018-05-28T12:45:20Z" data-provider="skill" finished-at="2018-05-28T12:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +90,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="143" started-at="2018-05-27T17:48:55Z" data-provider="skill" finished-at="2018-05-27T17:48:55Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="111" started-at="2018-05-28T12:45:21Z" data-provider="skill" finished-at="2018-05-28T12:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -81,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="96" started-at="2018-05-27T17:48:55Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="99" started-at="2018-05-28T12:45:21Z" data-provider="skill" finished-at="2018-05-28T12:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -92,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="110" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="89" started-at="2018-05-28T12:45:21Z" data-provider="skill" finished-at="2018-05-28T12:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -103,7 +123,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="86" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="86" started-at="2018-05-28T12:45:21Z" data-provider="skill" finished-at="2018-05-28T12:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -114,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="83" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="193" started-at="2018-05-28T12:45:21Z" data-provider="skill" finished-at="2018-05-28T12:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -125,7 +145,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="84" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="157" started-at="2018-05-28T12:45:21Z" data-provider="skill" finished-at="2018-05-28T12:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -136,7 +156,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="87" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="91" started-at="2018-05-28T12:45:21Z" data-provider="skill" finished-at="2018-05-28T12:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -147,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="83" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="87" started-at="2018-05-28T12:45:21Z" data-provider="skill" finished-at="2018-05-28T12:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -158,7 +178,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="89" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="89" started-at="2018-05-28T12:45:21Z" data-provider="skill" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -169,7 +189,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="85" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="82" started-at="2018-05-28T12:45:22Z" data-provider="skill" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -180,7 +200,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="87" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="86" started-at="2018-05-28T12:45:22Z" data-provider="skill" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -191,7 +211,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="91" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:56Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="91" started-at="2018-05-28T12:45:22Z" data-provider="skill" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -202,7 +222,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="89" started-at="2018-05-27T17:48:56Z" data-provider="skill" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="91" started-at="2018-05-28T12:45:22Z" data-provider="skill" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -213,7 +233,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectSkill" duration-ms="110" started-at="2018-05-27T17:48:57Z" data-provider="skill" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectSkill(java.lang.String)[pri:3, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectSkill" duration-ms="92" started-at="2018-05-28T12:45:22Z" data-provider="skill" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -224,7 +244,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSkill -->
-        <test-method status="PASS" signature="selectLocation(java.lang.String, java.lang.String)[pri:4, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectLocation" duration-ms="105" started-at="2018-05-27T17:48:57Z" data-provider="location" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectLocation(java.lang.String, java.lang.String)[pri:4, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectLocation" duration-ms="106" started-at="2018-05-28T12:45:22Z" data-provider="location" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -240,7 +260,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectLocation -->
-        <test-method status="PASS" signature="selectLocation(java.lang.String, java.lang.String)[pri:4, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectLocation" duration-ms="114" started-at="2018-05-27T17:48:57Z" data-provider="location" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectLocation(java.lang.String, java.lang.String)[pri:4, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectLocation" duration-ms="93" started-at="2018-05-28T12:45:22Z" data-provider="location" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -256,7 +276,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectLocation -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="113" started-at="2018-05-27T17:48:57Z" data-provider="trainers" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="102" started-at="2018-05-28T12:45:22Z" data-provider="trainers" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -267,7 +287,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="117" started-at="2018-05-27T17:48:57Z" data-provider="trainers" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="95" started-at="2018-05-28T12:45:22Z" data-provider="trainers" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -278,7 +298,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="94" started-at="2018-05-27T17:48:57Z" data-provider="trainers" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="86" started-at="2018-05-28T12:45:22Z" data-provider="trainers" finished-at="2018-05-28T12:45:22Z">
           <params>
             <param index="0">
               <value>
@@ -289,7 +309,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="85" started-at="2018-05-27T17:48:57Z" data-provider="trainers" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="87" started-at="2018-05-28T12:45:22Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -300,7 +320,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="88" started-at="2018-05-27T17:48:57Z" data-provider="trainers" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="91" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -311,7 +331,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="86" started-at="2018-05-27T17:48:57Z" data-provider="trainers" finished-at="2018-05-27T17:48:57Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="96" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -322,7 +342,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="105" started-at="2018-05-27T17:48:57Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="82" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -333,7 +353,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="85" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="85" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -344,7 +364,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="83" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="85" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -355,7 +375,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="89" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="87" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -366,7 +386,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="84" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="82" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -377,7 +397,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="108" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="107" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -388,7 +408,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="84" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="93" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -399,7 +419,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="82" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="85" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:23Z">
           <params>
             <param index="0">
               <value>
@@ -410,7 +430,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="82" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="84" started-at="2018-05-28T12:45:23Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -421,7 +441,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="81" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="87" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -432,7 +452,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="84" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="84" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -443,7 +463,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="85" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:58Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="87" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -454,7 +474,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="87" started-at="2018-05-27T17:48:58Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="82" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -465,7 +485,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="95" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="89" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -476,7 +496,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="56" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="71" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -487,7 +507,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="61" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="63" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -498,7 +518,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="83" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="85" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -509,7 +529,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="89" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="87" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -520,7 +540,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="98" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="85" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -531,7 +551,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="94" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="86" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:24Z">
           <params>
             <param index="0">
               <value>
@@ -542,7 +562,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="52" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="57" started-at="2018-05-28T12:45:24Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -553,7 +573,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="56" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="58" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -564,7 +584,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="56" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="56" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -575,7 +595,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="80" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="85" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -586,7 +606,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="83" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:48:59Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="88" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -597,7 +617,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="101" started-at="2018-05-27T17:48:59Z" data-provider="trainers" finished-at="2018-05-27T17:49:00Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="83" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -608,7 +628,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="91" started-at="2018-05-27T17:49:00Z" data-provider="trainers" finished-at="2018-05-27T17:49:00Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="87" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -619,7 +639,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="91" started-at="2018-05-27T17:49:00Z" data-provider="trainers" finished-at="2018-05-27T17:49:00Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="86" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -630,7 +650,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="137" started-at="2018-05-27T17:49:00Z" data-provider="trainers" finished-at="2018-05-27T17:49:00Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="86" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -641,7 +661,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="232" started-at="2018-05-27T17:49:00Z" data-provider="trainers" finished-at="2018-05-27T17:49:00Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="82" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -652,7 +672,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="287" started-at="2018-05-27T17:49:00Z" data-provider="trainers" finished-at="2018-05-27T17:49:00Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="84" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -663,7 +683,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectTrainer" duration-ms="329" started-at="2018-05-27T17:49:00Z" data-provider="trainers" finished-at="2018-05-27T17:49:01Z">
+        <test-method status="PASS" signature="selectTrainer(java.lang.String)[pri:5, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectTrainer" duration-ms="87" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:25Z">
           <params>
             <param index="0">
               <value>
@@ -674,7 +694,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="237" started-at="2018-05-27T17:49:01Z" data-provider="trainers" finished-at="2018-05-27T17:49:01Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="106" started-at="2018-05-28T12:45:25Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -685,7 +705,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="119" started-at="2018-05-27T17:49:01Z" data-provider="trainers" finished-at="2018-05-27T17:49:01Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="113" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -696,7 +716,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="179" started-at="2018-05-27T17:49:01Z" data-provider="trainers" finished-at="2018-05-27T17:49:01Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="92" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -707,7 +727,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="86" started-at="2018-05-27T17:49:01Z" data-provider="trainers" finished-at="2018-05-27T17:49:01Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="103" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -718,7 +738,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="88" started-at="2018-05-27T17:49:01Z" data-provider="trainers" finished-at="2018-05-27T17:49:01Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="89" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -729,7 +749,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="102" started-at="2018-05-27T17:49:01Z" data-provider="trainers" finished-at="2018-05-27T17:49:02Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="83" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -740,7 +760,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="120" started-at="2018-05-27T17:49:02Z" data-provider="trainers" finished-at="2018-05-27T17:49:02Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="81" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -751,7 +771,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="118" started-at="2018-05-27T17:49:02Z" data-provider="trainers" finished-at="2018-05-27T17:49:02Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="86" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -762,7 +782,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="99" started-at="2018-05-27T17:49:02Z" data-provider="trainers" finished-at="2018-05-27T17:49:02Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="110" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -773,7 +793,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="90" started-at="2018-05-27T17:49:02Z" data-provider="trainers" finished-at="2018-05-27T17:49:02Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="92" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -784,7 +804,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="89" started-at="2018-05-27T17:49:02Z" data-provider="trainers" finished-at="2018-05-27T17:49:02Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="95" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:26Z">
           <params>
             <param index="0">
               <value>
@@ -795,7 +815,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="96" started-at="2018-05-27T17:49:02Z" data-provider="trainers" finished-at="2018-05-27T17:49:02Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="87" started-at="2018-05-28T12:45:26Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -806,7 +826,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="94" started-at="2018-05-27T17:49:02Z" data-provider="trainers" finished-at="2018-05-27T17:49:02Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="82" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -817,7 +837,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="98" started-at="2018-05-27T17:49:02Z" data-provider="trainers" finished-at="2018-05-27T17:49:02Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="79" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -828,7 +848,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="91" started-at="2018-05-27T17:49:02Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="88" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -839,7 +859,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="98" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="85" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -850,7 +870,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="84" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="92" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -861,7 +881,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="83" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="84" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -872,7 +892,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="98" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="82" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -883,7 +903,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="106" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="84" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -894,7 +914,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="65" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="62" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -905,7 +925,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="71" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="59" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -916,7 +936,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="91" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="84" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:27Z">
           <params>
             <param index="0">
               <value>
@@ -927,7 +947,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="91" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="85" started-at="2018-05-28T12:45:27Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -938,7 +958,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="95" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="89" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -949,7 +969,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="92" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:03Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="93" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -960,7 +980,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="58" started-at="2018-05-27T17:49:03Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="70" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -971,7 +991,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="67" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="58" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -982,7 +1002,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="63" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="60" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -993,7 +1013,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="95" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="82" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -1004,7 +1024,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="94" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="84" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -1015,7 +1035,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="109" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="85" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -1026,7 +1046,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="97" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="83" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -1037,7 +1057,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="93" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="83" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -1048,7 +1068,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="94" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="81" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -1059,7 +1079,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="90" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="79" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:28Z">
           <params>
             <param index="0">
               <value>
@@ -1070,7 +1090,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="84" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:04Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="81" started-at="2018-05-28T12:45:28Z" data-provider="trainers" finished-at="2018-05-28T12:45:29Z">
           <params>
             <param index="0">
               <value>
@@ -1081,7 +1101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectCotrainer" duration-ms="88" started-at="2018-05-27T17:49:04Z" data-provider="trainers" finished-at="2018-05-27T17:49:05Z">
+        <test-method status="PASS" signature="selectCotrainer(java.lang.String)[pri:6, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectCotrainer" duration-ms="1" started-at="2018-05-28T12:45:29Z" data-provider="trainers" finished-at="2018-05-28T12:45:29Z">
           <params>
             <param index="0">
               <value>
@@ -1092,119 +1112,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCotrainer -->
-        <test-method status="PASS" signature="selectStart()[pri:7, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectStart" duration-ms="158" started-at="2018-05-27T17:49:05Z" finished-at="2018-05-27T17:49:05Z">
+        <test-method status="PASS" signature="selectStart()[pri:7, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectStart" duration-ms="107" started-at="2018-05-28T12:45:29Z" finished-at="2018-05-28T12:45:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectStart -->
-        <test-method status="PASS" signature="selectEnd()[pri:8, instance:pomtest.ManageCreateTest@6eebc39e]" name="selectEnd" duration-ms="113" started-at="2018-05-27T17:49:05Z" finished-at="2018-05-27T17:49:05Z">
+        <test-method status="PASS" signature="selectEnd()[pri:8, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="selectEnd" duration-ms="133" started-at="2018-05-28T12:45:29Z" finished-at="2018-05-28T12:45:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectEnd -->
-        <test-method status="PASS" signature="inputGood()[pri:9, instance:pomtest.ManageCreateTest@6eebc39e]" name="inputGood" duration-ms="147" started-at="2018-05-27T17:49:05Z" finished-at="2018-05-27T17:49:05Z">
+        <test-method status="PASS" signature="inputGood()[pri:9, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="inputGood" duration-ms="111" started-at="2018-05-28T12:45:29Z" finished-at="2018-05-28T12:45:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputGood -->
-        <test-method status="PASS" signature="inputPassing()[pri:10, instance:pomtest.ManageCreateTest@6eebc39e]" name="inputPassing" duration-ms="127" started-at="2018-05-27T17:49:05Z" finished-at="2018-05-27T17:49:05Z">
+        <test-method status="PASS" signature="inputPassing()[pri:10, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="inputPassing" duration-ms="99" started-at="2018-05-28T12:45:29Z" finished-at="2018-05-28T12:45:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputPassing -->
-        <test-method status="PASS" signature="buttonSave()[pri:11, instance:pomtest.ManageCreateTest@6eebc39e]" name="buttonSave" duration-ms="89" started-at="2018-05-27T17:49:05Z" finished-at="2018-05-27T17:49:05Z">
+        <test-method status="PASS" signature="buttonSave()[pri:11, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="buttonSave" duration-ms="49" started-at="2018-05-28T12:45:29Z" finished-at="2018-05-28T12:45:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buttonSave -->
-        <test-method status="PASS" signature="buttonClose()[pri:12, instance:pomtest.ManageCreateTest@6eebc39e]" name="buttonClose" duration-ms="1300" started-at="2018-05-27T17:49:05Z" finished-at="2018-05-27T17:49:06Z">
+        <test-method status="PASS" signature="buttonClose()[pri:12, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="buttonClose" duration-ms="1413" started-at="2018-05-28T12:45:29Z" finished-at="2018-05-28T12:45:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buttonClose -->
-        <test-method status="PASS" signature="buttonX()[pri:13, instance:pomtest.ManageCreateTest@6eebc39e]" name="buttonX" duration-ms="1264" started-at="2018-05-27T17:49:06Z" finished-at="2018-05-27T17:49:08Z">
+        <test-method status="PASS" signature="buttonX()[pri:13, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="buttonX" duration-ms="1333" started-at="2018-05-28T12:45:30Z" finished-at="2018-05-28T12:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buttonX -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageCreateTest@6eebc39e]" name="afterSuite" is-config="true" duration-ms="593" started-at="2018-05-27T17:49:08Z" finished-at="2018-05-27T17:49:09Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageCreateTest@3c0ecd4b]" name="afterSuite" is-config="true" duration-ms="251" started-at="2018-05-28T12:45:32Z" finished-at="2018-05-28T12:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- pomtest.ManageCreateTest -->
-    </test> <!-- test -->
-  </suite> <!-- pom manage create -->
-  <suite name="caliber" duration-ms="0" started-at="2018-05-27T21:49:21Z" finished-at="2018-05-27T21:49:21Z">
+    </test> <!-- managebatch>createbatch -->
+  </suite> <!-- pommanagecreate -->
+  <suite name="pommanageyear" duration-ms="1495" started-at="2018-05-28T16:45:07Z" finished-at="2018-05-28T16:45:08Z">
     <groups>
     </groups>
-  </suite> <!-- caliber -->
-  <suite name="pom manage" duration-ms="2988" started-at="2018-05-27T21:48:37Z" finished-at="2018-05-27T21:48:40Z">
-    <groups>
-    </groups>
-    <test name="test" duration-ms="2988" started-at="2018-05-27T21:48:37Z" finished-at="2018-05-27T21:48:40Z">
-      <class name="pomtest.ManageTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageTest@53b32d7]" name="beforeSuite" is-config="true" duration-ms="8699" started-at="2018-05-27T17:48:28Z" finished-at="2018-05-27T17:48:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="clickYear()[pri:1, instance:pomtest.ManageTest@53b32d7]" name="clickYear" duration-ms="735" started-at="2018-05-27T17:48:37Z" finished-at="2018-05-27T17:48:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickYear -->
-        <test-method status="PASS" signature="clickCreateBatch()[pri:2, instance:pomtest.ManageTest@53b32d7]" name="clickCreateBatch" duration-ms="860" started-at="2018-05-27T17:48:37Z" finished-at="2018-05-27T17:48:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickCreateBatch -->
-        <test-method status="PASS" signature="clickImportBatch()[pri:3, instance:pomtest.ManageTest@53b32d7]" name="clickImportBatch" duration-ms="1387" started-at="2018-05-27T17:48:38Z" finished-at="2018-05-27T17:48:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickImportBatch -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageTest@53b32d7]" name="afterSuite" is-config="true" duration-ms="794" started-at="2018-05-27T17:48:40Z" finished-at="2018-05-27T17:48:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- pomtest.ManageTest -->
-    </test> <!-- test -->
-  </suite> <!-- pom manage -->
-  <suite name="pom home" duration-ms="6558" started-at="2018-05-27T21:48:21Z" finished-at="2018-05-27T21:48:27Z">
-    <groups>
-    </groups>
-    <test name="test" duration-ms="6558" started-at="2018-05-27T21:48:21Z" finished-at="2018-05-27T21:48:27Z">
-      <class name="pomtest.HomeTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.HomeTest@42d80b78]" name="beforeSuite" is-config="true" duration-ms="3653" started-at="2018-05-27T17:48:17Z" finished-at="2018-05-27T17:48:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="goHome()[pri:1, instance:pomtest.HomeTest@42d80b78]" name="goHome" duration-ms="3756" started-at="2018-05-27T17:48:21Z" finished-at="2018-05-27T17:48:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goHome -->
-        <test-method status="PASS" signature="clickHome()[pri:2, instance:pomtest.HomeTest@42d80b78]" name="clickHome" duration-ms="733" started-at="2018-05-27T17:48:24Z" finished-at="2018-05-27T17:48:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHome -->
-        <test-method status="PASS" signature="clickManageBatch()[pri:3, instance:pomtest.HomeTest@42d80b78]" name="clickManageBatch" duration-ms="1214" started-at="2018-05-27T17:48:25Z" finished-at="2018-05-27T17:48:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickManageBatch -->
-        <test-method status="PASS" signature="clickAssessBatch()[pri:4, instance:pomtest.HomeTest@42d80b78]" name="clickAssessBatch" duration-ms="355" started-at="2018-05-27T17:48:26Z" finished-at="2018-05-27T17:48:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickAssessBatch -->
-        <test-method status="PASS" signature="clickReports()[pri:5, instance:pomtest.HomeTest@42d80b78]" name="clickReports" duration-ms="487" started-at="2018-05-27T17:48:27Z" finished-at="2018-05-27T17:48:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickReports -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.HomeTest@42d80b78]" name="afterSuite" is-config="true" duration-ms="858" started-at="2018-05-27T17:48:27Z" finished-at="2018-05-27T17:48:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- pomtest.HomeTest -->
-    </test> <!-- test -->
-  </suite> <!-- pom home -->
-  <suite name="pom manage year" duration-ms="1442" started-at="2018-05-27T21:49:20Z" finished-at="2018-05-27T21:49:21Z">
-    <groups>
-    </groups>
-    <test name="test" duration-ms="1442" started-at="2018-05-27T21:49:20Z" finished-at="2018-05-27T21:49:21Z">
+    <test name="managebatch&gt;years" duration-ms="1495" started-at="2018-05-28T16:45:07Z" finished-at="2018-05-28T16:45:08Z">
       <class name="pomtest.ManageYearTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageYearTest@3c0ecd4b]" name="beforeSuite" is-config="true" duration-ms="11021" started-at="2018-05-27T17:49:09Z" finished-at="2018-05-27T17:49:20Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageYearTest@6eebc39e]" name="beforeSuite" is-config="true" duration-ms="9309" started-at="2018-05-28T12:44:58Z" finished-at="2018-05-28T12:45:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@3c0ecd4b]" name="listYears" duration-ms="881" started-at="2018-05-27T17:49:20Z" data-provider="years" finished-at="2018-05-27T17:49:20Z">
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@6eebc39e]" name="listYears" duration-ms="918" started-at="2018-05-28T12:45:07Z" data-provider="years" finished-at="2018-05-28T12:45:08Z">
           <params>
             <param index="0">
               <value>
@@ -1215,7 +1167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listYears -->
-        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@3c0ecd4b]" name="listYears" duration-ms="228" started-at="2018-05-27T17:49:20Z" data-provider="years" finished-at="2018-05-27T17:49:21Z">
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@6eebc39e]" name="listYears" duration-ms="215" started-at="2018-05-28T12:45:08Z" data-provider="years" finished-at="2018-05-28T12:45:08Z">
           <params>
             <param index="0">
               <value>
@@ -1226,7 +1178,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listYears -->
-        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@3c0ecd4b]" name="listYears" duration-ms="165" started-at="2018-05-27T17:49:21Z" data-provider="years" finished-at="2018-05-27T17:49:21Z">
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@6eebc39e]" name="listYears" duration-ms="167" started-at="2018-05-28T12:45:08Z" data-provider="years" finished-at="2018-05-28T12:45:08Z">
           <params>
             <param index="0">
               <value>
@@ -1237,7 +1189,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listYears -->
-        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@3c0ecd4b]" name="listYears" duration-ms="164" started-at="2018-05-27T17:49:21Z" data-provider="years" finished-at="2018-05-27T17:49:21Z">
+        <test-method status="PASS" signature="listYears(java.lang.String)[pri:1, instance:pomtest.ManageYearTest@6eebc39e]" name="listYears" duration-ms="186" started-at="2018-05-28T12:45:08Z" data-provider="years" finished-at="2018-05-28T12:45:08Z">
           <params>
             <param index="0">
               <value>
@@ -1248,31 +1200,79 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listYears -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageYearTest@3c0ecd4b]" name="afterSuite" is-config="true" duration-ms="331" started-at="2018-05-27T17:49:21Z" finished-at="2018-05-27T17:49:21Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageYearTest@6eebc39e]" name="afterSuite" is-config="true" duration-ms="2085" started-at="2018-05-28T12:45:08Z" finished-at="2018-05-28T12:45:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- pomtest.ManageYearTest -->
-    </test> <!-- test -->
-  </suite> <!-- pom manage year -->
-  <suite name="driver chrome" duration-ms="3796" started-at="2018-05-27T21:48:13Z" finished-at="2018-05-27T21:48:17Z">
+    </test> <!-- managebatch>years -->
+  </suite> <!-- pommanageyear -->
+  <suite name="caliber" duration-ms="0" started-at="2018-05-28T16:45:32Z" finished-at="2018-05-28T16:45:32Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="3796" started-at="2018-05-27T21:48:13Z" finished-at="2018-05-27T21:48:17Z">
-      <class name="drivertest.ChromeTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:drivertest.ChromeTest@cb5822]" name="beforeSuite" is-config="true" duration-ms="5626" started-at="2018-05-27T17:48:07Z" finished-at="2018-05-27T17:48:13Z">
+  </suite> <!-- caliber -->
+  <suite name="pommanage" duration-ms="3043" started-at="2018-05-28T16:44:54Z" finished-at="2018-05-28T16:44:57Z">
+    <groups>
+    </groups>
+    <test name="managebatch" duration-ms="3043" started-at="2018-05-28T16:44:54Z" finished-at="2018-05-28T16:44:57Z">
+      <class name="pomtest.ManageTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.ManageTest@53b32d7]" name="beforeSuite" is-config="true" duration-ms="8090" started-at="2018-05-28T12:44:46Z" finished-at="2018-05-28T12:44:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="home()[pri:0, instance:drivertest.ChromeTest@cb5822]" name="home" duration-ms="3775" started-at="2018-05-27T17:48:13Z" finished-at="2018-05-27T17:48:17Z">
+        <test-method status="PASS" signature="clickYear()[pri:1, instance:pomtest.ManageTest@53b32d7]" name="clickYear" duration-ms="771" started-at="2018-05-28T12:44:54Z" finished-at="2018-05-28T12:44:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- home -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:drivertest.ChromeTest@cb5822]" name="afterSuite" is-config="true" duration-ms="310" started-at="2018-05-27T17:48:17Z" finished-at="2018-05-27T17:48:17Z">
+        </test-method> <!-- clickYear -->
+        <test-method status="PASS" signature="clickCreateBatch()[pri:2, instance:pomtest.ManageTest@53b32d7]" name="clickCreateBatch" duration-ms="861" started-at="2018-05-28T12:44:55Z" finished-at="2018-05-28T12:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCreateBatch -->
+        <test-method status="PASS" signature="clickImportBatch()[pri:3, instance:pomtest.ManageTest@53b32d7]" name="clickImportBatch" duration-ms="1406" started-at="2018-05-28T12:44:55Z" finished-at="2018-05-28T12:44:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickImportBatch -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.ManageTest@53b32d7]" name="afterSuite" is-config="true" duration-ms="773" started-at="2018-05-28T12:44:57Z" finished-at="2018-05-28T12:44:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- drivertest.ChromeTest -->
-    </test> <!-- test -->
-  </suite> <!-- driver chrome -->
+      </class> <!-- pomtest.ManageTest -->
+    </test> <!-- managebatch -->
+  </suite> <!-- pommanage -->
+  <suite name="pomhome" duration-ms="6260" started-at="2018-05-28T16:44:39Z" finished-at="2018-05-28T16:44:45Z">
+    <groups>
+    </groups>
+    <test name="home" duration-ms="6260" started-at="2018-05-28T16:44:39Z" finished-at="2018-05-28T16:44:45Z">
+      <class name="pomtest.HomeTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pomtest.HomeTest@42d80b78]" name="beforeSuite" is-config="true" duration-ms="3453" started-at="2018-05-28T12:44:35Z" finished-at="2018-05-28T12:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="goHome()[pri:1, instance:pomtest.HomeTest@42d80b78]" name="goHome" duration-ms="3767" started-at="2018-05-28T12:44:39Z" finished-at="2018-05-28T12:44:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="clickHome()[pri:2, instance:pomtest.HomeTest@42d80b78]" name="clickHome" duration-ms="726" started-at="2018-05-28T12:44:42Z" finished-at="2018-05-28T12:44:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickHome -->
+        <test-method status="PASS" signature="clickManageBatch()[pri:3, instance:pomtest.HomeTest@42d80b78]" name="clickManageBatch" duration-ms="1049" started-at="2018-05-28T12:44:43Z" finished-at="2018-05-28T12:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickManageBatch -->
+        <test-method status="PASS" signature="clickAssessBatch()[pri:4, instance:pomtest.HomeTest@42d80b78]" name="clickAssessBatch" duration-ms="404" started-at="2018-05-28T12:44:44Z" finished-at="2018-05-28T12:44:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAssessBatch -->
+        <test-method status="PASS" signature="clickReports()[pri:5, instance:pomtest.HomeTest@42d80b78]" name="clickReports" duration-ms="300" started-at="2018-05-28T12:44:45Z" finished-at="2018-05-28T12:44:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickReports -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:pomtest.HomeTest@42d80b78]" name="afterSuite" is-config="true" duration-ms="750" started-at="2018-05-28T12:44:45Z" finished-at="2018-05-28T12:44:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- pomtest.HomeTest -->
+    </test> <!-- home -->
+  </suite> <!-- pomhome -->
 </testng-results>

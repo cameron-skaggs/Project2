@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="driver chrome">
-	<test name="test">
+<suite name="driverchrome">
+	<test name="driverchrome">
 		<classes>
 			<class name="drivertest.ChromeTest"></class>
 		</classes>
