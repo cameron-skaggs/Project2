@@ -7,5 +7,6 @@
 		<suite-file path="manage.xml"/>
 		<suite-file path="manageyear.xml"/>
 		<suite-file path="managecreate.xml"/>
+		<suite-file path="manageupdate.xml"/>
 	</suite-files>
 </suite>
