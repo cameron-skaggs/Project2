@@ -5,7 +5,7 @@
 		<suite-file path="driverchrome.xml"/>
 		<suite-file path="pomhome.xml"/>
 		<suite-file path="pommanage.xml"/>
-		<suite-file path="pommanagecreate.xml"/>
 		<suite-file path="pommanageyear.xml"/>
+		<suite-file path="pommanagecreate.xml"/>
 	</suite-files>
 </suite>
