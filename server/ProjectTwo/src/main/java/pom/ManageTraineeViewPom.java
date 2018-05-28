@@ -34,7 +34,9 @@ public class ManageTraineeViewPom extends Pom{
 	public WebElement anchorTraineeAdd() {
 		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[1]/div/a[1]";
 		return driver.findElement(By.xpath(xpath));
-	}
+	} 
+	//*[@id="viewTraineeModal"]/div/div/div[2]/div[2]/div/div/a
+	//*[@id="viewTraineeModal"]/div/div/div[2]/div[2]/div/div/a
 	
 	public WebElement anchorTraineeEdit() {
 		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td[14]/a";
@@ -52,7 +54,4 @@ public class ManageTraineeViewPom extends Pom{
 		String xpath = "//*[@id=\"viewTraineeModal\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
-
-
-	
 }

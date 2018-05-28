@@ -42,14 +42,12 @@ public class ManageTraineeViewTest {
 		
 		modal(modal, active);
 		active.click();
-		
-		
 		inactive.click();
 	}
 	
 	@Test(priority=3)
 	public void traineeAdd() {
-		
+		update.anchorTraineeAdd().click();
 	}
 	
 	
