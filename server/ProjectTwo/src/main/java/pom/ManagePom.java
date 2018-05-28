@@ -44,4 +44,9 @@ public class ManagePom extends Pom {
 		String xpath = "//*[@id=\"importBatchModal\"]/div/div/div[3]/button";
 		return driver.findElement(By.xpath(xpath));
 	}
+
+	public WebElement modal() {
+		String xpath = "//*[@id=\"createBatchModal\"]";
+		return driver.findElement(By.xpath(xpath));
+	}
 }

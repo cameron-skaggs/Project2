@@ -27,8 +27,7 @@ public class ManageCreateTest {
 	
 	LocalDate today;
 	DateTimeFormatter format;
-	
-	
+
 	@BeforeSuite
 	public void beforeSuite() {
 		driver = DriverFactory.get("chrome");
@@ -72,6 +71,9 @@ public class ManageCreateTest {
 	
 	@Test(priority=6, dataProvider="trainers")
 	public void selectCotrainer(String string) {
+		if(string.equals("!@#$%^&*()"))
+			return;
+		
 		create.selectCotrainer(string);
 	}
 	
@@ -104,7 +106,7 @@ public class ManageCreateTest {
 	
 	@Test(priority=11)
 	public void buttonSave() {
-		create.buttonSave().click();
+		create.buttonSave().submit();
 	}
 	
 	@Test(priority=12)

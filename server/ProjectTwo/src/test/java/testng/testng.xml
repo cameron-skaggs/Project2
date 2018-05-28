@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="caliber">
+	<suite-files>
+		<suite-file path="driverchrome.xml"/>
+		<suite-file path="home.xml"/>
+		<suite-file path="manage.xml"/>
+		<suite-file path="manageyear.xml"/>
+		<suite-file path="managecreate.xml"/>
+		<suite-file path="manageupdate.xml"/>
+	</suite-files>
+</suite>
