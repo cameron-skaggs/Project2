@@ -27,6 +27,16 @@ anchor "Create Batch"
 input "Start Date" && input "End Date"
 span class glyphicon-calendar <-- unnecessary
 
+Bug 5
+-------------------------------------------------------------------------------------
+https://dev-caliber.revature.tech/caliber/#/trainer/manage
+home
+anchor "Manage Batch"
+anchor "Create Batch"
+anchor "glyphicon-user"
+anchor "Add Trainee"
+input "Save"
+does not save trainee
 
 =============================================================================================
 Andrew Ahn, Associate
