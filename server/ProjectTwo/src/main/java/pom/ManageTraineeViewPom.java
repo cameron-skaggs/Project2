@@ -3,6 +3,7 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class ManageTraineeViewPom extends Pom{
 
@@ -31,8 +32,8 @@ public class ManageTraineeViewPom extends Pom{
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement anchorTraineeAdd() {
-		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[1]/div/a";
+	public WebElement anchorAddTrainee() {
+		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[2]/div/div/a";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
@@ -107,14 +108,18 @@ public class ManageTraineeViewPom extends Pom{
 		String xpath = "//*[@id=\"traineeProjectCompletion\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
+	//*[@id="traineeName"]
 	
 	public WebElement inputProfile() {
-		String xpath = "//*[@id=\"traineeName\"]";
+		String xpath = "//*[@id=\"traineeName\"]/html/body/div[1]/ui-view/ui-view/div/div[7]/form/div/div/div/div[2]/div[1]/div[6]/div/input";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement selectTraining(String string) {
-		return driver.findElement(By.linkText(string));
+	public void selectTraining(String string) {
+		String xpath = "//*[@id=\"traineeStatus\"]";
+		WebElement element = driver.findElement(By.xpath(xpath));
+		Select select = new Select(element);
+		select.selectByValue(string);
 	}
 	
 	public WebElement inputSave() {

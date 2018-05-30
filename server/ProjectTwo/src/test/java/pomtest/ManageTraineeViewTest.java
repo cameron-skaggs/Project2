@@ -27,7 +27,7 @@ public class ManageTraineeViewTest {
 	@BeforeSuite
 	public void beforeSuite() {
 		driver = DriverFactory.get("chrome");
-		wait = new WebDriverWait(driver, 1);
+		wait = new WebDriverWait(driver, 5);
 		home = new HomePom(driver);
 		manage = new ManagePom(driver);
 		year = new ManageYearPom(driver);
@@ -47,29 +47,27 @@ public class ManageTraineeViewTest {
 	public void traineeActive() {
 		WebElement active = view.anchorTraineeActive();
 		WebElement inactive = view.anchorTrainInactive();
-		WebElement modal = view.modalView();
+		WebElement modal = view.modalAdd();
 		
 		modal(modal, active);
 		active.click();
 		inactive.click();
-		active.click();
 	}
 	
 	@Test(priority=3)
 	public void traineeAdd() {
-		view.anchorTraineeAdd().click();
+		WebElement modal = view.modalAdd();
+		WebElement anchor = view.anchorAddTrainee();
+		
+		modal(modal, anchor);
+		anchor.click();
 	}
 	
 	@Test(priority=4)
 	public void inputName() {
-		WebElement modal = view.modalAdd();
-		WebElement input = view.inputName();
-		
-		modal(modal, input);
-		
-		input.sendKeys("Full Name");
+		view.inputName().sendKeys("Full Name");
 	}
-	
+
 	@Test(priority=5)
 	public void inputEmail() {
 		view.inputEmail().sendKeys("email@email.com");
@@ -115,14 +113,14 @@ public class ManageTraineeViewTest {
 		view.inputProject().sendKeys("0%");
 	}
 	
-	@Test(priority=14)
-	public void inputProfile() {
-		view.inputProfile().sendKeys("http://www.example.com/revature");
-	}
+//	@Test(priority=14)
+//	public void inputProfile() {
+//		view.inputProfile().sendKeys("http://www.example.com/revature");
+//	}
 	
 	@Test(priority=15, dataProvider="trainingstatus")
 	public void selectTraining(String status) {
-		view.selectTraining(status).click();
+		view.selectTraining(status);
 	}
 	
 	@Test(priority=16)
@@ -132,9 +130,11 @@ public class ManageTraineeViewTest {
 	
 	@Test(priority=17)
 	public void close() {
-		WebElement modal = view.modalAdd();
-		WebElement anchor = view.anchorTraineeAdd();
+		WebElement modal = view.modalView();
+		WebElement anchor = view.anchorAddTrainee();
 		WebElement close = view.buttonClose();
+		
+		modal(modal, anchor);
 		
 		anchor.click();
 		close.click();
@@ -142,18 +142,21 @@ public class ManageTraineeViewTest {
 	
 	@Test(priority=18)
 	public void x() {
-		WebElement anchor = view.anchorTraineeAdd();
+		WebElement modal = view.modalView();
+		WebElement anchor = view.anchorAddTrainee();
 		WebElement x = view.buttonTraineeX();
+		
+		modal(modal, anchor);
 		
 		anchor.click();
 		x.click();
 	}
-	
-	
-	@AfterSuite
-	public void afterSuite() {
-		driver.close();
-	}
+//	
+//	
+//	@AfterSuite
+//	public void afterSuite() {
+//		driver.close();
+//	}
 	
 	private void modal(WebElement modal, WebElement anchor) {
 		ExpectedCondition<Boolean> modalCondition =
@@ -165,7 +168,7 @@ public class ManageTraineeViewTest {
 		wait.until(anchorCondition);
 	}
 	
-	@DataProvider(name="training")
+	@DataProvider(name="trainingstatus")
 	public Object[][] training(){
 		return new Object[][] {
 			new Object[] { "Signed" },
