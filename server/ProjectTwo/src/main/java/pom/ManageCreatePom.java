@@ -62,9 +62,9 @@ public class ManageCreatePom extends Pom{
 		String xpath = "//*[@id=\"borderlineGrade\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
-	
+			
 	public WebElement buttonSave() {
-		String xpath = "//*[@id=\"createBatchModal\"]/div/div/div[3]/button";
+		String xpath = "//*[@id=\"createBatchModal\"]/div/div/div[3]/input";
 		return driver.findElement(By.xpath(xpath));
 	}
 	

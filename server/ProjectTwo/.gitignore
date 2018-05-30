@@ -65,3 +65,6 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+
+#merge
+target/m2e-wtp/web-resources/META-INF/maven/com.revature/ProjectTwo/pom.properties
