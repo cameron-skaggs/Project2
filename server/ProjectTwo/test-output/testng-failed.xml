@@ -1,12 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [pomhome]">
-  <listeners>
-    <listener class-name="listener.Listener"/>
-  </listeners>
-  <test name="home">
+<suite name="Failed suite [Hello World Suite]">
+  <test name="Hello World Test">
     <classes>
-      <class name="pomtest.HomeTest"/>
+      <class name="testng.HomeTest"/>
+      <class name="testng.ManageTest"/>
+      <class name="testng.ManageCreateTest"/>
+      <class name="testng.ManageTraineeViewTest"/>
     </classes>
-  </test> <!-- home -->
-</suite> <!-- Failed suite [pomhome] -->
+  </test> <!-- Hello World Test -->
+  <test name="Hello World Test(failed)">
+    <classes>
+      <class name="testng.ManageCreateTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="buttonClose"/>
+          <include name="buttonX"/>
+        </methods>
+      </class> <!-- testng.ManageCreateTest -->
+      <class name="testng.ManageTraineeViewTest">
+        <methods>
+          <include name="inputName"/>
+          <include name="inputCollege"/>
+          <include name="inputMajor"/>
+          <include name="inputPhone"/>
+          <include name="traineeAdd"/>
+          <include name="beforeSuite"/>
+          <include name="save"/>
+          <include name="inputDegree"/>
+          <include name="selectTraining" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="x"/>
+          <include name="inputEmail"/>
+          <include name="traineeActive"/>
+          <include name="close"/>
+          <include name="inputRecruiter"/>
+          <include name="inputProject"/>
+          <include name="inputSkype"/>
+          <include name="inputTech"/>
+          <include name="traineeView"/>
+        </methods>
+      </class> <!-- testng.ManageTraineeViewTest -->
+      <class name="testng.ManageTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="clickCreateBatch"/>
+          <include name="clickImportBatch"/>
+          <include name="listYears" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- testng.ManageTest -->
+      <class name="testng.HomeTest">
+        <methods>
+          <include name="clickManageBatch"/>
+          <include name="clickAssessBatch"/>
+          <include name="clickReports"/>
+          <include name="clickHome"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testng.HomeTest -->
+    </classes>
+  </test> <!-- Hello World Test(failed) -->
+</suite> <!-- Failed suite [Hello World Suite] -->

@@ -1,4 +1,4 @@
-package pomtest;
+package testng;
 
 import static org.testng.Assert.assertEquals;
 
@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import driver.DriverFactory;
@@ -42,7 +43,7 @@ public class ManageTest {
 		WebElement anchor = manage.anchorCreate();
 		WebElement input = manage.inputCreate();
 		WebElement close = manage.buttonCreateClose();
-		WebElement modal = manage.modal();
+		WebElement modal = manage.createBatchModal();
 		
 		anchor.click();
 		
@@ -58,7 +59,7 @@ public class ManageTest {
 		WebElement anchor = manage.anchorImport();
 		WebElement input = manage.inputImport();
 		WebElement close = manage.buttonImportClose();
-		WebElement modal = manage.modal();
+		WebElement modal = manage.createBatchModal();
 		
 		modal(modal, anchor);
 		anchor.click();
@@ -70,9 +71,29 @@ public class ManageTest {
 		close.click();
 	}
 	
+	@Test(priority=4, dataProvider="years")
+	public void listYears(String year) {
+		WebElement anchor = manage.anchorYear();
+		WebElement modal = manage.importBatchModal();
+		
+		modal(modal, anchor);
+		anchor.click();
+		manage.yearItems(year).click();
+	}
+	
 	@AfterSuite
 	public void afterSuite() {
 		driver.quit();
+	}
+	
+	@DataProvider(name="years")
+	public Object[][] years() {
+		return new Object[][] {
+			new Object[] { "2019" },
+			new Object[] { "2018" },
+			new Object[] { "2017" },
+			new Object[] { "2016" }
+		};
 	}
 	
 	private void modal(WebElement modal, WebElement anchor) {

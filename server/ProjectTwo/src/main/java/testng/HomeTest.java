@@ -1,4 +1,4 @@
-package pomtest;
+package testng;
 
 import static org.testng.Assert.assertEquals;
 

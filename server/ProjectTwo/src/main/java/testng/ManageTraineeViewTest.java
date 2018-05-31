@@ -1,4 +1,4 @@
-package pomtest;
+package testng;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,14 +14,12 @@ import driver.DriverFactory;
 import pom.HomePom;
 import pom.ManagePom;
 import pom.ManageTraineeViewPom;
-import pom.ManageYearPom;
 
 public class ManageTraineeViewTest {
 	WebDriver driver;
 	WebDriverWait wait;
 	HomePom home;
 	ManagePom manage;
-	ManageYearPom year;
 	ManageTraineeViewPom view;
 	
 	@BeforeSuite
@@ -30,12 +28,11 @@ public class ManageTraineeViewTest {
 		wait = new WebDriverWait(driver, 5);
 		home = new HomePom(driver);
 		manage = new ManagePom(driver);
-		year = new ManageYearPom(driver);
 		view = new ManageTraineeViewPom(driver);
 		
 		home.anchorManage().click();
 		manage.anchorYear().click();
-		year.yearItems("2019").click();
+		manage.yearItems("2019").click();
 	}
 	
 	@Test(priority=1)
@@ -151,12 +148,12 @@ public class ManageTraineeViewTest {
 		anchor.click();
 		x.click();
 	}
-//	
-//	
-//	@AfterSuite
-//	public void afterSuite() {
-//		driver.close();
-//	}
+	
+	
+	@AfterSuite
+	public void afterSuite() {
+		driver.close();
+	}
 	
 	private void modal(WebElement modal, WebElement anchor) {
 		ExpectedCondition<Boolean> modalCondition =
