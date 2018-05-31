@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="pomhome">
-	<test name="home">
+<suite name="pommanagetraineeview">
+	<test name="managebatch>viewtrainee">
 		<classes>
-			<class name="pomtest.HomeTest"></class>
+			<class name="testng.ManageTraineeViewTest"></class>
 		</classes>
 	</test>
 </suite>
