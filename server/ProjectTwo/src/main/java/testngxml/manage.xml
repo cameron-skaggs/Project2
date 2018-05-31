@@ -3,7 +3,7 @@
 <suite name="pommanage">
 	<test name="managebatch">
 		<classes>
-			<class name="pomtest.ManageTest"></class>
+			<class name="testng.ManageTest"></class>
 		</classes>
 	</test>
 </suite>
