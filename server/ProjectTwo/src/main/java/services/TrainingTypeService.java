@@ -4,7 +4,7 @@ import java.util.List;
 
 import dao.TrainingTypeDao;
 import daoimpl.TrainingTypeDaoImpl;
-import hibernate.TrainingType;
+import model.TrainingType;
 
 public class TrainingTypeService {
 	private static TrainingTypeDao dao = TrainingTypeDaoImpl.getInstance();

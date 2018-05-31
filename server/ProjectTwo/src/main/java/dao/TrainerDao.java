@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import hibernate.Trainers;
+import model.Trainers;
 
 public interface TrainerDao {
 

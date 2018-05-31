@@ -4,7 +4,7 @@ import java.util.List;
 
 import dao.SkillDao;
 import daoimpl.SkillDaoImpl;
-import hibernate.Skill;
+import model.Skill;
 
 public class SkillService {
 

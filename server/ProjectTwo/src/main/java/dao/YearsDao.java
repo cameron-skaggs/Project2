@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import hibernate.Years;
+import model.Years;
 
 public interface YearsDao {
 

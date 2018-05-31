@@ -7,7 +7,7 @@ import org.hibernate.Session;
 
 import dao.TrainerDao;
 import hibernate.HibernateUtil;
-import hibernate.Trainers;
+import model.Trainers;
 
 public class TrainerDaoImpl implements TrainerDao {
 	private static TrainerDaoImpl instance;

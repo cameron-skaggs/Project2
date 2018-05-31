@@ -4,7 +4,7 @@ import java.util.List;
 
 import dao.LocationDao;
 import daoimpl.LocationDaoImpl;
-import hibernate.Location;
+import model.Location;
 
 public class LocationService {
 

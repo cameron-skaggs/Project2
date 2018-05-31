@@ -7,7 +7,7 @@ import org.hibernate.Session;
 
 import dao.YearsDao;
 import hibernate.HibernateUtil;
-import hibernate.Years;
+import model.Years;
 
 public class YearsDaoImpl implements YearsDao {
 

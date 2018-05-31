@@ -1,4 +1,4 @@
-package listener;
+package model;
 
 public class MethodResult {
 	private String name;

@@ -7,7 +7,7 @@ import org.hibernate.Session;
 
 import dao.SkillDao;
 import hibernate.HibernateUtil;
-import hibernate.Skill;
+import model.Skill;
 
 public class SkillDaoImpl implements SkillDao {
 
