@@ -3,7 +3,7 @@ package services;
 import java.util.List;
 
 import dao.LocationDao;
-import dao.LocationDaoImpl;
+import daoimpl.LocationDaoImpl;
 import hibernate.Location;
 
 public class LocationService {

@@ -9,11 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.testng.TestNG;
-import org.testng.xml.XmlClass;
-import org.testng.xml.XmlSuite;
-import org.testng.xml.XmlTest;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class HomeServlet extends HttpServlet {
@@ -27,38 +22,14 @@ public class HomeServlet extends HttpServlet {
 		response.setContentType("application/json");
 		
 		ObjectMapper mapper = new ObjectMapper();
-		List<String> employees = testNg();
+		List<String> results = new ArrayList<String>();
+		results.add("home suite results");
 		response.getWriter().write(
-				mapper.writeValueAsString(employees));
+				mapper.writeValueAsString(results));
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
 	
-	private List<String> testNg() {
-		// Get a reference to an XML Suite
-		XmlSuite suite = new XmlSuite();
-		suite.setName("pomhome");
-		
-		// Get a reference to an XML Test
-		XmlTest test = new XmlTest(suite);
-		test.setName("home");
-		
-		// Set the classes for the XML Test
-		List<XmlClass> classes = new ArrayList<>();
-		classes.add(new XmlClass("pomtest.HomeTest"));
-		test.setXmlClasses(classes);
-		
-		// Pass the XML Suite to TestNG
-		List<XmlSuite> suites = new ArrayList<>();
-		suites.add(suite);
-		TestNG testng = new TestNG();
-		testng.setXmlSuites(suites);
-		
-		// Run the TestNG Suite
-		testng.run();
-		return new ArrayList<String>();
-	}
-
 }

@@ -22,9 +22,10 @@ public class ManageCreateServlet extends HttpServlet {
 		response.setContentType("application/json");
 		
 		ObjectMapper mapper = new ObjectMapper();
-		List<String> employees = new ArrayList<String>();
+		List<String> results = new ArrayList<String>();
+		results.add("manage create suite results");
 		response.getWriter().write(
-				mapper.writeValueAsString(employees));
+				mapper.writeValueAsString(results));
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
