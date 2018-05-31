@@ -3,7 +3,7 @@ package services;
 import java.util.List;
 
 import dao.SkillDao;
-import dao.SkillDaoImpl;
+import daoimpl.SkillDaoImpl;
 import hibernate.Skill;
 
 public class SkillService {

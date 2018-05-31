@@ -3,7 +3,7 @@ package services;
 import java.util.List;
 
 import dao.TrainingTypeDao;
-import dao.TrainingTypeDaoImpl;
+import daoimpl.TrainingTypeDaoImpl;
 import hibernate.TrainingType;
 
 public class TrainingTypeService {
