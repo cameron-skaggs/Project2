@@ -4,7 +4,7 @@ import java.util.List;
 
 import dao.TrainerDao;
 import daoimpl.TrainerDaoImpl;
-import hibernate.Trainers;
+import model.Trainers;
 
 public class TrainerService {
 	private static TrainerDao dao = TrainerDaoImpl.getInstance();

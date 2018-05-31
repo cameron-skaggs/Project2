@@ -7,7 +7,7 @@ import org.hibernate.Session;
 
 import dao.LocationDao;
 import hibernate.HibernateUtil;
-import hibernate.Location;
+import model.Location;
 
 public class LocationDaoImpl implements LocationDao {
 

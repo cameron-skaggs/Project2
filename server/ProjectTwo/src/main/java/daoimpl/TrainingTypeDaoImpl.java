@@ -7,7 +7,7 @@ import org.hibernate.Session;
 
 import dao.TrainingTypeDao;
 import hibernate.HibernateUtil;
-import hibernate.TrainingType;
+import model.TrainingType;
 
 public class TrainingTypeDaoImpl implements TrainingTypeDao {
 	private static TrainingTypeDaoImpl instance;

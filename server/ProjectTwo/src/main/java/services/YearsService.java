@@ -4,7 +4,7 @@ import java.util.List;
 
 import dao.YearsDao;
 import daoimpl.YearsDaoImpl;
-import hibernate.Years;
+import model.Years;
 
 public class YearsService {
 	private static YearsDao dao = YearsDaoImpl.getInstance();

@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import hibernate.Skill;
+import model.Skill;
 
 public interface SkillDao {
 
