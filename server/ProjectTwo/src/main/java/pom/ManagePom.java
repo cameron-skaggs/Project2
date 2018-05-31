@@ -45,8 +45,17 @@ public class ManagePom extends Pom {
 		return driver.findElement(By.xpath(xpath));
 	}
 
-	public WebElement modal() {
+	public WebElement createBatchModal() {
 		String xpath = "//*[@id=\"createBatchModal\"]";
 		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement importBatchModal() {
+		String xpath = "//*[@id=\"importBatchModal\"]";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement yearItems(String year) {
+		return driver.findElement(By.linkText(year));
 	}
 }

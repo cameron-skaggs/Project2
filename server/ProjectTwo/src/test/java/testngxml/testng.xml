@@ -8,7 +8,6 @@
 		<suite-file path="driverchrome.xml"/>
 		<suite-file path="home.xml"/>
 		<suite-file path="manage.xml"/>
-		<suite-file path="manageyear.xml"/>
 		<suite-file path="managecreate.xml"/>
 		<suite-file path="managetraineeview.xml"/>
 	</suite-files>
