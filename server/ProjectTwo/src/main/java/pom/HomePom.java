@@ -30,5 +30,5 @@ public class HomePom extends Pom {
 	
 	public WebElement anchorGuide() {
 		return driver.findElement(By.linkText("user guide"));
-	}
+	}	
 }
