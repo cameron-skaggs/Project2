@@ -10,46 +10,43 @@ import org.testng.xml.XmlTest;
 
 public class TestNgRunner {    
     public static void main(String[] args) {
+    	homeTest();
+    	manageBatchTest();
+    }
+    
+    private static void homeTest() {
     	XmlSuite homeSuite = new XmlSuite();
-    	XmlSuite manageSuite = new XmlSuite();
-    	XmlSuite manageCreateSuite = new XmlSuite();
-    	XmlSuite manageTraineeViewSuite = new XmlSuite();
-    	
-    	homeSuite.setName("Home Suite");
-    	manageSuite.setName("Manage Suite");
-    	manageCreateSuite.setName("Manage Create Suite");
-    	manageTraineeViewSuite.setName("Manage Trainee View Suite");
-    	
     	XmlTest homeTest = new XmlTest(homeSuite);
-    	XmlTest manageTest = new XmlTest(manageSuite);
-    	XmlTest manageCreateTest = new XmlTest(manageCreateSuite);
-    	XmlTest manageTraineeTest = new XmlTest(manageTraineeViewSuite);
-    	
-    	homeTest.setName("Home Test");
-    	manageTest.setName("Manage Test");
-    	manageCreateTest.setName("Manage Create Test");
-    	manageTraineeTest.setName("Manage Trainee Test");
-    	
-    	XmlClass homeClass = new XmlClass("testng.HomeTest");
-    	XmlClass manageClass = new XmlClass("testng.ManageTest");
-    	XmlClass manageCreateClass = new XmlClass("testng.ManageCreateTest");
-    	XmlClass manageTraineeViewClass = new XmlClass("testng.ManageTraineeViewTest");
-    	
+    	XmlClass homeClass = new XmlClass("testng.HomeClass");
     	List<XmlClass> homeClasses = Arrays.asList( homeClass );
-    	List<XmlClass> manageClasses = Arrays.asList( manageClass );
-    	List<XmlClass> manageCreateClasses = Arrays.asList( manageCreateClass );
-    	List<XmlClass> manageTraineeViewClasses = Arrays.asList( manageTraineeViewClass );
-    	
-    	homeTest.setXmlClasses(homeClasses);
-    	manageTest.setXmlClasses(manageClasses);
-    	manageCreateTest.setXmlClasses(manageCreateClasses);
-    	manageTraineeTest.setXmlClasses(manageTraineeViewClasses);
-    	
-    	List<XmlSuite> suites = Arrays.asList( homeSuite, manageSuite, manageCreateSuite, manageTraineeViewSuite );
-
+    	List<XmlSuite> homeSuites = Arrays.asList( homeSuite );
     	TestNG testng = new TestNG();
-    	testng.setXmlSuites(suites);
     	
-    	testng.run();   	
+    	homeSuite.setName("Home Suite");    	
+       	homeTest.setName("Home Test");
+       	homeTest.setXmlClasses(homeClasses);
+       	testng.setXmlSuites(homeSuites);
+       	testng.run();
+    }
+    
+    private static void manageBatchTest() {
+    	XmlSuite manageSuite = new XmlSuite();    	
+    	XmlTest manageTest = new XmlTest(manageSuite);
+    	XmlClass manageClass = new XmlClass("testng.ManageClass");
+    	List<XmlClass> manageClasses = Arrays.asList( manageClass );    	
+    	List<XmlSuite> suites = Arrays.asList( manageSuite );
+    	TestNG testng = new TestNG();    	
+    	
+    	manageSuite.setName("Manage Suite"); 
+    	manageTest.setName("Manage Test");
+    	manageTest.setXmlClasses(manageClasses);
+    	testng.setXmlSuites(suites);
+    	testng.run();  
+    }
+    
+    private void assessBatchTest() {
+    }
+    
+    private void reportsTest() {
     }
 }

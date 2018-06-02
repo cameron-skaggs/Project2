@@ -180,126 +180,136 @@ public class ManagePom extends Pom {
 	
 	/* View Trainees */
 	
-	public WebElement buttonViewTraineeX() {
+	public WebElement anchorViewTraineesUser() {
+		String xpath = "//*[@id=\"manage\"]/div[2]/div/div/table/tbody/tr[1]/td[11]/a";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement buttonViewTraineesX() {
 		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[1]/button";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement anchorViewTraineeActive() {
+	public WebElement anchorViewTraineesActive() {
 		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[1]/div/a[1]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement anchorViewTrainInactive() {
+	public WebElement anchorViewTraineesInactive() {
 		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[1]/div/a[2]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement anchorAddTrainee() {
+	public WebElement anchorAddTrainees() {
 		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[2]/div/div/a";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement modalViewTrainees() {
+		String xpath = "//*[@id=\"viewTraineeModal\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
 	/* Add Trainees */
 	
-	public WebElement modalViewTrainee() {
-		String xpath = "//*[@id=\"viewTraineeModal\"]";
-		return driver.findElement(By.xpath(xpath));
-	}
-	
-	public WebElement anchorTrainee() {
-		String xpath = "//*[@id=\"manage\"]/div[2]/div/div/table/tbody/tr[1]/td[11]/a";
-		return driver.findElement(By.xpath(xpath));
-	}
-	
-	public WebElement anchorTraineeEdit() {
-		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td[14]/a";
-		return driver.findElement(By.xpath(xpath));
-	}
-	
-	public WebElement anchorTraineeDelete() {
-		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td[15]/a";
-		return driver.findElement(By.xpath(xpath));
-	}
-	
-	public WebElement modalAddTrainee() {
+	public WebElement modalAddTrainees() {
 		String xpath = "//*[@id=\"addTraineeModal\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
-
-	public WebElement inputName() {
+	
+	public WebElement buttonAddTraineesX() {
+		String xpath = "//*[@id=\"addTraineeModal\"]/div/div/div[1]/button";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement inputAddTraineesFullName() {
 		String xpath = "//*[@id=\"traineeName\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputEmail() {
+	public WebElement inputAddTraineesEmail() {
 		String xpath = "//*[@id=\"traineeEmail\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputSkype() {
+	public WebElement inputAddTraineesSkypeId() {
 		String xpath = "//*[@id=\"traineeSkype\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputPhone() {
+	public WebElement inputAddTraineesPhone() {
 		String xpath = "//*[@id=\"traineePhone\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputCollege() {
+	public WebElement inputAddTraineesCollege() {
 		String xpath = "//*[@id=\"traineeCollege\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputDegree() {
+	public WebElement inputAddTraineesDegree() {
 		String xpath = "//*[@id=\"traineeDegree\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputMajor() {
+	public WebElement inputAddTraineesMajor() {
 		String xpath = "//*[@id=\"traineeMajor\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputRecruiter() {
+	public WebElement inputAddTraineesRecruiterName() {
 		String xpath = "//*[@id=\"traineeRecruiterName\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputTech() {
+	public WebElement inputAddTraineesTechScreenerName() {
 		String xpath = "//*[@id=\"traineeTechScreenerName\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputProject() {
+	public WebElement inputAddTraineesProjectCompletion() {
 		String xpath = "//*[@id=\"traineeProjectCompletion\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement inputProfile() {
+	public WebElement inputAddTraineesProfileUrl() {
+		String css = "#traineeName";
 		String xpath = "//*[@id=\"traineeName\"]/html/body/div[1]/ui-view/ui-view/div/div[7]/form/div/div/div/div[2]/div[1]/div[6]/div/input";
-		return driver.findElement(By.xpath(xpath));
+		return driver.findElement(By.cssSelector(css));
 	}
 	
-	public void selectTraining(String string) {
+	public void selectAddTraineesTrainingStatus(String string) {
 		String xpath = "//*[@id=\"traineeStatus\"]";
 		WebElement element = driver.findElement(By.xpath(xpath));
 		Select select = new Select(element);
 		select.selectByValue(string);
 	}
 	
-	public WebElement inputSave() {
+	public WebElement inputAddTraineesSave() {
 		String xpath = "//*[@id=\"addTraineeModal\"]/div/div/div[2]/div[2]/input[1]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	public WebElement buttonCloseAddTrainee() {
-		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[1]/button";
+	public WebElement buttonAddTraineesClose() {
+		String xpath = "//*[@id=\"addTraineeModal\"]/div/div/div[2]/div[2]/button[1]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
-	/* Add Trainees end */
+	/* Edit Trainees */
+	
+	public WebElement anchorAddTraineesEdit() {
+		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td[14]/a";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	/* Delete Trainees */
+	
+	public WebElement anchorAddTraineesDelete() {
+		String xpath = "//*[@id=\"viewTraineeModal\"]/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td[15]/a";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	/* Years */
 		
 	public WebElement anchorYear() {
 		String xpath = "//*[@id=\"manage\"]/div[1]/div/div/ul/li[1]/a";
@@ -309,6 +319,8 @@ public class ManagePom extends Pom {
 	public WebElement yearItems(String year) {
 		return driver.findElement(By.linkText(year));
 	}
+	
+	/* select utils */
 			
 	private void select(String xpath, String text) {
 		WebElement element = driver.findElement(By.xpath(xpath));
