@@ -11,7 +11,7 @@ import org.testng.xml.XmlTest;
 public class TestNgRunner {    
     public static void main(String[] args) {
     	homeTest();
-    	manageBatchTest();
+    	//manageBatchTest();
     }
     
     private static void homeTest() {

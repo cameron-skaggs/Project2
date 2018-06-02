@@ -22,27 +22,27 @@ public class TestManageBatchServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		manageBatchTest();
+//		manageBatchTest();
 		response.getWriter().append("TestManageBatchServlet");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-	
-    private static void manageBatchTest() {
-    	XmlSuite manageSuite = new XmlSuite();    	
-    	XmlTest manageTest = new XmlTest(manageSuite);
-    	XmlClass manageClass = new XmlClass("testng.ManageClass");
-    	List<XmlClass> manageClasses = Arrays.asList( manageClass );    	
-    	List<XmlSuite> suites = Arrays.asList( manageSuite );
-    	TestNG testng = new TestNG();    	
-    	
-    	manageSuite.setName("Manage Suite"); 
-    	manageTest.setName("Manage Test");
-    	manageTest.setXmlClasses(manageClasses);
-    	testng.setXmlSuites(suites);
-    	testng.run();  
-    }
+//	
+//    private static void manageBatchTest() {
+//    	XmlSuite manageSuite = new XmlSuite();    	
+//    	XmlTest manageTest = new XmlTest(manageSuite);
+//    	XmlClass manageClass = new XmlClass("testng.ManageClass");
+//    	List<XmlClass> manageClasses = Arrays.asList( manageClass );    	
+//    	List<XmlSuite> suites = Arrays.asList( manageSuite );
+//    	TestNG testng = new TestNG();    	
+//    	
+//    	manageSuite.setName("Manage Suite"); 
+//    	manageTest.setName("Manage Test");
+//    	manageTest.setXmlClasses(manageClasses);
+//    	testng.setXmlSuites(suites);
+//    	testng.run();  
+//    }
 
 }
