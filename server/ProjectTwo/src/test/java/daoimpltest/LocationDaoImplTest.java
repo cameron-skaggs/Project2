@@ -1,9 +1,7 @@
 package daoimpltest;
-import java.util.List;
 
 import daoimpl.LocationDaoImpl;
 import junit.framework.TestCase;
-import model.Location;
 
 public class LocationDaoImplTest extends TestCase {
 	LocationDaoImpl dao;
