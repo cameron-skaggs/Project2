@@ -9,10 +9,10 @@ import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
 
 public class TestNgRunner {    
-    public static void main(String[] args) {
-    	homeTest();
-    	//manageBatchTest();
-    }
+//    public static void main(String[] args) {
+//    	homeTest();
+//    	manageBatchTest();
+//    }
     
     private static void homeTest() {
     	XmlSuite homeSuite = new XmlSuite();
