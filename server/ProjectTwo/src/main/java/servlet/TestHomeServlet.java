@@ -25,8 +25,6 @@ public class TestHomeServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("TestHomeServlet");
-		
-		HomeRunner.main(new String[] { "" });
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
