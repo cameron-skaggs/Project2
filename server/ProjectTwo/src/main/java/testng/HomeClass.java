@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import driver.DriverFactory;
 import pom.HomePom;
 
-public class HomeTest {
+public class HomeClass {
 	WebDriver driver;
 	HomePom home;
 	

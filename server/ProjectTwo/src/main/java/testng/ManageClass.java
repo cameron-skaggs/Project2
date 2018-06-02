@@ -19,7 +19,7 @@ import driver.DriverFactory;
 import pom.HomePom;
 import pom.ManagePom;
 
-public class ManageTest {
+public class ManageClass {
 	WebDriver driver;
 	WebDriverWait wait;
 	HomePom home;
@@ -39,91 +39,91 @@ public class ManageTest {
 		home.anchorManage().click();
 	}
 	
-//	@Test(priority=1)
-//	public void importBatch() {
-//		WebElement importBatch = manage.anchorImportBatch();
-//		WebElement x = manage.buttonImportBatchX();
-//		WebElement buttonImport = manage.buttonImport();
-//		WebElement close = manage.buttonImportClose();
-//		WebElement modal = manage.modalImport();
-//		
-//		importBatch.click();
-//		
-//		button(x);
-//		x.click();
-//		
-//		modal(modal, importBatch);		
-//		importBatch.click();
-//		
-//		button(close);		
-//		close.click();
-//		
-//		modal(modal, importBatch);		
-//		importBatch.click();
-//		
-//		button(buttonImport);		
-//		buttonImport.click();
-//		close.click();
-//		
-//		modal(modal, importBatch);
-//	}
-//	
-//	@Test(priority=2)
-//	public void createBatchClose() {
-//		WebElement createBatch = manage.anchorCreateBatch();
-//		WebElement x = manage.buttonCreateBatchX();
-//		WebElement close = manage.buttonCreateBatchClose();
-//		WebElement modal = manage.modalCreateBatch();
-//		
-//		createBatch.click();
-//		
-//		button(x);
-//		x.click();
-//		
-//		modal(modal, createBatch);
-//		createBatch.click();
-//		
-//		button(close);
-//		close.click();
-//		
-//		modal(modal, createBatch);
-//		createBatch.click();
-//	}
-//	
-//	@Test(priority=3, dataProvider="trainingtype")
-//	public void createBatchTrainingType(String type) {
-//		manage.selectTrainingType(type);
-//	}
-//	
-//	@Test(priority=4, dataProvider="skilltype")
-//	public void createBatchSkillType(String skill) {
-//		manage.selectSkillType(skill);
-//	}
-//	
-//	@Test(priority=5, dataProvider="location")
-//	public void createBatchLocation(String state, String location) {
-//		manage.selectLocation(state, location);
-//	}
-//	
-//	@Test(priority=6, dataProvider="trainers")
-//	public void createBatchTrainer(String trainer) {
-//		manage.selectTrainer(trainer);
-//	}
-//	
-//	@Test(priority=7, dataProvider="trainers")
-//	public void createBatchCotrainer(String cotrainer) {
-//		manage.selectCotrainer(cotrainer);
-//	}
-//	
-//	@Test(priority=8)
-//	public void createBatchSavePrepare() {
-//		WebElement close = manage.buttonCreateBatchClose();
-//		WebElement createBatch = manage.anchorCreateBatch();
-//		WebElement modalCreateBatch = manage.modalCreateBatch();
-//
-//		close.click();
-//		modal(modalCreateBatch, createBatch);
-//	}
+	@Test(priority=1)
+	public void importBatch() {
+		WebElement importBatch = manage.anchorImportBatch();
+		WebElement x = manage.buttonImportBatchX();
+		WebElement buttonImport = manage.buttonImport();
+		WebElement close = manage.buttonImportClose();
+		WebElement modal = manage.modalImport();
+		
+		importBatch.click();
+		
+		button(x);
+		x.click();
+		
+		modal(modal, importBatch);		
+		importBatch.click();
+		
+		button(close);		
+		close.click();
+		
+		modal(modal, importBatch);		
+		importBatch.click();
+		
+		button(buttonImport);		
+		buttonImport.click();
+		close.click();
+		
+		modal(modal, importBatch);
+	}
+	
+	@Test(priority=2)
+	public void createBatchClose() {
+		WebElement createBatch = manage.anchorCreateBatch();
+		WebElement x = manage.buttonCreateBatchX();
+		WebElement close = manage.buttonCreateBatchClose();
+		WebElement modal = manage.modalCreateBatch();
+		
+		createBatch.click();
+		
+		button(x);
+		x.click();
+		
+		modal(modal, createBatch);
+		createBatch.click();
+		
+		button(close);
+		close.click();
+		
+		modal(modal, createBatch);
+		createBatch.click();
+	}
+	
+	@Test(priority=3, dataProvider="trainingtype")
+	public void createBatchTrainingType(String type) {
+		manage.selectTrainingType(type);
+	}
+	
+	@Test(priority=4, dataProvider="skilltype")
+	public void createBatchSkillType(String skill) {
+		manage.selectSkillType(skill);
+	}
+	
+	@Test(priority=5, dataProvider="location")
+	public void createBatchLocation(String state, String location) {
+		manage.selectLocation(state, location);
+	}
+	
+	@Test(priority=6, dataProvider="trainers")
+	public void createBatchTrainer(String trainer) {
+		manage.selectTrainer(trainer);
+	}
+	
+	@Test(priority=7, dataProvider="trainers")
+	public void createBatchCotrainer(String cotrainer) {
+		manage.selectCotrainer(cotrainer);
+	}
+	
+	@Test(priority=8)
+	public void createBatchSavePrepare() {
+		WebElement close = manage.buttonCreateBatchClose();
+		WebElement createBatch = manage.anchorCreateBatch();
+		WebElement modalCreateBatch = manage.modalCreateBatch();
+
+		close.click();
+		modal(modalCreateBatch, createBatch);
+	}
 	
 	@Test(priority=9)
 	public void createBatchSavePass() {
@@ -228,36 +228,154 @@ public class ManageTest {
 		modal( modalDeleteBatch, home.anchorHome() );
 	}
 	
-	@Test(priority=14)
-	public void updateBatch() {
-		createBatchSendKeys();
+//	@Test(priority=14)
+//	public void updateBatch() {
+//		createBatchSendKeys();
+//		
+//		WebElement close = manage.buttonUpdateBatchClose();
+//		WebElement update = manage.buttonUpdateBatchUpdate();
+//		WebElement pencil = manage.buttonUpdateBatchPencil();
+//		WebElement modal = manage.modalCreateBatch();
+//		WebElement trainingName = manage.inputTrainingName();
+//		
+//		modal(modal, pencil);
+//		pencil.click();
+//		
+//		modal(modal, close);
+//		close.click();
+//		
+//		modal(modal, pencil);
+//		pencil.click();
+//		
+//		modal(modal, update);
+//		trainingName.sendKeys("Script");
+//		update.click();	
+//		
+//		modal(modal, pencil);
+//	}
+//	
+//	@Test(priority=15)
+//	public void viewTrainees() {
+//		WebElement user = manage.anchorViewTraineesUser();
+//		WebElement x = manage.buttonViewTraineesX();
+//		WebElement active = manage.anchorViewTraineesActive();
+//		WebElement inactive = manage.anchorViewTraineesInactive();
+//		WebElement modal = manage.modalViewTrainees();
+//		
+//		user.click();
+//		
+//		modal(modal, x);
+//		x.click();
+//		
+//		modal(modal, user);
+//		user.click();
+//		
+//		modal(modal, active);
+//		active.click();
+//		
+//		button(inactive);
+//		inactive.click();
+//	}
+//	
+//	@Test(priority=16)
+//	public void addTrainees() {
+//		WebElement addTrainee = manage.anchorAddTrainees();
+//		WebElement x = manage.buttonAddTraineesX();
+//		WebElement close = manage.buttonAddTraineesClose();
+//		WebElement modalAddTrainees = manage.modalAddTrainees();
+//		
+//		addTrainee.click();
+//		
+//		modal(modalAddTrainees, x);
+//		x.click();
+//		
+//		modal(modalAddTrainees, addTrainee);
+//		addTrainee.click();
+//		
+//		modal(modalAddTrainees, close);
+//		close.click();
+//		
+//		modal(modalAddTrainees, addTrainee);
+//		addTrainee.click();
+//		
+//		modal(modalAddTrainees, close);
+//	}
+//	
+//	@Test(priority=17, dataProvider="trainingstatus")
+//	public void addTraineesTrainingStatus(String status) {
+//		manage.selectAddTraineesTrainingStatus(status);
+//	}
+//	
+//	@Test(priority=18)
+//	public void addTraineesFailureFullName() {
+//		WebElement save = manage.inputAddTraineesSave();
+//		save.click();		
+//	}
+//	
+//	@Test(priority=19)
+//	public void addTraineesFailureEmail() {
+//		WebElement fullName = manage.inputAddTraineesFullName();
+//		WebElement save = manage.inputAddTraineesSave();
+//		
+//		fullName.sendKeys("Full Name");
+//		save.click();		
+//	}
+//	
+//	@Test(priority=20)
+//	public void addTraineesFailureTrainingStatus() {
+//		WebElement email = manage.inputAddTraineesEmail();
+//		WebElement save = manage.inputAddTraineesSave();
+//		
+//		email.sendKeys("email@email.com");
+//		save.click();
+//	}
+//	
+//	@Test(priority=21)
+//	public void addTraineesPassMinimum() {
+//		WebElement save = manage.inputAddTraineesSave();
+//		manage.selectAddTraineesTrainingStatus("Signed");
+//		save.click();
+//	}
+//	
+//	@Test(priority=22)
+//	public void addTraineesPassMaximum() {
+//		manage.anchorAddTrainees().click();
+//		addTraineesSendKeys();
+//	}
+	
+	private void addTraineesSendKeys() {
+		WebElement fullName = manage.inputAddTraineesFullName();
+		WebElement email = manage.inputAddTraineesEmail();
+		WebElement skypeId = manage.inputAddTraineesSkypeId();
+		WebElement phone = manage.inputAddTraineesPhone();
+		WebElement college = manage.inputAddTraineesCollege();
+		WebElement degree = manage.inputAddTraineesDegree();
+		WebElement major = manage.inputAddTraineesMajor();
+		WebElement recruiterName = manage.inputAddTraineesRecruiterName();
+		WebElement techScreenerName = manage.inputAddTraineesTechScreenerName();
+		WebElement projectCompletion = manage.inputAddTraineesProjectCompletion();
+		WebElement profileUrl = manage.inputAddTraineesProfileUrl();
+		WebElement save = manage.inputAddTraineesSave();
 		
-		WebElement close = manage.buttonUpdateBatchClose();
-		WebElement update = manage.buttonUpdateBatchUpdate();
-		WebElement pencil = manage.buttonUpdateBatchPencil();
-		WebElement modal = manage.modalCreateBatch();
-		WebElement trainingName = manage.inputTrainingName();
-		
-		modal(modal, pencil);
-		pencil.click();
-		
-		modal(modal, close);
-		close.click();
-		
-		modal(modal, pencil);
-		pencil.click();
-		
-		modal(modal, update);
-		trainingName.sendKeys("Script");
-		update.click();	
-		
-		modal(modal, pencil);
+		fullName.sendKeys("Full Name");
+		email.sendKeys("email@email.com");
+		skypeId.sendKeys("Skypeid");
+		phone.sendKeys("(123)-456-7890");
+		college.sendKeys("College");
+		degree.sendKeys("Degree");
+		major.sendKeys("Major");
+		recruiterName.sendKeys("Recruiter Name");
+		techScreenerName.sendKeys("Tech Screener Name");
+		projectCompletion.sendKeys("0%");
+		profileUrl.sendKeys("http://www.example.com/revature");
+		manage.selectAddTraineesTrainingStatus("Signed");
+		save.click();
 	}
 	
-//	@AfterSuite
-//	public void afterSuite() {
-//		driver.close();
-//	}
+	@AfterSuite
+	public void afterSuite() {
+		driver.close();
+	}
 	
 	@DataProvider(name="trainingtype")
 	public Object[][] trainingType(){

@@ -38,6 +38,18 @@ anchor "Add Trainee"
 input "Save"
 does not save trainee
 
+Bug 6
+-------------------------------------------------------------------------------------
+https://dev-caliber.revature.tech/caliber/#/trainer/manage
+home
+anchor "Manage Batch"
+assume batch exists
+anchor class="glyphicon glyphicon-user"
+anchor "Add Trainee"
+input id="traineeName", placeholder="http://www.example.com/revature"
+input id="traineeName", placeholder="Name"
+duplicate id
+
 =============================================================================================
 Andrew Ahn, Associate
 William Gentry, Trainer

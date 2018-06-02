@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [pomhome]">
-  <listeners>
-    <listener class-name="listener.Listener"/>
-  </listeners>
-  <test name="home">
+<suite name="Failed suite [Home Suite]">
+  <test name="Home Test">
     <classes>
-      <class name="testng.HomeTest"/>
+      <class name="testng.HomeClass"/>
     </classes>
-  </test> <!-- home -->
-</suite> <!-- Failed suite [pomhome] -->
+  </test> <!-- Home Test -->
+  <test name="Home Test(failed)">
+    <classes>
+      <class name="testng.HomeClass">
+        <methods>
+          <include name="clickReports"/>
+          <include name="clickHome"/>
+          <include name="afterSuite"/>
+          <include name="clickAssessBatch"/>
+          <include name="clickManageBatch"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testng.HomeClass -->
+    </classes>
+  </test> <!-- Home Test(failed) -->
+</suite> <!-- Failed suite [Home Suite] -->

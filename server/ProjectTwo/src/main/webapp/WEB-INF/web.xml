@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
   <display-name>ProjectTwo</display-name>
+  
   <filter>
     <filter-name>Cors</filter-name>
     <filter-class>filter.Cors</filter-class>
@@ -12,34 +13,80 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
   <servlet>
-    <description></description>
-    <display-name>HomeServlet</display-name>
-    <servlet-name>HomeServlet</servlet-name>
-    <servlet-class>servlet.HomeServlet</servlet-class>
+  	<display-name>ResultAssessBatchServlet</display-name>
+  	<servlet-name>ResultAssessBatchServlet</servlet-name>
+  	<servlet-class>servlet.ResultAssessBatchServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<display-name>ResultHomeServlet</display-name>
+  	<servlet-name>ResultHomeServlet</servlet-name>
+  	<servlet-class>servlet.ResultHomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<display-name>ResultManageBatchServlet</display-name>
+  	<servlet-name>ResultManageBatchServlet</servlet-name>
+  	<servlet-class>servlet.ResultManageBatchServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<display-name>ResultReportsServlet</display-name>
+  	<servlet-name>ResultReportsServlet</servlet-name>
+  	<servlet-class>servlet.ResultReportsServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<display-name>TestAssessBatchServlet</display-name>
+  	<servlet-name>TestAssessBatchServlet</servlet-name>
+  	<servlet-class>servlet.TestAssessBatchServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<display-name>TestHomeServlet</display-name>
+  	<servlet-name>TestHomeServlet</servlet-name>
+  	<servlet-class>servlet.TestHomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<display-name>TestManageBatchServlet</display-name>
+  	<servlet-name>TestManageBatchServlet</servlet-name>
+  	<servlet-class>servlet.TestManageBatchServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<display-name>TestReportsServlet</display-name>
+  	<servlet-name>TestReportsServlet</servlet-name>
+  	<servlet-class>servlet.TestReportsServlet</servlet-class>
+  </servlet>
+  
   <servlet-mapping>
-    <servlet-name>HomeServlet</servlet-name>
-    <url-pattern>/HomeServlet</url-pattern>
+  	<servlet-name>ResultAssessBatchServlet</servlet-name>
+  	<url-pattern>/ResultAssessBatchServlet</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ManageServlet</display-name>
-    <servlet-name>ManageServlet</servlet-name>
-    <servlet-class>servlet.ManageServlet</servlet-class>
-  </servlet>
   <servlet-mapping>
-    <servlet-name>ManageServlet</servlet-name>
-    <url-pattern>/ManageServlet</url-pattern>
+  	<servlet-name>ResultHomeServlet</servlet-name>
+  	<url-pattern>/ResultHomeServlet</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ManageCreateServlet</display-name>
-    <servlet-name>ManageCreateServlet</servlet-name>
-    <servlet-class>servlet.ManageCreateServlet</servlet-class>
-  </servlet>
   <servlet-mapping>
-    <servlet-name>ManageCreateServlet</servlet-name>
-    <url-pattern>/ManageCreateServlet</url-pattern>
+  	<servlet-name>ResultManageBatchServlet</servlet-name>
+  	<url-pattern>/ResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ResultReportsServlet</servlet-name>
+  	<url-pattern>/ResultReportsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>TestAssessBatchServlet</servlet-name>
+  	<url-pattern>/TestAssessBatchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestHomeServlet</servlet-name>
+  	<url-pattern>/TestHomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestManageBatchServlet</servlet-name>
+  	<url-pattern>/TestManageBatchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestReportsServlet</servlet-name>
+  	<url-pattern>/TestReportsServlet</url-pattern>
   </servlet-mapping>
 </web-app>

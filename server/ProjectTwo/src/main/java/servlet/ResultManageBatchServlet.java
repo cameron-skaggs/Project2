@@ -11,10 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class HomeServlet extends HttpServlet {
+public class ResultManageBatchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public HomeServlet() {
+    public ResultManageBatchServlet() {
         super();
     }
 
@@ -23,7 +23,7 @@ public class HomeServlet extends HttpServlet {
 		
 		ObjectMapper mapper = new ObjectMapper();
 		List<String> results = new ArrayList<String>();
-		results.add("home suite results");
+		results.add("manage suite results");
 		response.getWriter().write(
 				mapper.writeValueAsString(results));
 	}
@@ -31,5 +31,5 @@ public class HomeServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-	
+
 }
