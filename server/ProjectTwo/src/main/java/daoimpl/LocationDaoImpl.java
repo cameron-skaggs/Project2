@@ -33,6 +33,5 @@ public class LocationDaoImpl implements LocationDao {
 			HibernateUtil.shutdownSession(session);
 		}
 		return null;
-		
 	}
 }
