@@ -15,27 +15,6 @@
   </welcome-file-list>
   
   <servlet>
-  	<display-name>ResultAssessBatchServlet</display-name>
-  	<servlet-name>ResultAssessBatchServlet</servlet-name>
-  	<servlet-class>servlet.ResultAssessBatchServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<display-name>ResultHomeServlet</display-name>
-  	<servlet-name>ResultHomeServlet</servlet-name>
-  	<servlet-class>servlet.ResultHomeServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<display-name>ResultManageBatchServlet</display-name>
-  	<servlet-name>ResultManageBatchServlet</servlet-name>
-  	<servlet-class>servlet.ResultManageBatchServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<display-name>ResultReportsServlet</display-name>
-  	<servlet-name>ResultReportsServlet</servlet-name>
-  	<servlet-class>servlet.ResultReportsServlet</servlet-class>
-  </servlet>
-  
-  <servlet>
   	<display-name>TestAssessBatchServlet</display-name>
   	<servlet-name>TestAssessBatchServlet</servlet-name>
   	<servlet-class>servlet.TestAssessBatchServlet</servlet-class>
@@ -55,23 +34,6 @@
   	<servlet-name>TestReportsServlet</servlet-name>
   	<servlet-class>servlet.TestReportsServlet</servlet-class>
   </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>ResultAssessBatchServlet</servlet-name>
-  	<url-pattern>/ResultAssessBatchServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>ResultHomeServlet</servlet-name>
-  	<url-pattern>/ResultHomeServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>ResultManageBatchServlet</servlet-name>
-  	<url-pattern>/ResultServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>ResultReportsServlet</servlet-name>
-  	<url-pattern>/ResultReportsServlet</url-pattern>
-  </servlet-mapping>
   
   <servlet-mapping>
   	<servlet-name>TestAssessBatchServlet</servlet-name>
