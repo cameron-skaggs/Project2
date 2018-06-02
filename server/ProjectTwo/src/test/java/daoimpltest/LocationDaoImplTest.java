@@ -13,8 +13,8 @@ public class LocationDaoImplTest extends TestCase {
 	}
 
 	public void testGetAllLocations() {
-		List<Location> locations = dao.getAllLocations();
-		System.out.println(locations);
+//		List<Location> locations = dao.getAllLocations();
+//		System.out.println(locations);
 	}
 
 }
