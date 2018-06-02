@@ -27,6 +27,7 @@ public class HibernateUtil {
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		}
+
 		// configure() looks in src/main/resources for the hibernate.cfg.xml file by default
 		return cfg.configure().buildSessionFactory();
 	}
@@ -42,6 +43,8 @@ public class HibernateUtil {
 	}
 	
 	public static void shutdownSession(Session session) {
+		System.out.println(session);
+		System.out.println("shutdown session");
 		if (session != null) {
 			session.close();
 			System.out.println("Session successfully closed: " + !session.isOpen());
