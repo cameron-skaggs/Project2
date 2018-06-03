@@ -1,5 +1,9 @@
 package pom;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -131,12 +135,31 @@ public class ManagePom extends Pom {
 	}
 	
 	/* Delete Batch */
-	public WebElement buttonDeleteBatchRedCross() {
-		String xpath = "//*[@id=\"manage\"]/div[2]/div/div/table/tbody/tr/td[13]/a";
-		return driver.findElement(By.xpath(xpath));
-	}
 	
-	public WebElement buttonDeleteBatchX() {
+//	public WebElement buttonDeleteBatchRedCross() {
+//		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd, YYYY");
+//		String now = formatter.format(LocalDate.now());
+//		
+//		String xpath = "//*[@id=\"manage\"]/div[2]/div/div/table/tbody/tr";
+//
+//		List<WebElement> trows = driver.findElements(By.xpath(xpath));
+//		
+//		
+//		for(WebElement row: trows) {
+//			List<WebElement> tds = row.findElements(By.tagName("td"));
+//			
+//			for(WebElement td: tds) {
+//				if( td.getText().equals(now) )
+//					break;
+//			}
+//			
+//			return row;
+//		}
+//		
+//		
+//	}
+	
+	public WebElement buttonDeleteBatchConfirmX() {
 		String xpath = "//*[@id=\"deleteBatchModal\"]/div/div/div[1]/button";
 		return driver.findElement(By.xpath(xpath));
 	}
@@ -153,6 +176,26 @@ public class ManagePom extends Pom {
 	
 	public WebElement modalDeleteBatch() {
 		String xpath = "//*[@id=\"deleteBatchModal\"]";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement buttonDeleteBatchRedCrossError() {
+		String xpath = "//*[@id=\\\"manage\\\"]/div[2]/div/div/table/tbody/tr/td[13]/a";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement buttonDeleteBatchErrorX() {
+		String xpath = "";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement buttonDeleteBatchErrorOk() {
+		String xpath = "";
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement modalDeleteBatchError() {
+		String xpath = "//*[@id=\"deleteBatchErrorModal\"]";
 		return driver.findElement(By.xpath(xpath));
 	}
 	
