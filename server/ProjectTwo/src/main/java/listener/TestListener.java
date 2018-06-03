@@ -38,9 +38,11 @@ public class TestListener implements ITestListener {
 	private void setTestResult(ITestResult result) {
 		long start = result.getStartMillis();
 		long end = result.getEndMillis();
-		testResult.setMilli(end, start);
-		testResult.setStatus(result.getStatus());
 		testResult.setName(result.getName());
+		testResult.setStatus(result.getStatus());
+		testResult.setMilli(end, start);
+		testResult.setParameters(result.getParameters());
+		
 	}
 
 	@Override

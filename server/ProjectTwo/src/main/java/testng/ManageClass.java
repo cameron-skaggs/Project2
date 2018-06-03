@@ -36,7 +36,7 @@ public class ManageClass {
 		today = LocalDate.now();
 		format = DateTimeFormatter.ofPattern("MM dd yyyy");
 		
-		home.anchorManage().click();
+		home.listNavbar("Manage Batch");
 	}
 	
 	@Test(priority=1)
@@ -225,7 +225,8 @@ public class ManageClass {
 		modal(modalDeleteBatch, delete);
 		delete.click();
 		
-		modal( modalDeleteBatch, home.anchorHome() );
+		modal( modalDeleteBatch, delete );
+		home.listNavbar("Home");
 	}
 	
 //	@Test(priority=14)
@@ -521,7 +522,7 @@ public class ManageClass {
 	}
 	
 	private void createBatchSendKeys() {
-		home.anchorManage().click();
+		home.listNavbar("Manage Batch");
 		manage.anchorCreateBatch().click();
 		
 		String location = "Revature LLC, 11730 Plaza America Drive, 2nd Floor Reston VA 20190";

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
  
 import driver.DriverFactory;
@@ -27,34 +28,15 @@ public class HomeClass {
 		assertEquals("Caliber | Performance Management", home.title());
 	}
 	
-	@Test(priority=2)
-	public void clickHome() {
-		home.anchorHome().click();
-		assertEquals("Caliber | Performance Management", home.title());
+	@Test(priority=2, dataProvider="navbar")
+	public void clickNavbar(String string) {
+		home.listNavbar(string);
 	}
 	
-	@Test(priority=3)
-	public void clickManageBatch() {
-		home.anchorManage().click();
-		String xpath = "//*[@id=\"manage\"]/div[1]/div/div/ul/li[2]/a";
-		String text = elementTrim(xpath);
-		assertEquals("ImportBatch", text);
-	}
-	
-	@Test(priority=4)
-	public void clickAssessBatch() {
-		home.anchorAssess().click();
-		String xpath = "/html/body/div/ui-view/ui-view/div[1]/div/div[2]/ul[1]/li[3]/a";
-		String text = elementTrim(xpath);
-		assertEquals("CreateAssessment", text);
-	}
-	
-	@Test(priority=5)
-	public void clickReports() {
-		home.anchorReports().click();
-		String xpath = "/html/body/div/ui-view/nav/div/ul[2]/li[4]/a";
-		String text = elementTrim(xpath);
-		assertEquals("Reports", text);
+	@Test(priority=3, dataProvider="settings")
+	public void clickSettings(String settings, String item) {
+		home.listNavbar(settings);
+		home.listSettings(item);
 	}
 	
 	public String elementTrim(String xpath) {
@@ -66,5 +48,26 @@ public class HomeClass {
 	@AfterSuite
 	public void afterSuite() {
 		driver.quit();
+	}
+	
+	@DataProvider(name="navbar")
+	public Object[][] navbar(){
+		return new Object[][] {
+			new Object[] { "Home" },
+			new Object[] { "Manage Batch" },
+			new Object[] { "Assess Batch" },
+			new Object[] { "Quality Audit" },
+			new Object[] { "Panel" },
+			new Object[] { "Reports" }
+		};
+	}
+	
+	@DataProvider(name="settings")
+	public Object[][] settings(){
+		return new Object[][] {
+			new Object[] { "Settings", "Trainers" },
+			new Object[] { "Settings", "Locations" },
+			new Object[] { "Settings", "Category" }
+		};
 	}
 }
