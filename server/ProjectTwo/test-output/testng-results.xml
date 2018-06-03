@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14959" started-at="2018-06-02T20:39:06Z" finished-at="2018-06-02T20:39:21Z">
+  <suite name="Default suite" duration-ms="11318" started-at="2018-06-02T23:21:07Z" finished-at="2018-06-02T23:21:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14959" started-at="2018-06-02T20:39:06Z" finished-at="2018-06-02T20:39:21Z">
+    <test name="Default test" duration-ms="11318" started-at="2018-06-02T23:21:07Z" finished-at="2018-06-02T23:21:18Z">
       <class name="testng.HomeClass">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testng.HomeClass@3bfdc050]" name="beforeSuite" is-config="true" duration-ms="8658" started-at="2018-06-02T16:38:58Z" finished-at="2018-06-02T16:39:06Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testng.HomeClass@3bfdc050]" name="beforeSuite" is-config="true" duration-ms="17330" started-at="2018-06-02T19:20:50Z" finished-at="2018-06-02T19:21:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="goHome()[pri:1, instance:testng.HomeClass@3bfdc050]" name="goHome" duration-ms="5575" started-at="2018-06-02T16:39:06Z" finished-at="2018-06-02T16:39:12Z">
+        <test-method status="PASS" signature="goHome()[pri:1, instance:testng.HomeClass@3bfdc050]" name="goHome" duration-ms="6143" started-at="2018-06-02T19:21:07Z" finished-at="2018-06-02T19:21:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method status="PASS" signature="clickHome()[pri:2, instance:testng.HomeClass@3bfdc050]" name="clickHome" duration-ms="2274" started-at="2018-06-02T16:39:12Z" finished-at="2018-06-02T16:39:14Z">
+        <test-method status="PASS" signature="clickHome()[pri:2, instance:testng.HomeClass@3bfdc050]" name="clickHome" duration-ms="2752" started-at="2018-06-02T19:21:13Z" finished-at="2018-06-02T19:21:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickHome -->
-        <test-method status="PASS" signature="clickManageBatch()[pri:3, instance:testng.HomeClass@3bfdc050]" name="clickManageBatch" duration-ms="5987" started-at="2018-06-02T16:39:14Z" finished-at="2018-06-02T16:39:20Z">
+        <test-method status="PASS" signature="clickManageBatch()[pri:3, instance:testng.HomeClass@3bfdc050]" name="clickManageBatch" duration-ms="1079" started-at="2018-06-02T19:21:16Z" finished-at="2018-06-02T19:21:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickManageBatch -->
-        <test-method status="PASS" signature="clickAssessBatch()[pri:4, instance:testng.HomeClass@3bfdc050]" name="clickAssessBatch" duration-ms="390" started-at="2018-06-02T16:39:20Z" finished-at="2018-06-02T16:39:21Z">
+        <test-method status="PASS" signature="clickAssessBatch()[pri:4, instance:testng.HomeClass@3bfdc050]" name="clickAssessBatch" duration-ms="632" started-at="2018-06-02T19:21:17Z" finished-at="2018-06-02T19:21:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAssessBatch -->
-        <test-method status="PASS" signature="clickReports()[pri:5, instance:testng.HomeClass@3bfdc050]" name="clickReports" duration-ms="657" started-at="2018-06-02T16:39:21Z" finished-at="2018-06-02T16:39:21Z">
+        <test-method status="PASS" signature="clickReports()[pri:5, instance:testng.HomeClass@3bfdc050]" name="clickReports" duration-ms="647" started-at="2018-06-02T19:21:18Z" finished-at="2018-06-02T19:21:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickReports -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testng.HomeClass@3bfdc050]" name="afterSuite" is-config="true" duration-ms="1015" started-at="2018-06-02T16:39:21Z" finished-at="2018-06-02T16:39:22Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testng.HomeClass@3bfdc050]" name="afterSuite" is-config="true" duration-ms="1259" started-at="2018-06-02T19:21:19Z" finished-at="2018-06-02T19:21:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
