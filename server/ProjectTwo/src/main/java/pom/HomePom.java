@@ -1,5 +1,7 @@
 package pom;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,24 +13,25 @@ public class HomePom extends Pom {
 		super(driver);
 		driver.get(URL);
 	}
-	
-	public WebElement anchorHome() {
-		return driver.findElement(By.linkText("Home"));
+
+	public void listNavbar(String string) {
+		List<WebElement> list = driver.findElements(By.tagName("li"));
+		
+		filter(list, string);
 	}
 	
-	public WebElement anchorManage() {
-		return driver.findElement(By.linkText("Manage Batch"));
+	public void listSettings(String string) {
+		List<WebElement> list = driver.findElements(By.tagName("li"));
+		
+		filter(list, string);
 	}
 	
-	public WebElement anchorAssess() {
-		return driver.findElement(By.linkText("Assess Batch"));
+	private void filter(List<WebElement> list, String string) {
+		WebElement item = list.stream()
+				.filter( element -> element.getText().equals(string))
+				.findAny()
+				.orElse(null);
+		
+		item.click();
 	}
-	
-	public WebElement anchorReports() {
-		return driver.findElement(By.linkText("Reports"));
-	}
-	
-	public WebElement anchorGuide() {
-		return driver.findElement(By.linkText("user guide"));
-	}	
 }

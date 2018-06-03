@@ -1,17 +1,20 @@
 package listener;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class TestResult {
-	private List<Long> millis;
 	private List<String> names;
 	private List<String> statuses;
-	
+	private List<String> parameters;
+	private List<Long> millis;
+
 	public TestResult() {
-		this.millis = new ArrayList<>();
 		this.names = new ArrayList<>();
 		this.statuses = new ArrayList<>();
+		this.parameters = new ArrayList<>();
+		this.millis = new ArrayList<>();
 	}
 
 	public List<Long> getMillis() {
@@ -36,10 +39,19 @@ public class TestResult {
 
 	public void setStatuses(List<String> statuses) {
 		this.statuses = statuses;
+	}	
+	
+	public List<String> getParameters() {
+		return parameters;
+	}
+
+	public void setParameters(Object[] objects) {
+		String string = Arrays.toString(objects);
+		this.parameters.add(string);
 	}
 
 	public void setMilli(long start, long end) {
-		Long milli = new Long( end - start );
+		Long milli = new Long( start - end );
 		this.millis.add(milli);
 	}
 	
