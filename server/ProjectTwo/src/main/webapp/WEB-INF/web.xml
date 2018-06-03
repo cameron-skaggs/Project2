@@ -20,6 +20,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Front</servlet-name>
-    <url-pattern>*.dude</url-pattern>
+    <url-pattern>*.sabotage</url-pattern>
   </servlet-mapping>
 </web-app>
