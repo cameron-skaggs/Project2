@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>ProjectTwo</display-name>
+  
+  <filter>
+    <filter-name>Cors</filter-name>
+    <filter-class>filter.Cors</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Cors</filter-name>
+    <url-pattern>*.cors</url-pattern>
+  </filter-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<display-name>TestAssessBatchServlet</display-name>
+  	<servlet-name>TestAssessBatchServlet</servlet-name>
+  	<servlet-class>servlet.TestAssessBatchServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<display-name>TestHomeServlet</display-name>
+  	<servlet-name>TestHomeServlet</servlet-name>
+  	<servlet-class>servlet.TestHomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<display-name>TestManageBatchServlet</display-name>
+  	<servlet-name>TestManageBatchServlet</servlet-name>
+  	<servlet-class>servlet.TestManageBatchServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<display-name>TestReportsServlet</display-name>
+  	<servlet-name>TestReportsServlet</servlet-name>
+  	<servlet-class>servlet.TestReportsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>TestAssessBatchServlet</servlet-name>
+  	<url-pattern>/TestAssessBatchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestHomeServlet</servlet-name>
+  	<url-pattern>/TestHomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestManageBatchServlet</servlet-name>
+  	<url-pattern>/TestManageBatchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestReportsServlet</servlet-name>
+  	<url-pattern>/TestReportsServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

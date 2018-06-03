@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11390" started-at="2018-06-03T15:47:42Z" finished-at="2018-06-03T15:47:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11390" started-at="2018-06-03T15:47:42Z" finished-at="2018-06-03T15:47:54Z">
+      <class name="testng.HomeClass">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testng.HomeClass@5e3a8624]" name="beforeSuite" is-config="true" duration-ms="4134" started-at="2018-06-03T11:47:38Z" finished-at="2018-06-03T11:47:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="goHome()[pri:1, instance:testng.HomeClass@5e3a8624]" name="goHome" duration-ms="3957" started-at="2018-06-03T11:47:42Z" finished-at="2018-06-03T11:47:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="clickNavbar(java.lang.String)[pri:2, instance:testng.HomeClass@5e3a8624]" name="clickNavbar" duration-ms="1906" started-at="2018-06-03T11:47:46Z" data-provider="navbar" finished-at="2018-06-03T11:47:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNavbar -->
+        <test-method status="PASS" signature="clickNavbar(java.lang.String)[pri:2, instance:testng.HomeClass@5e3a8624]" name="clickNavbar" duration-ms="489" started-at="2018-06-03T11:47:48Z" data-provider="navbar" finished-at="2018-06-03T11:47:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manage Batch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNavbar -->
+        <test-method status="PASS" signature="clickNavbar(java.lang.String)[pri:2, instance:testng.HomeClass@5e3a8624]" name="clickNavbar" duration-ms="1102" started-at="2018-06-03T11:47:49Z" data-provider="navbar" finished-at="2018-06-03T11:47:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Assess Batch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNavbar -->
+        <test-method status="PASS" signature="clickNavbar(java.lang.String)[pri:2, instance:testng.HomeClass@5e3a8624]" name="clickNavbar" duration-ms="804" started-at="2018-06-03T11:47:50Z" data-provider="navbar" finished-at="2018-06-03T11:47:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Quality Audit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNavbar -->
+        <test-method status="PASS" signature="clickNavbar(java.lang.String)[pri:2, instance:testng.HomeClass@5e3a8624]" name="clickNavbar" duration-ms="328" started-at="2018-06-03T11:47:51Z" data-provider="navbar" finished-at="2018-06-03T11:47:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Panel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNavbar -->
+        <test-method status="PASS" signature="clickNavbar(java.lang.String)[pri:2, instance:testng.HomeClass@5e3a8624]" name="clickNavbar" duration-ms="413" started-at="2018-06-03T11:47:51Z" data-provider="navbar" finished-at="2018-06-03T11:47:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Reports]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNavbar -->
+        <test-method status="PASS" signature="clickSettings(java.lang.String, java.lang.String)[pri:3, instance:testng.HomeClass@5e3a8624]" name="clickSettings" duration-ms="966" started-at="2018-06-03T11:47:51Z" data-provider="settings" finished-at="2018-06-03T11:47:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Settings]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trainers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSettings -->
+        <test-method status="PASS" signature="clickSettings(java.lang.String, java.lang.String)[pri:3, instance:testng.HomeClass@5e3a8624]" name="clickSettings" duration-ms="835" started-at="2018-06-03T11:47:52Z" data-provider="settings" finished-at="2018-06-03T11:47:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Settings]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Locations]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSettings -->
+        <test-method status="PASS" signature="clickSettings(java.lang.String, java.lang.String)[pri:3, instance:testng.HomeClass@5e3a8624]" name="clickSettings" duration-ms="534" started-at="2018-06-03T11:47:53Z" data-provider="settings" finished-at="2018-06-03T11:47:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Settings]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Category]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSettings -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testng.HomeClass@5e3a8624]" name="afterSuite" is-config="true" duration-ms="810" started-at="2018-06-03T11:47:54Z" finished-at="2018-06-03T11:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testng.HomeClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
