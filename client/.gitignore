@@ -1,7 +1,15 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+<<<<<<< HEAD
+# package-lock is tooooo long
+package-lock.json
+
+# compiled output
+
+=======
 # compiled output
 #/dist
+>>>>>>> 271fa764a7ec9a38ef560d481f24f7e9315ae70e
 /tmp
 /out-tsc
 

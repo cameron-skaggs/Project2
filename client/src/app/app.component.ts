@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,23 +7,25 @@ import { Component } from '@angular/core'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'to the Testing Application'
+  
+  title = 'to the Testing Application';
 
-  constructor(){ }
+  //constructor() {}
 
-  clickHome(){
-    alert('click home')
-  }
 
-  clickManageCreate(){
-    alert('click manage create')
-  }
+  // runHomeTest = function() {
+  //   // this.router.navigateByUrl('/hometest');
+  // }
 
-  clickManage(){
-    alert('click manage')
-  }
+  // runManageCreateTest() {
 
-  clickManageYear(){
-    alert('click manage year')
-  }
+  // }
+
+  // runManageTest() {
+
+  // }
+
+  // runManageYearTest() {
+
+  // }
 }
