@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Dispatcher {
 	public static void dispatch(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {
+		System.out.println(request.getRequestURI());
 		switch(request.getRequestURI()) {
 		case "/ProjectTwo/TestHomeServlet.do":
 			Service.home(request, response);
