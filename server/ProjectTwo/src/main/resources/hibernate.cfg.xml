@@ -28,10 +28,10 @@
 		<!-- Tells Hibernate the location of the ehcache.xml configuration file -->
 		<property name="net.sf.ehcache.configurationResourceName">/ehcache.xml</property>
 		
-		<mapping class="modal.Location"></mapping>
-		<mapping class="modal.Skill"></mapping>
-		<mapping class="modal.Trainers"></mapping>
-		<mapping class="modal.TrainingType"></mapping>
-		<mapping class="modal.Years"></mapping>
+		<mapping class="model.Location"></mapping>
+		<mapping class="model.Skill"></mapping>
+		<mapping class="model.Trainers"></mapping>
+		<mapping class="model.TrainingType"></mapping>
+		<mapping class="model.Years"></mapping>
 	</session-factory>
 </hibernate-configuration>

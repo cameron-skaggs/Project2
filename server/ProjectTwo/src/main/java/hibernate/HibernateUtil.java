@@ -21,6 +21,8 @@ public class HibernateUtil {
 			props.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("hibernate.properties"));
 			
 			// Set the properties to the Configuration
+			System.out.println("URL " + props.getProperty("hibernate.connection.url"));
+			System.out.println("User Name " + props.getProperty("hibernate.connection.username"));
 			cfg.setProperties(props);
 		} catch (FileNotFoundException fnfe) {
 			fnfe.printStackTrace();
@@ -29,10 +31,12 @@ public class HibernateUtil {
 		}
 
 		// configure() looks in src/main/resources for the hibernate.cfg.xml file by default
+		System.out.println("Returning configure " + cfg );
 		return cfg.configure().buildSessionFactory();
 	}
 	
 	public static SessionFactory getSessionFactory() {
+		System.out.println("Session Factory " + sessionFactory);
 		return sessionFactory;
 	}
 	

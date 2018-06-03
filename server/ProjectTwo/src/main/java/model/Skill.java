@@ -3,7 +3,9 @@ package model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Cache;
@@ -15,13 +17,18 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 public class Skill {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SKILL_SEQ")
+	@SequenceGenerator(name="SKILL_SEQ", sequenceName="SKILL_SEQ", allocationSize=1)
 	@Column(name = "SKILL_ID")
 	private int id;
 
 	@Column(name = "SKILL_NAME")
 	private String name;
 
+	public Skill(String name) {
+		super();
+		this.name = name;
+	}
 	public Skill(int id, String name) {
 		super();
 		this.id = id;
