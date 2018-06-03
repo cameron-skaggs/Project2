@@ -9,16 +9,16 @@ import javax.servlet.http.HttpServletResponse;
 public class Dispatcher {
 	public static void dispatch(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {
 		switch(request.getRequestURI()) {
-		case "/ProjectTwo/TestHomeServlet.dude":
+		case "/ProjectTwo/TestHomeServlet.sabotage":
 			Service.home(request, response);
 			break;
-		case "/ProjectTwo/TestManageBatchServlet.dude":
+		case "/ProjectTwo/TestManageBatchServlet.sabotage":
 			Service.manageBatch(request, response);
 			break;
-		case "/ProjectTwo/TestAssessBatchServlet.dude":
+		case "/ProjectTwo/TestAssessBatchServlet.sabotage":
 			Service.assessBatch(request, response);
 			break;
-		case "/ProjectTwo/TestReportsServlet.dude":
+		case "/ProjectTwo/TestReportsServlet.sabotage":
 			Service.reports(request, response);
 			break;
 		default:
