@@ -48,7 +48,7 @@ public class Service {
 	}
 	
 	public static void error(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("index.jsp");
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 	
     public static TestResult test(String name) {

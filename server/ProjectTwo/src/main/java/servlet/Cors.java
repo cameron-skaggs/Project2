@@ -21,7 +21,6 @@ public class Cors implements Filter{
 			throws IOException, ServletException {
 		// Cast the ServletRequest to an HttpServletRequest in order to get the HTTP Method attached with the request
 		HttpServletRequest httpRequest = (HttpServletRequest) request;
-		System.out.println("CORSFilter HTTP Request: " + httpRequest.getMethod());
 		
 		// Authorize domain(s) to consume the content
 		/*
