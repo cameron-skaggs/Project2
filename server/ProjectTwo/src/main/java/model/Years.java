@@ -3,7 +3,9 @@ package model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Cache;
@@ -15,7 +17,8 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 public class Years {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="YEARS_SEQ")
+	@SequenceGenerator(name="YEARS_SEQ", sequenceName="YEARS_SEQ", allocationSize=1)
 	@Column(name="YEAR_ID")
 	private int id;
 	
