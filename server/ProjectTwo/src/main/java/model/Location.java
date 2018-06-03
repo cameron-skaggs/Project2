@@ -17,7 +17,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 public class Location {
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="LOCATION_SEQ")
-	@SequenceGenerator(name="LOCATION_SEQUENCE", sequenceName="LOCATION_SEQ", allocationSize=1)
+	@SequenceGenerator(name="LOCATION_SEQ", sequenceName="LOCATION_SEQ", allocationSize=1)
 	@Column(name = "LOCATION_ID")
 	private int id;
 
