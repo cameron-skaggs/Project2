@@ -14,6 +14,11 @@ import org.testng.xml.XmlClass;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import listener.TestListener;
+import listener.TestResult;
+
 public class TestManageBatchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -22,27 +27,18 @@ public class TestManageBatchServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		manageBatchTest();
-		response.getWriter().append("TestManageBatchServlet");
+		TestResult testResult = Util.test("manage");
+		
+		response.setContentType("application/json");
+		
+		ObjectMapper mapper = new ObjectMapper();
+		response.getWriter().write(
+				mapper.writeValueAsString(testResult));
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
 	
-    private static void manageBatchTest() {
-    	XmlSuite manageSuite = new XmlSuite();    	
-    	XmlTest manageTest = new XmlTest(manageSuite);
-    	XmlClass manageClass = new XmlClass("testng.ManageClass");
-    	List<XmlClass> manageClasses = Arrays.asList( manageClass );    	
-    	List<XmlSuite> suites = Arrays.asList( manageSuite );
-    	TestNG testng = new TestNG();    	
-    	
-    	manageSuite.setName("Manage Suite"); 
-    	manageTest.setName("Manage Test");
-    	manageTest.setXmlClasses(manageClasses);
-    	testng.setXmlSuites(suites);
-    	testng.run();  
-    }
 
 }
