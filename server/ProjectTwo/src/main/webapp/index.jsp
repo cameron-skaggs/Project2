@@ -4,10 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Caliber Test Automation</title>
 </head>
 <body>
-<h1>ProjectTwo</h1>
-<p>this is a paragraph</p>
+<h1>ProjectTwo: Caliber Test Automation</h1>
+<a href='TestHomeServlet.do'>Test Home</a>
+<a href='TestManageBatchServlet.do'>Test Manage Batch</a>
+<a href='TestAssessBatchServlet.do'>Test Assess Batch</a>
+<a href='TestReportsServlet.do'>Test Reports</a>
 </body>
 </html>

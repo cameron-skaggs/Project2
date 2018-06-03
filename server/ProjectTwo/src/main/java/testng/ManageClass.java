@@ -1,10 +1,10 @@
 package testng;
 
-import static org.testng.Assert.assertEquals;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -140,8 +140,8 @@ public class ManageClass {
 		manage.selectTrainingType("Revature");
 		manage.selectSkillType("J2EE");
 		manage.selectLocation("VA", location);
-		manage.selectTrainer("123");
-		manage.selectCotrainer("123");
+		manage.selectTrainer("Patrick Walsh");
+		manage.selectCotrainer("Dan Pickles");
 		manage.inputStartDate().sendKeys("04/16/2018");
 		manage.inputEndDate().sendKeys("07/16/2017");
 		manage.inputGoodGrade().sendKeys("80");
@@ -162,8 +162,8 @@ public class ManageClass {
 		manage.selectTrainingType("Revature");
 		manage.selectSkillType("J2EE");
 		manage.selectLocation("VA", location);
-		manage.selectTrainer("123");
-		manage.selectCotrainer("123");
+		manage.selectTrainer("Patrick Walsh");
+		manage.selectCotrainer("Patrick Walsh");
 		manage.inputStartDate().sendKeys("04/16/2018");
 		manage.inputEndDate().sendKeys("07/16/2018");
 		manage.inputGoodGrade().sendKeys("80");
@@ -184,52 +184,90 @@ public class ManageClass {
 		manage.selectTrainingType("Revature");
 		manage.selectSkillType("J2EE");
 		manage.selectLocation("VA", location);
-		manage.selectTrainer("123");
-		manage.selectCotrainer("123");
+		manage.selectTrainer("Patrick Walsh");
+		manage.selectCotrainer("Dan Pickles");
 		manage.inputStartDate().sendKeys("04/16/2018");
 		manage.inputEndDate().sendKeys("07/16/2018");
 		manage.inputGoodGrade().sendKeys("80");
-		//manage.inputPassingGrade().sendKeys("50");
-
-		manage.buttonCreateBatchSave().click();	
-		
-		createBatchFailureAppend();
+		manage.inputPassingGrade().sendKeys("50");
+		manage.buttonCreateBatchSave().click();
 	}
 	
-	@Test(priority=13)
-	public void deleteBatch() {
-		WebElement redCross = manage.buttonDeleteBatchRedCross();
-		WebElement x = manage.buttonDeleteBatchX();
-		WebElement cancel = manage.buttonDeleteBatchCancel();
-		WebElement delete = manage.buttonDeleteBatchDelete();
-		WebElement modalCreateBatch = manage.modalCreateBatch();
-		WebElement modalDeleteBatch = manage.modalDeleteBatch();
-		WebElement modalInvalidBatchInfo = manage.modalInvalidBatchInfo();
-		
-		modal(modalCreateBatch, redCross);
-		modal(modalInvalidBatchInfo, redCross);
-		redCross.click();
-		
-		button(x);
-		x.click();
-		
-		modal(modalDeleteBatch, redCross);
-		redCross.click();
-		
-		modal(modalDeleteBatch, cancel);
-		cancel.click();
-		
-		modal(modalDeleteBatch, redCross);
-		redCross.click();
-		
-		modal(modalDeleteBatch, delete);
-		delete.click();
-		
-		modal( modalDeleteBatch, delete );
-		home.listNavbar("Home");
-	}
-	
+//	@Test(priority=13)
+//	public void deleteBatchError() {
+//		WebElement redCross = manage.buttonDeleteBatchRedCrossError();
+//		WebElement confirmX = manage.buttonDeleteBatchConfirmX();
+//		WebElement cancel = manage.buttonDeleteBatchCancel();
+//		WebElement delete = manage.buttonDeleteBatchDelete();
+//		WebElement errorX = manage.buttonDeleteBatchErrorX();
+//		WebElement errorOk = manage.buttonDeleteBatchErrorOk();
+//		WebElement modalDeleteBatch = manage.modalDeleteBatch();
+//		WebElement modalDeleteBatchError = manage.modalDeleteBatchError();
+//		
+//		button(redCross);
+//		redCross.click();
+//		
+//		button(confirmX);
+//		confirmX.click();
+//		
+//		button(redCross);
+//		redCross.click();
+//		
+//		button(cancel);
+//		cancel.click();
+//		
+//		button(redCross);
+//		redCross.click();
+//		
+//		button(delete);
+//		delete.click();
+//		
+//		button(errorX);
+//		errorX.click();
+//		
+//		button(redCross);
+//		redCross.click();
+//		
+//		button(errorOk);
+//		errorOk.click();
+//		
+//		
+//	}
+//	
 //	@Test(priority=14)
+//	public void deleteBatch() {
+//		WebElement redCross = manage.buttonDeleteBatchRedCross();
+//		WebElement x = manage.buttonDeleteBatchConfirmX();
+//		WebElement cancel = manage.buttonDeleteBatchCancel();
+//		WebElement delete = manage.buttonDeleteBatchDelete();
+//		WebElement modalCreateBatch = manage.modalCreateBatch();
+//		WebElement modalDeleteBatch = manage.modalDeleteBatch();
+//		WebElement modalInvalidBatchInfo = manage.modalInvalidBatchInfo();
+//		
+//		modal(modalCreateBatch, redCross);
+//		modal(modalInvalidBatchInfo, redCross);
+//		redCross.click();
+//		
+//		button(x);
+//		x.click();
+//		
+//		modal(modalDeleteBatch, redCross);
+//		redCross.click();
+//		
+//		modal(modalDeleteBatch, cancel);
+//		cancel.click();
+//		
+//		modal(modalDeleteBatch, redCross);
+//		redCross.click();
+//		
+//		modal(modalDeleteBatch, delete);
+//		delete.click();
+//		
+//		modal( modalDeleteBatch, delete );
+//		home.listNavbar("Home");
+//	}
+//	
+//	@Test(priority=15)
 //	public void updateBatch() {
 //		createBatchSendKeys();
 //		
@@ -255,7 +293,7 @@ public class ManageClass {
 //		modal(modal, pencil);
 //	}
 //	
-//	@Test(priority=15)
+//	@Test(priority=16)
 //	public void viewTrainees() {
 //		WebElement user = manage.anchorViewTraineesUser();
 //		WebElement x = manage.buttonViewTraineesX();
@@ -278,7 +316,7 @@ public class ManageClass {
 //		inactive.click();
 //	}
 //	
-//	@Test(priority=16)
+//	@Test(priority=17)
 //	public void addTrainees() {
 //		WebElement addTrainee = manage.anchorAddTrainees();
 //		WebElement x = manage.buttonAddTraineesX();
@@ -302,18 +340,18 @@ public class ManageClass {
 //		modal(modalAddTrainees, close);
 //	}
 //	
-//	@Test(priority=17, dataProvider="trainingstatus")
+//	@Test(priority=18, dataProvider="trainingstatus")
 //	public void addTraineesTrainingStatus(String status) {
 //		manage.selectAddTraineesTrainingStatus(status);
 //	}
 //	
-//	@Test(priority=18)
+//	@Test(priority=19)
 //	public void addTraineesFailureFullName() {
 //		WebElement save = manage.inputAddTraineesSave();
 //		save.click();		
 //	}
 //	
-//	@Test(priority=19)
+//	@Test(priority=20)
 //	public void addTraineesFailureEmail() {
 //		WebElement fullName = manage.inputAddTraineesFullName();
 //		WebElement save = manage.inputAddTraineesSave();
@@ -322,7 +360,7 @@ public class ManageClass {
 //		save.click();		
 //	}
 //	
-//	@Test(priority=20)
+//	@Test(priority=21)
 //	public void addTraineesFailureTrainingStatus() {
 //		WebElement email = manage.inputAddTraineesEmail();
 //		WebElement save = manage.inputAddTraineesSave();
@@ -331,48 +369,48 @@ public class ManageClass {
 //		save.click();
 //	}
 //	
-//	@Test(priority=21)
+//	@Test(priority=22)
 //	public void addTraineesPassMinimum() {
 //		WebElement save = manage.inputAddTraineesSave();
 //		manage.selectAddTraineesTrainingStatus("Signed");
 //		save.click();
 //	}
 //	
-//	@Test(priority=22)
+//	@Test(priority=23)
 //	public void addTraineesPassMaximum() {
 //		manage.anchorAddTrainees().click();
 //		addTraineesSendKeys();
 //	}
-	
-	private void addTraineesSendKeys() {
-		WebElement fullName = manage.inputAddTraineesFullName();
-		WebElement email = manage.inputAddTraineesEmail();
-		WebElement skypeId = manage.inputAddTraineesSkypeId();
-		WebElement phone = manage.inputAddTraineesPhone();
-		WebElement college = manage.inputAddTraineesCollege();
-		WebElement degree = manage.inputAddTraineesDegree();
-		WebElement major = manage.inputAddTraineesMajor();
-		WebElement recruiterName = manage.inputAddTraineesRecruiterName();
-		WebElement techScreenerName = manage.inputAddTraineesTechScreenerName();
-		WebElement projectCompletion = manage.inputAddTraineesProjectCompletion();
-		WebElement profileUrl = manage.inputAddTraineesProfileUrl();
-		WebElement save = manage.inputAddTraineesSave();
-		
-		fullName.sendKeys("Full Name");
-		email.sendKeys("email@email.com");
-		skypeId.sendKeys("Skypeid");
-		phone.sendKeys("(123)-456-7890");
-		college.sendKeys("College");
-		degree.sendKeys("Degree");
-		major.sendKeys("Major");
-		recruiterName.sendKeys("Recruiter Name");
-		techScreenerName.sendKeys("Tech Screener Name");
-		projectCompletion.sendKeys("0%");
-		profileUrl.sendKeys("http://www.example.com/revature");
-		manage.selectAddTraineesTrainingStatus("Signed");
-		save.click();
-	}
-	
+//	
+//	private void addTraineesSendKeys() {
+//		WebElement fullName = manage.inputAddTraineesFullName();
+//		WebElement email = manage.inputAddTraineesEmail();
+//		WebElement skypeId = manage.inputAddTraineesSkypeId();
+//		WebElement phone = manage.inputAddTraineesPhone();
+//		WebElement college = manage.inputAddTraineesCollege();
+//		WebElement degree = manage.inputAddTraineesDegree();
+//		WebElement major = manage.inputAddTraineesMajor();
+//		WebElement recruiterName = manage.inputAddTraineesRecruiterName();
+//		WebElement techScreenerName = manage.inputAddTraineesTechScreenerName();
+//		WebElement projectCompletion = manage.inputAddTraineesProjectCompletion();
+//		WebElement profileUrl = manage.inputAddTraineesProfileUrl();
+//		WebElement save = manage.inputAddTraineesSave();
+//		
+//		fullName.sendKeys("Full Name");
+//		email.sendKeys("email@email.com");
+//		skypeId.sendKeys("Skypeid");
+//		phone.sendKeys("(123)-456-7890");
+//		college.sendKeys("College");
+//		degree.sendKeys("Degree");
+//		major.sendKeys("Major");
+//		recruiterName.sendKeys("Recruiter Name");
+//		techScreenerName.sendKeys("Tech Screener Name");
+//		projectCompletion.sendKeys("0%");
+//		profileUrl.sendKeys("http://www.example.com/revature");
+//		manage.selectAddTraineesTrainingStatus("Signed");
+//		save.click();
+//	}
+//	
 	@AfterSuite
 	public void afterSuite() {
 		driver.close();
@@ -420,9 +458,6 @@ public class ManageClass {
 	@DataProvider(name="trainers")
 	public Object[][] trainers(){
 		return new Object[][] {
-			new Object[] { "123" },
-			new Object[] { "Name" },
-			new Object[] { "bfs" },
 			new Object[] { "Patrick Walsh" },
 			new Object[] { "Dan Pickles" },
 			new Object[] { "Karan Dhirar" },
@@ -456,8 +491,7 @@ public class ManageClass {
 			new Object[] { "Raghavan Swaminathan" },
 			new Object[] { "Marvin" },
 			new Object[] { "Spongebob Squarepants" },
-			new Object[] { "Kermit Frog" },
-			new Object[] { "!@#$%^&*()" }
+			new Object[] { "Kermit Frog" }
 		};
 	}
 	
@@ -504,7 +538,8 @@ public class ManageClass {
 	private void createBatchFailurePrepend() {
 		WebElement createBatch = manage.anchorCreateBatch();
 		WebElement createBatchModal = manage.modalCreateBatch();
-				
+		
+		button(createBatch);
 		modal(createBatchModal, createBatch);
 		createBatch.click();
 	}
@@ -512,10 +547,10 @@ public class ManageClass {
 	private void createBatchFailureAppend() {
 		WebElement invalidBatchModal = manage.modalInvalidBatchInfo();
 		WebElement createBatchClose = manage.buttonCreateBatchClose();
-		WebElement invalidBatchX = manage.buttonInvalidBatchInfoX();
+		WebElement invalidBatchOk = manage.buttonInvalidBatchInfoOk();
 		
-		button(invalidBatchX);
-		invalidBatchX.click();
+		button(invalidBatchOk);
+		invalidBatchOk.click();
 		
 		modal(invalidBatchModal, createBatchClose);
 		createBatchClose.click();
@@ -531,8 +566,8 @@ public class ManageClass {
 		manage.selectTrainingType("Revature");
 		manage.selectSkillType("J2EE");
 		manage.selectLocation("VA", location);
-		manage.selectTrainer("123");
-		manage.selectCotrainer("Name");
+		manage.selectTrainer("Patrick Walsh");
+		manage.selectCotrainer("Dan Pickles");
 		manage.inputStartDate().sendKeys("04/16/2018");
 		manage.inputEndDate().sendKeys("07/16/2018");
 		manage.inputGoodGrade().sendKeys("80");
