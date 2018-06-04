@@ -8,9 +8,9 @@
 </head>
 <body>
 <h1>ProjectTwo: Caliber Test Automation</h1>
-<a href='TestHomeServlet.sabotage'>Test Home</a>
-<a href='TestManageBatchServlet.sabotage'>Test Manage Batch</a>
-<a href='TestAssessBatchServlet.sabotage'>Test Assess Batch</a>
-<a href='TestReportsServlet.sabotage'>Test Reports</a>
+<a href='TestHomeServlet.dude'>Test Home</a>
+<a href='TestManageBatchServlet.dude'>Test Manage Batch</a>
+<a href='TestAssessBatchServlet.dude'>Test Assess Batch</a>
+<a href='TestReportsServlet.dude'>Test Reports</a>
 </body>
 </html>
