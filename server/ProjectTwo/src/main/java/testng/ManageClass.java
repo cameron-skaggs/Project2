@@ -267,150 +267,152 @@ public class ManageClass {
 //		home.listNavbar("Home");
 //	}
 //	
-//	@Test(priority=15)
-//	public void updateBatch() {
-//		createBatchSendKeys();
-//		
-//		WebElement close = manage.buttonUpdateBatchClose();
-//		WebElement update = manage.buttonUpdateBatchUpdate();
-//		WebElement pencil = manage.buttonUpdateBatchPencil();
-//		WebElement modal = manage.modalCreateBatch();
-//		WebElement trainingName = manage.inputTrainingName();
-//		
-//		modal(modal, pencil);
-//		pencil.click();
-//		
-//		modal(modal, close);
-//		close.click();
-//		
-//		modal(modal, pencil);
-//		pencil.click();
-//		
-//		modal(modal, update);
-//		trainingName.sendKeys("Script");
-//		update.click();	
-//		
-//		modal(modal, pencil);
-//	}
-//	
-//	@Test(priority=16)
-//	public void viewTrainees() {
-//		WebElement user = manage.anchorViewTraineesUser();
-//		WebElement x = manage.buttonViewTraineesX();
-//		WebElement active = manage.anchorViewTraineesActive();
-//		WebElement inactive = manage.anchorViewTraineesInactive();
-//		WebElement modal = manage.modalViewTrainees();
-//		
-//		user.click();
-//		
-//		modal(modal, x);
-//		x.click();
-//		
-//		modal(modal, user);
-//		user.click();
-//		
-//		modal(modal, active);
-//		active.click();
-//		
-//		button(inactive);
-//		inactive.click();
-//	}
-//	
-//	@Test(priority=17)
-//	public void addTrainees() {
-//		WebElement addTrainee = manage.anchorAddTrainees();
-//		WebElement x = manage.buttonAddTraineesX();
-//		WebElement close = manage.buttonAddTraineesClose();
-//		WebElement modalAddTrainees = manage.modalAddTrainees();
-//		
-//		addTrainee.click();
-//		
-//		modal(modalAddTrainees, x);
-//		x.click();
-//		
-//		modal(modalAddTrainees, addTrainee);
-//		addTrainee.click();
-//		
-//		modal(modalAddTrainees, close);
-//		close.click();
-//		
-//		modal(modalAddTrainees, addTrainee);
-//		addTrainee.click();
-//		
-//		modal(modalAddTrainees, close);
-//	}
-//	
-//	@Test(priority=18, dataProvider="trainingstatus")
-//	public void addTraineesTrainingStatus(String status) {
-//		manage.selectAddTraineesTrainingStatus(status);
-//	}
-//	
-//	@Test(priority=19)
-//	public void addTraineesFailureFullName() {
-//		WebElement save = manage.inputAddTraineesSave();
-//		save.click();		
-//	}
-//	
-//	@Test(priority=20)
-//	public void addTraineesFailureEmail() {
-//		WebElement fullName = manage.inputAddTraineesFullName();
-//		WebElement save = manage.inputAddTraineesSave();
-//		
-//		fullName.sendKeys("Full Name");
-//		save.click();		
-//	}
-//	
-//	@Test(priority=21)
-//	public void addTraineesFailureTrainingStatus() {
-//		WebElement email = manage.inputAddTraineesEmail();
-//		WebElement save = manage.inputAddTraineesSave();
-//		
-//		email.sendKeys("email@email.com");
-//		save.click();
-//	}
-//	
-//	@Test(priority=22)
-//	public void addTraineesPassMinimum() {
-//		WebElement save = manage.inputAddTraineesSave();
-//		manage.selectAddTraineesTrainingStatus("Signed");
-//		save.click();
-//	}
-//	
+	
+	
+	@Test(priority=15)
+	public void updateBatch() {
+		createBatchSendKeys();
+		
+		WebElement close = manage.buttonUpdateBatchClose();
+		WebElement update = manage.buttonUpdateBatchUpdate();
+		WebElement pencil = manage.buttonUpdateBatchPencil();
+		WebElement modal = manage.modalCreateBatch();
+		WebElement trainingName = manage.inputTrainingName();
+		
+		modal(modal, pencil);
+		pencil.click();
+		
+		modal(modal, close);
+		close.click();
+		
+		modal(modal, pencil);
+		pencil.click();
+		
+		modal(modal, update);
+		trainingName.sendKeys("Script");
+		update.click();	
+		
+		modal(modal, pencil);
+	}
+	
+	@Test(priority=16)
+	public void viewTrainees() {
+		WebElement user = manage.anchorViewTraineesUser();
+		WebElement x = manage.buttonViewTraineesX();
+		WebElement active = manage.anchorViewTraineesActive();
+		WebElement inactive = manage.anchorViewTraineesInactive();
+		WebElement modal = manage.modalViewTrainees();
+		
+		user.click();
+		
+		modal(modal, x);
+		x.click();
+		
+		modal(modal, user);
+		user.click();
+		
+		modal(modal, active);
+		active.click();
+		
+		button(inactive);
+		inactive.click();
+	}
+	
+	@Test(priority=17)
+	public void addTrainees() {
+		WebElement addTrainee = manage.anchorAddTrainees();
+		WebElement x = manage.buttonAddTraineesX();
+		WebElement close = manage.buttonAddTraineesClose();
+		WebElement modalAddTrainees = manage.modalAddTrainees();
+		
+		addTrainee.click();
+		
+		modal(modalAddTrainees, x);
+		x.click();
+		
+		modal(modalAddTrainees, addTrainee);
+		addTrainee.click();
+		
+		modal(modalAddTrainees, close);
+		close.click();
+		
+		modal(modalAddTrainees, addTrainee);
+		addTrainee.click();
+		
+		modal(modalAddTrainees, close);
+	}
+	
+	@Test(priority=18, dataProvider="trainingstatus")
+	public void addTraineesTrainingStatus(String status) {
+		manage.selectAddTraineesTrainingStatus(status);
+	}
+	
+	@Test(priority=19)
+	public void addTraineesFailureFullName() {
+		WebElement save = manage.inputAddTraineesSave();
+		save.click();		
+	}
+	
+	@Test(priority=20)
+	public void addTraineesFailureEmail() {
+		WebElement fullName = manage.inputAddTraineesFullName();
+		WebElement save = manage.inputAddTraineesSave();
+		
+		fullName.sendKeys("Full Name");
+		save.click();		
+	}
+	
+	@Test(priority=21)
+	public void addTraineesFailureTrainingStatus() {
+		WebElement email = manage.inputAddTraineesEmail();
+		WebElement save = manage.inputAddTraineesSave();
+		
+		email.sendKeys("email@email.com");
+		save.click();
+	}
+	
+	@Test(priority=22)
+	public void addTraineesPassMinimum() {
+		WebElement save = manage.inputAddTraineesSave();
+		manage.selectAddTraineesTrainingStatus("Signed");
+		save.click();
+	}
+	
 //	@Test(priority=23)
 //	public void addTraineesPassMaximum() {
 //		manage.anchorAddTrainees().click();
 //		addTraineesSendKeys();
 //	}
-//	
-//	private void addTraineesSendKeys() {
-//		WebElement fullName = manage.inputAddTraineesFullName();
-//		WebElement email = manage.inputAddTraineesEmail();
-//		WebElement skypeId = manage.inputAddTraineesSkypeId();
-//		WebElement phone = manage.inputAddTraineesPhone();
-//		WebElement college = manage.inputAddTraineesCollege();
-//		WebElement degree = manage.inputAddTraineesDegree();
-//		WebElement major = manage.inputAddTraineesMajor();
-//		WebElement recruiterName = manage.inputAddTraineesRecruiterName();
-//		WebElement techScreenerName = manage.inputAddTraineesTechScreenerName();
-//		WebElement projectCompletion = manage.inputAddTraineesProjectCompletion();
-//		WebElement profileUrl = manage.inputAddTraineesProfileUrl();
-//		WebElement save = manage.inputAddTraineesSave();
-//		
-//		fullName.sendKeys("Full Name");
-//		email.sendKeys("email@email.com");
-//		skypeId.sendKeys("Skypeid");
-//		phone.sendKeys("(123)-456-7890");
-//		college.sendKeys("College");
-//		degree.sendKeys("Degree");
-//		major.sendKeys("Major");
-//		recruiterName.sendKeys("Recruiter Name");
-//		techScreenerName.sendKeys("Tech Screener Name");
-//		projectCompletion.sendKeys("0%");
-//		profileUrl.sendKeys("http://www.example.com/revature");
-//		manage.selectAddTraineesTrainingStatus("Signed");
-//		save.click();
-//	}
-//	
+	
+	private void addTraineesSendKeys() {
+		WebElement fullName = manage.inputAddTraineesFullName();
+		WebElement email = manage.inputAddTraineesEmail();
+		WebElement skypeId = manage.inputAddTraineesSkypeId();
+		WebElement phone = manage.inputAddTraineesPhone();
+		WebElement college = manage.inputAddTraineesCollege();
+		WebElement degree = manage.inputAddTraineesDegree();
+		WebElement major = manage.inputAddTraineesMajor();
+		WebElement recruiterName = manage.inputAddTraineesRecruiterName();
+		WebElement techScreenerName = manage.inputAddTraineesTechScreenerName();
+		WebElement projectCompletion = manage.inputAddTraineesProjectCompletion();
+		WebElement profileUrl = manage.inputAddTraineesProfileUrl();
+		WebElement save = manage.inputAddTraineesSave();
+		
+		fullName.sendKeys("Full Name");
+		email.sendKeys("email@email.com");
+		skypeId.sendKeys("Skypeid");
+		phone.sendKeys("(123)-456-7890");
+		college.sendKeys("College");
+		degree.sendKeys("Degree");
+		major.sendKeys("Major");
+		recruiterName.sendKeys("Recruiter Name");
+		techScreenerName.sendKeys("Tech Screener Name");
+		projectCompletion.sendKeys("0%");
+		profileUrl.sendKeys("http://www.example.com/revature");
+		manage.selectAddTraineesTrainingStatus("Signed");
+		save.click();
+	}
+	
 	@AfterSuite
 	public void afterSuite() {
 		driver.close();
