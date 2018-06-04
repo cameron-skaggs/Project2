@@ -5,8 +5,8 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
  
@@ -17,7 +17,7 @@ public class HomeClass {
 	WebDriver driver;
 	HomePom home;
 	
-	@BeforeSuite
+	@BeforeClass
 	public void beforeSuite() {
 		driver = DriverFactory.get("chrome");
 	}
@@ -45,7 +45,7 @@ public class HomeClass {
 		return string.replace(" ", "");
 	}
 	
-	@AfterSuite
+	@AfterClass
 	public void afterSuite() {
 		driver.quit();
 	}
